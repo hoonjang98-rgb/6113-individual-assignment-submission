@@ -1,0 +1,100 @@
+001: Individual Assignment: Financial Decentralized Application (DApp)
+002: I. BackgroundDecentralized Applications (DApps) are transforming the financial industry by enabling secure, transparent, and trustless digital transactions without relying on centralized intermediaries. In this assignment, you will design and develop a financial DApp that demonstrates your understanding of blockchain technology, smart contracts, and full-stack web development.Your solution should solve a real-world financial problem by integrating blockchain technology with a user-friendly web application.
+003: II. Learning Objectives
+004: Explain the fundamentals of blockchain and decentralized applications.
+005: Design and implement Ethereum smart contracts using Solidity.
+006: Develop a full-stack DApp integrating blockchain with a web interface.
+007: Evaluate the security, usability, and performance of a DApp.
+008: Demonstrate practical applications of decentralized finance (DeFi).
+009: III. Project Requirements
+010: Develop an original Financial DApp.
+011: Include a Solidity smart contract.
+012: Support MetaMask wallet connection.
+013: Provide a user-friendly web interface.
+014: Integrate a backend using Flask or Node.js.
+015: Execute blockchain transactions.
+016: Display transaction status/history.
+017: Implement input validation and error handling.
+018: IV. Suggested Project Topics
+019: Peer-to-Peer Lending Platform
+020: Micro-Investment Platform
+021: Cryptocurrency Money Transfer
+022: Digital Savings/Deposit System
+023: Token-based Reward System
+024: Charity Donation Platform
+025: Crowdfunding Platform
+026: Escrow Payment System
+027: Digital Invoice Payment System
+028: Student Scholarship Distribution System
+029: V. Recommended Technologies
+030: Frontend: HTML, CSS, JavaScript
+031: Backend: Flask (Python) or Node.js
+032: Blockchain: Ethereum Sepolia Testnet
+033: Smart Contract: Solidity
+034: Wallet: MetaMask
+035: IDE: VS Code / Remix IDE
+036: Database (Optional): SQLite or MongoDB
+037: Deployment: Render or AWS
+038: Version Control: GitHub
+039: VI. Functional Requirements
+040: Connect MetaMask wallet.
+041: Submit blockchain transactions.
+042: Validate requests via smart contracts.
+043: Record transactions on blockchain.
+044: Display confirmation and history.
+045: VII. Security Considerations
+046: Authentication and authorization
+047: Input validation
+048: Smart contract vulnerabilities
+049: Private key protection
+050: Gas optimization
+051: Data privacy and ethical considerations
+052: VIII. Testing
+053: Successful transactions
+054: Invalid input handling
+055: Wallet connection
+056: Smart contract deployment
+057: Screenshots of results
+058: IX. Report Structure
+059: Introduction
+060: Problem Statement
+061: Objectives
+062: System Architecture
+063: Technologies Used
+064: Smart Contract Design
+065: Application Design
+066: Implementation
+067: Testing and Results
+068: Challenges Encountered
+069: Limitations
+070: Future Improvements
+071: Conclusion
+072: X. Deliverables
+073: Final Report (5–8 pages, PDF)
+074: Source Code
+075: Smart Contract (.sol)
+076: Python/Node.js files
+077: HTML/CSS/JavaScript files
+078: Database (if applicable)
+079: README file
+080: Screenshots
+081: No video recording needed
+082: XI. Marking Rubric (100 Marks)
+083: Criteria
+084: Marks
+085: Problem Definition and Objectives
+086: 10
+087: Smart Contract Design
+088: 20
+089: DApp Functionality
+090: 25
+091: Frontend User Interface
+092: 10
+093: Backend Integration
+094: 10
+095: Testing and Evaluation
+096: 10
+097: Report Quality
+098: 10
+099: Innovation and Creativity
+100: 5

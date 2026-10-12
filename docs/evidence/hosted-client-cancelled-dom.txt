@@ -1,0 +1,130 @@
+Browser tab: 1917613700, Title: "FreelancePay · Your work. Clear payments.", URL: "https://freelancepay-059m.onrender.com/".
+1 AXWebArea FreelancePay · Your work. Clear payments., URL: freelancepay-059m.onrender.com/
+	2 link Description: Skip to invoices, Value: freelancepay-059m.onrender.com/#workspace
+	3 container
+		4 link Description: FreelancePay home, Value: freelancepay-059m.onrender.com/
+		5 container Wallet controls
+			6 button (disabled) ✓ Connected · 0xB291…cc67, ID: connect
+			67 button Switch account, ID: switch-account
+			68 button Disconnect, ID: disconnect
+	8 container
+		92 text Using 0xB2914BC24584098BB6108e3B72F96109E9bCcc67 for this app. Choose Sent to you for received invoices or Issued by you for your requests.
+		9 text WORK COMPLETED. PAYMENT RECORDED.
+		10 heading Your work. Clear payments., Value: 1
+			11 text Your work.
+			12 text Clear payments.
+		13 container
+			14 text Create an invoice. Pay the exact amount.
+			15 text Keep a record you can both verify.
+		16 container
+			17 text HOW IT WORKS
+			18 content list
+				19 container
+					20 text 01 Send a clear request Choose your client and invoice amount.
+				21 container
+					22 text 02 Pay through your wallet Only the designated client can pay.
+				23 container
+					24 text 03 Verify the result See the confirmed payment on-chain.
+			25 text Sepolia test ETH only · No platform fee
+		118 text Ethereum Sepolia
+		119 text 0xB2914BC24584098BB6108e3B72F96109E9bCcc67
+		71 container wallet-balance
+			72 text Test ETH balance
+			87 text 0.009145880715313346 ETH
+			74 button Refresh balance, ID: refresh-balance
+			88 text Balance updated at 18:39:39. Network fees are separate.
+		76 container account-picker
+			77 text Account for this app
+			78 pop up button (collapsed, settable) Account for this app, Value: 0xB2914BC24584098BB6108e3B72F96109E9bCcc67, ID: active-account, Secondary Actions: Expand
+				79 menu
+					120 0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f
+					121 (selected) 0xB2914BC24584098BB6108e3B72F96109E9bCcc67
+			82 text Choose an account already connected to this site. MetaMask approval is still required for every transaction.
+		83 button (collapsed) Wallet connection details, Secondary Actions: Expand
+			84 text Wallet connection details
+		91 text Your wallet is connected. Select an invoice or create a new request.
+		29 container Invoices, ID: workspace
+			30 text YOUR WORKSPACE
+			31 heading Invoices, Value: 2, ID: workspace-title
+				32 text Invoices
+			33 button Create invoice, ID: new-invoice
+			34 container Invoice role
+				35 checkbox Issued by you, Value: 0, ID: issued
+				36 checkbox Sent to you, Value: 1, ID: received
+			37 button Refresh , ID: refresh
+			97 text These requests can be paid by the connected account. Open an invoice to review its payment.
+			39 text Status
+			40 pop up button (collapsed, settable) Status, Value: All statuses, ID: status-filter, Secondary Actions: Expand
+				41 menu
+					42 (disabled) All statuses
+					43 (disabled) Pending
+					44 (disabled) Paid
+					45 (disabled) Cancelled
+			46 text Filters the invoices on this page.
+			47 container invoice-list
+				102 button Open invoice 3, SC6113-LIVE-CANCEL-001, Cancelled
+					103 text SC6113-LIVE-CANCEL-001
+					104 text Invoice #3
+					105 text 0.0001 ETH
+					106 text Cancelled
+				107 button Open invoice 2, SC6113-LIVE-PAY-001, Paid
+					108 text SC6113-LIVE-PAY-001
+					109 text Invoice #2
+					110 text 0.0001 ETH
+					111 text Paid
+				112 button Open invoice 1, SC6113-PAY-001, Paid
+					113 text SC6113-PAY-001
+					114 text Invoice #1
+					115 text 0.0001 ETH
+					116 text Paid
+			117 text 3 received · 1–3 shown · Block 11848305
+			52 container
+				53 button (disabled) ← Previous, ID: previous
+				54 button (disabled) Next →, ID: next
+		122 container SC6113-LIVE-CANCEL-001 · #3, ID: detail
+			123 text INVOICE DETAILS
+			124 heading SC6113-LIVE-CANCEL-001 · #3, Value: 2, ID: detail-title
+				125 text SC6113-LIVE-CANCEL-001 · #3
+			126 button Close, ID: close-detail
+			127 container detail-content
+				128 text Cancelled
+				129 definition list
+					130 container Amount
+						131 text Amount
+					132 text 0.0001 ETH
+					133 container Created
+						134 text Created
+					135 text 05 Oct 2026, 18:35:36 GMT+8
+					136 container Cancelled at
+						137 text Cancelled at
+					138 text 05 Oct 2026, 18:37:36 GMT+8
+					139 container Freelancer / issuer
+						140 text Freelancer / issuer
+					141 text 0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f
+					142 container Designated client
+						143 text Designated client
+					144 text 0xB2914BC24584098BB6108e3B72F96109E9bCcc67
+					145 container Observed block
+						146 text Observed block
+					147 text 11848305
+			148 heading On-chain activity, Value: 3
+				149 text On-chain activity
+			150 container history
+				151 text Invoice Created 05 Oct 2026, 18:35:36 GMT+8 · Block 11848283
+				152 link Description: Transaction ↗, Value: sepolia.etherscan.io/tx/0x09525df5e350d98abbf288e1150cce3f6dc971d4d5ec559ffbb857aa5ae66509
+				153 text Invoice Cancelled 05 Oct 2026, 18:37:36 GMT+8 · Block 11848293
+				154 link Description: Transaction ↗, Value: sepolia.etherscan.io/tx/0x57c539676f3c18b31e0b95555873501c85bab2ae404685b1949191abc6cfb1b1
+		55 heading Direct to the freelancer, Value: 3
+			56 text Direct to the freelancer
+		57 text Payment goes to the issuer in the same transaction. FreelancePay keeps no payment balance.
+		58 heading A shared, public record, Value: 3
+			59 text A shared, public record
+		60 text Addresses, references and payment details are public. Keep personal and confidential information out.
+		61 heading Know what is confirmed, Value: 3
+			62 text Know what is confirmed
+		63 text Payment records do not prove work quality. Payments have network fees and cannot be reversed here.
+	64 container
+		65 text FreelancePay SC6113 educational project · Test funds only
+		66 link Description: View contract ↗, Value: sepolia.etherscan.io/address/0xF9c9cA735028b3C9787773383D1C6926B9312C0F, ID: contract-link
+
+The focused UI element is 122 container SC6113-LIVE-CANCEL-001 · #3, ID: detail

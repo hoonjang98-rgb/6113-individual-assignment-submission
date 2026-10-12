@@ -1,0 +1,131 @@
+Browser tab: 1917613700, Title: "FreelancePay · Your work. Clear payments.", URL: "https://freelancepay-059m.onrender.com/".
+0 AXWebArea FreelancePay · Your work. Clear payments., URL: freelancepay-059m.onrender.com/
+	1 link Description: Skip to invoices, Value: freelancepay-059m.onrender.com/#workspace
+	2 container
+		3 link Description: FreelancePay home, Value: freelancepay-059m.onrender.com/
+		4 container Wallet controls
+			5 button (disabled) ✓ Connected · 0xa91f…5D8f, ID: connect
+			6 button Switch account, ID: switch-account
+			7 button Disconnect, ID: disconnect
+	8 container
+		9 text Connected. Use Issued by you to request payment or Sent to you to pay an invoice.
+		10 text WORK COMPLETED. PAYMENT RECORDED.
+		11 heading Your work. Clear payments., Value: 1
+			12 text Your work.
+			13 text Clear payments.
+		14 container
+			15 text Create an invoice. Pay the exact amount.
+			16 text Keep a record you can both verify.
+		17 container
+			18 text HOW IT WORKS
+			19 content list
+				20 container
+					21 text 01 Send a clear request Choose your client and invoice amount.
+				22 container
+					23 text 02 Pay through your wallet Only the designated client can pay.
+				24 container
+					25 text 03 Verify the result See the confirmed payment on-chain.
+			26 text Sepolia test ETH only · No platform fee
+		97 text Ethereum Sepolia
+		98 text 0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f
+		29 container wallet-balance
+			30 text Test ETH balance
+			90 text 0.020112665104837539 ETH
+			32 button Refresh balance, ID: refresh-balance
+			91 text Balance updated at 18:25:41. Network fees are separate.
+		34 container account-picker
+			35 text Account for this app
+			36 pop up button (collapsed, settable) Account for this app, Value: 0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f, ID: active-account, Secondary Actions: Expand
+				37 menu
+					99 (selected) 0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f
+					100 0xB2914BC24584098BB6108e3B72F96109E9bCcc67
+			40 text Choose an account already connected to this site. MetaMask approval is still required for every transaction.
+		41 button (collapsed) Wallet connection details, Secondary Actions: Expand
+			42 text Wallet connection details
+		43 text Your wallet is connected. Select an invoice or create a new request.
+		44 container transaction
+			45 text TRANSACTION
+			46 heading Transaction confirmed, Value: 2, ID: tx-title
+				101 text Transaction confirmed
+			102 text The transaction receipt confirms success. Invoice details below come from the current chain state.
+			96 link Description: 0x8945bcc333c66b766ab1244728016e23ddfe0b6bacae5de618e66322bbdcaff7, Value: sepolia.etherscan.io/tx/0x8945bcc333c66b766ab1244728016e23ddfe0b6bacae5de618e66322bbdcaff7, ID: tx-link
+			103 text Ethereum Sepolia · Submitted by 0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f
+		49 container Invoices, ID: workspace
+			50 text YOUR WORKSPACE
+			51 heading Invoices, Value: 2, ID: workspace-title
+				52 text Invoices
+			53 button Create invoice, ID: new-invoice
+			54 container Invoice role
+				55 checkbox Issued by you, Value: 1, ID: issued
+				56 checkbox Sent to you, Value: 0, ID: received
+			57 button Refresh , ID: refresh
+			58 text To request a payment, create an invoice. To pay a request, choose Sent to you.
+			59 text Status
+			60 pop up button (collapsed, settable) Status, Value: All statuses, ID: status-filter, Secondary Actions: Expand
+				61 menu
+					62 (selected) All statuses
+					63 Pending
+					64 Paid
+					65 Cancelled
+			66 text Filters the invoices on this page.
+			104 container invoice-list
+				105 button Open invoice 2, SC6113-LIVE-PAY-001, Pending
+					106 text SC6113-LIVE-PAY-001
+					107 text Invoice #2
+					108 text 0.0001 ETH
+					109 text Pending
+				110 button Open invoice 1, SC6113-PAY-001, Paid
+					111 text SC6113-PAY-001
+					112 text Invoice #1
+					113 text 0.0001 ETH
+					114 text Paid
+			115 text 2 issued · 1–2 shown · Block 11848257
+			73 container
+				74 button (disabled) ← Previous, ID: previous
+				75 button (disabled) Next →, ID: next
+		116 container SC6113-LIVE-PAY-001 · #2, ID: detail
+			117 text INVOICE DETAILS
+			118 heading SC6113-LIVE-PAY-001 · #2, Value: 2, ID: detail-title
+				119 text SC6113-LIVE-PAY-001 · #2
+			120 button Close, ID: close-detail
+			121 container detail-content
+				122 text Pending
+				123 definition list
+					124 container Amount
+						125 text Amount
+					126 text 0.0001 ETH
+					127 container Created
+						128 text Created
+					129 text 05 Oct 2026, 18:25:36 GMT+8
+					130 container Freelancer / issuer
+						131 text Freelancer / issuer
+					132 text 0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f
+					133 container Designated client
+						134 text Designated client
+					135 text 0xB2914BC24584098BB6108e3B72F96109E9bCcc67
+					136 container Observed block
+						137 text Observed block
+					138 text 11848257
+			139 container detail-actions
+				140 text Next: payment by 0xB2914BC24584098BB6108e3B72F96109E9bCcc67. If you control this test account, switch to it to review the payment.
+				141 button Switch to client wallet
+				142 button Cancel unpaid invoice
+			143 heading On-chain activity, Value: 3
+				144 text On-chain activity
+			145 container history
+				146 text Invoice Created 05 Oct 2026, 18:25:36 GMT+8 · Block 11848236
+				147 link Description: Transaction ↗, Value: sepolia.etherscan.io/tx/0x8945bcc333c66b766ab1244728016e23ddfe0b6bacae5de618e66322bbdcaff7
+		76 heading Direct to the freelancer, Value: 3
+			77 text Direct to the freelancer
+		78 text Payment goes to the issuer in the same transaction. FreelancePay keeps no payment balance.
+		79 heading A shared, public record, Value: 3
+			80 text A shared, public record
+		81 text Addresses, references and payment details are public. Keep personal and confidential information out.
+		82 heading Know what is confirmed, Value: 3
+			83 text Know what is confirmed
+		84 text Payment records do not prove work quality. Payments have network fees and cannot be reversed here.
+	85 container
+		86 text FreelancePay SC6113 educational project · Test funds only
+		87 link Description: View contract ↗, Value: sepolia.etherscan.io/address/0xF9c9cA735028b3C9787773383D1C6926B9312C0F, ID: contract-link
+
+The focused UI element is 116 container SC6113-LIVE-PAY-001 · #2, ID: detail

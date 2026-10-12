@@ -1,0 +1,60 @@
+{
+  "recordedAtUtc": "2026-10-05T10:30:19.869052+00:00",
+  "results": [
+    {
+      "path": "/api/transactions/0x8945bcc333c66b766ab1244728016e23ddfe0b6bacae5de618e66322bbdcaff7",
+      "status": 200,
+      "body": {
+        "blockHash": "0x486580848b38499cb793f9badb45bc405f06545643053ecf7e537de312808fc4",
+        "blockNumber": "11848236",
+        "events": [
+          {
+            "event": "InvoiceCreated",
+            "invoiceId": "2"
+          }
+        ],
+        "from": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+        "gasUsed": "297326",
+        "hash": "0x8945bcc333c66b766ab1244728016e23ddfe0b6bacae5de618e66322bbdcaff7",
+        "observedBlock": "11848258",
+        "status": "confirmed"
+      }
+    },
+    {
+      "path": "/api/invoices/2",
+      "status": 200,
+      "body": {
+        "invoice": {
+          "amountWei": "100000000000000",
+          "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+          "createdAt": "1791195936",
+          "createdBlock": "11848236",
+          "id": "2",
+          "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+          "reference": "SC6113-LIVE-PAY-001",
+          "settledAt": "0",
+          "settledBlock": "0",
+          "status": "Pending"
+        },
+        "observedBlock": "11848258"
+      }
+    },
+    {
+      "path": "/api/invoices/2/history",
+      "status": 200,
+      "body": {
+        "items": [
+          {
+            "blockNumber": "11848236",
+            "event": "InvoiceCreated",
+            "invoiceId": "2",
+            "logIndex": 35,
+            "transactionHash": "0x8945bcc333c66b766ab1244728016e23ddfe0b6bacae5de618e66322bbdcaff7",
+            "transactionIndex": 13
+          }
+        ],
+        "observedBlock": "11848258"
+      }
+    }
+  ]
+}

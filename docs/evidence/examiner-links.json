@@ -1,0 +1,66 @@
+{
+  "recordedAtUtc": "2026-10-05T14:05:16.016062+00:00",
+  "primaryDocumentation": [
+    {
+      "url": "https://docs.ethers.org/v6/getting-started/",
+      "result": "Page content retrieved through the web tool on this review date"
+    },
+    {
+      "url": "https://docs.metamask.io/metamask-connect/evm/reference/provider-api/",
+      "result": "Page content retrieved through the web tool on this review date"
+    },
+    {
+      "url": "https://docs.soliditylang.org/en/latest/security-considerations.html",
+      "result": "Page content retrieved through the web tool on this review date"
+    },
+    {
+      "url": "https://docs.tenderly.co/node-rpc/rpc-reference",
+      "result": "Page content retrieved through the web tool on this review date"
+    },
+    {
+      "url": "https://ethereum.org/developers/docs/consensus-mechanisms/pos/#finality",
+      "result": "Page content retrieved through the web tool on this review date"
+    },
+    {
+      "url": "https://ethereum.org/developers/docs/transactions/",
+      "result": "Page content retrieved through the web tool on this review date"
+    },
+    {
+      "url": "https://flask.palletsprojects.com/en/stable/deploying/",
+      "result": "Page content retrieved through the web tool on this review date"
+    },
+    {
+      "url": "https://gunicorn.org/reference/settings/",
+      "result": "Page content retrieved through the web tool on this review date"
+    },
+    {
+      "url": "https://render.com/docs/blueprint-spec",
+      "result": "Page content retrieved through the web tool on this review date"
+    },
+    {
+      "url": "https://render.com/docs/deploy-flask",
+      "result": "Page content retrieved through the web tool on this review date"
+    },
+    {
+      "url": "https://render.com/docs/free",
+      "result": "Page content retrieved through the web tool on this review date"
+    },
+    {
+      "url": "https://render.com/docs/health-checks",
+      "result": "Page content retrieved through the web tool on this review date"
+    },
+    {
+      "url": "https://render.com/docs/python-version",
+      "result": "Page content retrieved through the web tool on this review date"
+    }
+  ],
+  "liveApplication": "examiner-live-verification.json",
+  "explorerPages": "examiner-explorer-links.json",
+  "classification": {
+    "privateGithubRepository": "Deliberately private; not an assessment prerequisite or a promised public link",
+    "loopbackURLs": "Work only after starting the supplied app; not public hosted links",
+    "rpcURLs": "JSON-RPC POST endpoints, not human-readable websites",
+    "historicalLocalPaths": "Observation provenance; not dependencies; selected deliverables are under the manifest"
+  },
+  "localGuideBrowserAttempt": "Local file navigation was blocked by the browser tool protocol policy before loading. No circumvention attempted. Local HTML will be checked structurally and every referenced file checked; direct file:// browser rendering is not claimed."
+}

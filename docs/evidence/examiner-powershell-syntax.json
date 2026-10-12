@@ -1,0 +1,10 @@
+[
+  {
+    "path": "tools\\start-setup.ps1",
+    "errors": 0
+  },
+  {
+    "path": "tools\\start-app.ps1",
+    "errors": 0
+  }
+]

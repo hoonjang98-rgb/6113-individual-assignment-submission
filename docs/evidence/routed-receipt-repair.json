@@ -1,0 +1,34 @@
+{
+  "recordedAtUtc": "2026-10-05T10:29:06.593856+00:00",
+  "issue": "A successful wallet-routed creation was labelled unrelated because outer tx.to was not the FreelancePay address.",
+  "affectedTransaction": "0x8945bcc333c66b766ab1244728016e23ddfe0b6bacae5de618e66322bbdcaff7",
+  "invoiceId": "2",
+  "reference": "SC6113-LIVE-PAY-001",
+  "duplicateWrites": 0,
+  "change": "Accept a routed transaction only after a successful receipt contains a decoded event emitted by the runtime-verified FreelancePay address. Unknown/pending or unrelated/failed routed receipts are never labelled successful.",
+  "contractOrAbiChanged": false,
+  "changedRuntimeFiles": [
+    "chain_service.py"
+  ],
+  "tests": {
+    "apiCount": 32,
+    "result": "passed",
+    "evidence": "docs/evidence/routed-receipt-api-tests.xml",
+    "newCases": 4,
+    "coverage": [
+      "routed create/cancel",
+      "other-contract matching events rejected",
+      "unmined routed call unknown",
+      "failed routed call not claimed"
+    ]
+  },
+  "actualPublicVerification": "docs/evidence/routed-receipt-public-verification.json",
+  "commit": "5febbadce4a58fcec3841741b26f82572d4f892e",
+  "exactRemoteReadback": true,
+  "ownerReview": "Inspected address filtering, status gate, pending distinction and unchanged API response schema. No independent reviewer claim.",
+  "hostedRecheck": "passed: same transaction confirmed in actual assessment Chrome and HTTPS receipt, invoice and history reads",
+  "hostedEvidence": [
+    "docs/evidence/hosted-create-recovered-dom.txt",
+    "docs/evidence/hosted-create-recovered-http.json"
+  ]
+}

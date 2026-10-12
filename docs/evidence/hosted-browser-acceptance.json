@@ -1,0 +1,144 @@
+{
+  "recordedAtUtc": "2026-10-05T10:51:12.807690+00:00",
+  "result": "Passed within approved Sepolia-only scope",
+  "environment": "Ordinary desktop assessment Chrome with actual MetaMask; user performed wallet approvals. Not injected-provider tests.",
+  "url": "https://freelancepay-059m.onrender.com",
+  "deployedCommit": "5febbadce4a58fcec3841741b26f82572d4f892e",
+  "chainId": 11155111,
+  "contract": "0xF9c9cA735028b3C9787773383D1C6926B9312C0F",
+  "checks": [
+    {
+      "name": "Connection and roles",
+      "result": "Passed",
+      "observation": "Two authorized accounts; client selected after user restored both permissions.",
+      "evidence": "docs/evidence/hosted-reconnected-both-accounts-dom.txt",
+      "sha256": "8f938051f16d3fdb368a873414da1d57c25ada621c54de054438f56905ab6ff4"
+    },
+    {
+      "name": "Payment client",
+      "result": "Passed",
+      "observation": "Invoice #2 Paid, exact 0.0001 ETH, two events; no further pay/cancel action.",
+      "evidence": "docs/evidence/hosted-client-paid-dom.txt",
+      "sha256": "e4bd35cedc7605d8668ef4301dad0c7a0db743192eaf344411bec3e43508051c"
+    },
+    {
+      "name": "Payment issuer reload",
+      "result": "Passed",
+      "observation": "Issuer reconstructs matching Paid invoice and history after reload.",
+      "evidence": "docs/evidence/hosted-issuer-paid-reload-dom.txt",
+      "sha256": "f86d48feae478a3a4bcc6790e82baa27f4e4b4f48e2c2bf7edda573a717b2fef"
+    },
+    {
+      "name": "Payment client reload",
+      "result": "Passed",
+      "observation": "Client reconstructs matching Paid invoice and history after reload.",
+      "evidence": "docs/evidence/hosted-client-paid-reload-dom.txt",
+      "sha256": "303da7b7710b92be643d8833aefda091a2d3fb0d4918234fb32b332177606528"
+    },
+    {
+      "name": "Cancellation issuer reload",
+      "result": "Passed",
+      "observation": "Issuer reconstructs #3 Cancelled and both events after reload.",
+      "evidence": "docs/evidence/hosted-issuer-cancelled-reload-dom.txt",
+      "sha256": "350960c5ca79dda3f300637fa91689cc0f7cfcbada41c98ec39636bfe01c345e"
+    },
+    {
+      "name": "Cancellation client",
+      "result": "Passed",
+      "observation": "Client sees matching Cancelled invoice/history, no terminal write action.",
+      "evidence": "docs/evidence/hosted-client-cancelled-dom.txt",
+      "sha256": "c0261d33639fedd581511d951dac189897fc5a5df09b9bf138a87a39f8cefe21"
+    },
+    {
+      "name": "Disconnect and reload",
+      "result": "Passed",
+      "observation": "No selected account after permission revocation and reload.",
+      "evidence": "docs/evidence/hosted-disconnected-reload-dom.txt",
+      "sha256": "25ae287503550d455dc524ccb2040e17cbb286d600c7e828b5403d133cf743cb"
+    },
+    {
+      "name": "Explicit two-account reconnection",
+      "result": "Passed",
+      "observation": "Both accounts visible after separate explicit user approvals; no transaction signing.",
+      "evidence": "docs/evidence/hosted-reconnected-both-accounts-dom.txt",
+      "sha256": "8f938051f16d3fdb368a873414da1d57c25ada621c54de054438f56905ab6ff4"
+    },
+    {
+      "name": "Cancellation after reconnection and reload",
+      "result": "Passed",
+      "observation": "Client selected, Sepolia, #3 Cancelled with original events.",
+      "evidence": "docs/evidence/hosted-client-cancelled-reload-dom.txt",
+      "sha256": "0042f56c47c8db760dd8da6c8d8e9dc232e12c626b29fa3e49ebf4928ebbc042"
+    },
+    {
+      "name": "Payment after reconnection and reload",
+      "result": "Passed",
+      "observation": "Client selected, Sepolia, #2 Paid with original events; displayed balance 0.009145880715313346 ETH.",
+      "evidence": "docs/evidence/hosted-client-paid-reconnected-dom.txt",
+      "sha256": "e2440edcedb47eba8fb8da203979ecba7f10beac9e030ead376df1b521f1e7fb"
+    }
+  ],
+  "independentChainAndHttpEvidence": [
+    "docs/evidence/hosted-complete-chain-http.json",
+    "docs/evidence/hosted-payment-verification.json"
+  ],
+  "successfulPublicTransactions": {
+    "payCreate": {
+      "hash": "0x8945bcc333c66b766ab1244728016e23ddfe0b6bacae5de618e66322bbdcaff7",
+      "from": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+      "outerTo": "0xdb9B1e94B5b69Df7e401DDbedE43491141047dB3",
+      "outerValueWei": "0",
+      "blockNumber": 11848236,
+      "blockHash": "0x486580848b38499cb793f9badb45bc405f06545643053ecf7e537de312808fc4",
+      "gasUsed": 297326,
+      "effectiveGasPriceWei": "3132059651",
+      "feeWei": "931242767793226",
+      "receiptStatus": 1
+    },
+    "payment": {
+      "hash": "0x1fa4bc20a8f2fbfcea2c6f42ff65e2c8c1f843fe636cb1c4c67c4b8179eac9ad",
+      "from": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+      "outerTo": "0xdb9B1e94B5b69Df7e401DDbedE43491141047dB3",
+      "outerValueWei": "0",
+      "blockNumber": 11848266,
+      "blockHash": "0x16d348d8f21a8196405f8dd7bf9b0856da92f4c9f23a67df757d818ac80acb87",
+      "gasUsed": 181047,
+      "effectiveGasPriceWei": "2596194706",
+      "feeWei": "470033262937182",
+      "receiptStatus": 1
+    },
+    "cancelCreate": {
+      "hash": "0x09525df5e350d98abbf288e1150cce3f6dc971d4d5ec559ffbb857aa5ae66509",
+      "from": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+      "outerTo": "0xdb9B1e94B5b69Df7e401DDbedE43491141047dB3",
+      "outerValueWei": "0",
+      "blockNumber": 11848283,
+      "blockHash": "0x979972490a02483f7dc132afe69911cc546948813ad63196497073220af53cbb",
+      "gasUsed": 298115,
+      "effectiveGasPriceWei": "2548809210",
+      "feeWei": "759838257639150",
+      "receiptStatus": 1
+    },
+    "cancellation": {
+      "hash": "0x57c539676f3c18b31e0b95555873501c85bab2ae404685b1949191abc6cfb1b1",
+      "from": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+      "outerTo": "0xdb9B1e94B5b69Df7e401DDbedE43491141047dB3",
+      "outerValueWei": "0",
+      "blockNumber": 11848293,
+      "blockHash": "0xbd3c0bb235d2c29742234477a1adc39c2f61c9d163a237861382d8aa3fec6f10",
+      "gasUsed": 146942,
+      "effectiveGasPriceWei": "2509418302",
+      "feeWei": "368738944132484",
+      "receiptStatus": 1
+    }
+  },
+  "originalPaidInvoice1Repaid": false,
+  "duplicateTransactionsSubmitted": 0,
+  "actualOtherNetworkChecks": {
+    "W05": "Excluded by user scope; unperformed/unverified, not passed",
+    "W06": "Excluded by user scope; unperformed/unverified, not passed"
+  },
+  "simulatedGuardCoverageSeparate": true,
+  "repair": "Actual wallet-routed receipt recovery; original create hash recovered without resubmission. See routed-receipt-repair.json.",
+  "userReconnectionNote": "Initially only one account approved; Switch account restored both through explicit user approval. No repeated disconnect or payment."
+}

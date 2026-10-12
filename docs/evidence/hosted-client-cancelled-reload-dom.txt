@@ -1,0 +1,118 @@
+- link "Skip to invoices":
+  - /url: "#workspace"
+- banner:
+  - link "FreelancePay home":
+    - /url: /
+    - generic: F/
+    - text: FreelancePay
+  - generic "Wallet controls":
+    - button "✓ Connected · 0xB291…cc67" [disabled]
+    - button "Switch account"
+    - button "Disconnect"
+- main:
+  - paragraph: WORK COMPLETED. PAYMENT RECORDED.
+  - heading "Your work. Clear payments." [level=1]:
+    - text: Your work.
+    - text: Clear payments.
+  - paragraph:
+    - text: Create an invoice. Pay the exact amount.
+    - text: Keep a record you can both verify.
+  - complementary:
+    - text: HOW IT WORKS
+    - list:
+      - generic: "01"
+      - strong: Send a clear request
+      - paragraph: Choose your client and invoice amount.
+      - generic: "02"
+      - strong: Pay through your wallet
+      - paragraph: Only the designated client can pay.
+      - generic: "03"
+      - strong: Verify the result
+      - paragraph: See the confirmed payment on-chain.
+    - paragraph: Sepolia test ETH only · No platform fee
+  - generic: Ethereum Sepolia
+  - generic: "0xB2914BC24584098BB6108e3B72F96109E9bCcc67"
+  - generic: Test ETH balance
+  - strong: 0.009145880715313346 ETH
+  - button "Refresh balance"
+  - status: Balance updated at 18:47:40. Network fees are separate.
+  - generic: Account for this app
+  - combobox "Account for this app":
+    - option "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f"
+    - option "0xB2914BC24584098BB6108e3B72F96109E9bCcc67" [selected]
+  - paragraph: Choose an account already connected to this site. MetaMask approval is still required for every transaction.
+  - generic "Wallet connection details"
+  - status: Your wallet is connected. Select an invoice or create a new request.
+  - region "Invoices":
+    - paragraph: YOUR WORKSPACE
+    - heading "Invoices" [level=2]
+    - button "Create invoice":
+      - generic: +
+      - text: Create invoice
+    - group "Invoice role":
+      - button "Issued by you"
+      - button "Sent to you" [pressed]
+    - button "Refresh": Refresh ↻
+    - paragraph: These requests can be paid by the connected account. Open an invoice to review its payment.
+    - generic: Status
+    - combobox "Status":
+      - option "All statuses" [selected]
+      - option "Pending"
+      - option "Paid"
+      - option "Cancelled"
+    - generic: Filters the invoices on this page.
+    - button "Open invoice 3, SC6113-LIVE-CANCEL-001, Cancelled":
+      - strong: SC6113-LIVE-CANCEL-001
+      - generic: "Invoice #3"
+      - generic: 0.0001 ETH
+      - generic: Cancelled
+    - button "Open invoice 2, SC6113-LIVE-PAY-001, Paid":
+      - strong: SC6113-LIVE-PAY-001
+      - generic: "Invoice #2"
+      - generic: 0.0001 ETH
+      - generic: Paid
+    - button "Open invoice 1, SC6113-PAY-001, Paid":
+      - strong: SC6113-PAY-001
+      - generic: "Invoice #1"
+      - generic: 0.0001 ETH
+      - generic: Paid
+    - generic: 3 received · 1–3 shown · Block 11848345
+    - button "← Previous" [disabled]
+    - button "Next →" [disabled]
+  - 'region "SC6113-LIVE-CANCEL-001 · #3" [active]':
+    - paragraph: INVOICE DETAILS
+    - 'heading "SC6113-LIVE-CANCEL-001 · #3" [level=2]'
+    - button "Close"
+    - generic: Cancelled
+    - term: Amount
+    - definition: 0.0001 ETH
+    - term: Created
+    - definition: 05 Oct 2026, 18:35:36 GMT+8
+    - term: Cancelled at
+    - definition: 05 Oct 2026, 18:37:36 GMT+8
+    - term: Freelancer / issuer
+    - definition: "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f"
+    - term: Designated client
+    - definition: "0xB2914BC24584098BB6108e3B72F96109E9bCcc67"
+    - term: Observed block
+    - definition: "11848346"
+    - heading "On-chain activity" [level=3]
+    - generic: Invoice Created
+    - generic: 05 Oct 2026, 18:35:36 GMT+8 · Block 11848283
+    - link "Transaction ↗":
+      - /url: https://sepolia.etherscan.io/tx/0x09525df5e350d98abbf288e1150cce3f6dc971d4d5ec559ffbb857aa5ae66509
+    - generic: Invoice Cancelled
+    - generic: 05 Oct 2026, 18:37:36 GMT+8 · Block 11848293
+    - link "Transaction ↗":
+      - /url: https://sepolia.etherscan.io/tx/0x57c539676f3c18b31e0b95555873501c85bab2ae404685b1949191abc6cfb1b1
+  - heading "Direct to the freelancer" [level=3]
+  - paragraph: Payment goes to the issuer in the same transaction. FreelancePay keeps no payment balance.
+  - heading "A shared, public record" [level=3]
+  - paragraph: Addresses, references and payment details are public. Keep personal and confidential information out.
+  - heading "Know what is confirmed" [level=3]
+  - paragraph: Payment records do not prove work quality. Payments have network fees and cannot be reversed here.
+- contentinfo:
+  - generic: FreelancePay
+  - paragraph: SC6113 educational project · Test funds only
+  - link "View contract ↗":
+    - /url: https://sepolia.etherscan.io/address/0xF9c9cA735028b3C9787773383D1C6926B9312C0F

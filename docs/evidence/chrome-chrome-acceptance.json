@@ -1,0 +1,81 @@
+{
+  "recordedAtUtc": "2026-10-05T10:16:40.721877+00:00",
+  "origin": "http://127.0.0.1:8765/",
+  "browser": {
+    "type": "ordinary desktop Chrome via extension",
+    "browserId": "4",
+    "tabId": "1917613573",
+    "extensionInstanceId": "eab5df8c-c04f-4b61-804b-2e6ee2fc874d",
+    "profileBasis": "User installed extension in assessment and asked to continue; a new distinct Chrome connection appeared with the existing task tabs. Only the recent assignment tab was used."
+  },
+  "scope": "Actual local-origin MetaMask acceptance, separate from the Codex in-app browser and injected fixtures",
+  "checks": [
+    {
+      "id": "W01",
+      "result": "passed",
+      "evidence": "Issuer Paid invoice #1 reopened after actual Chrome reload; exact roles/amount and creation/payment links retained."
+    },
+    {
+      "id": "W02",
+      "result": "passed",
+      "evidence": "Existing authorized client selected; same Paid record/history under Sent to you; client preference persisted after reload; no pay/cancel actions available for terminal invoice."
+    },
+    {
+      "id": "W03",
+      "result": "passed",
+      "evidence": "Disconnect reported revoked site permission; reload stayed disconnected with creation disabled and no selected account."
+    },
+    {
+      "id": "W04",
+      "result": "passed",
+      "evidence": "User approved both test accounts in actual MetaMask; direct browser result restored issuer/Sepolia/invoice. Refresh balance showed loading then completion; issuer/client balances match independent public reads."
+    },
+    {
+      "id": "W05",
+      "result": "excluded by user scope; actual unperformed/unverified, not passed"
+    },
+    {
+      "id": "W06",
+      "result": "excluded by user scope; actual unperformed/unverified, not passed"
+    }
+  ],
+  "issue": {
+    "code": "Public RPC missing historical logs/receipts",
+    "resolution": "Server-only RPC change to verified https://sepolia.gateway.tenderly.co; no code/contract/ABI changes",
+    "evidence": [
+      "assessment-history-rpc-diagnostic.json",
+      "assessment-history-tenderly-diagnostic.json",
+      "sepolia-rpc-correction.json",
+      "sepolia-rpc-correction-http.json"
+    ]
+  },
+  "evidenceSha256": {
+    "assessment-issuer-paid-reload-dom.txt": "30f846369cf0b333dccac37086926c0c514882d44de91edf90a7258f08f3aef2",
+    "assessment-client-paid-reload-dom.txt": "f6cd19e52940d4c05bef302590d52d77be1d1cfe1bf9064d834edb6874451f9b",
+    "assessment-disconnected-dom.txt": "ccdff757dbc970ae3bd39964fe701646b3205c6877c854d669819b6faab5d42a",
+    "assessment-disconnected-reload-dom.txt": "fe9f8d7e9dc01ce31bc5b1141bb8d809553bceb28dc16baa0fa15e63afbdea64",
+    "assessment-balance-refresh-loading-dom.txt": "44cd17fe45d9ab2de6a8c548286a38fa59a4d5e35f97e4e1ce78437813ba15d0",
+    "assessment-reconnected-balance-dom.txt": "9122405a468d10fc161070905cf2a3c108dc6ec7d702db8b140c485923afbdb7",
+    "assessment-reconnect-public-balances.json": "2aa5fed3c8cc9437cf6611f02c301b1e21bf780370e469141ee358a426e61443",
+    "sepolia-rpc-correction-http.json": "10bbc196161bbaa2777d1b0afc509d1f119e9ad11b9a907929730912d90ee2ab",
+    "screenshots/chrome-issuer-paid-reload.png": "72a5e1818f5b88e1d0ff09b0f46dc6383c14dd54eae62c1c423bd02123bf3c6c",
+    "screenshots/chrome-client-paid-reload.png": "34823d079f6bcf8d4963dd65d76cbe12db0b6f24987a862865c331fc37c102c6",
+    "screenshots/chrome-disconnected-reload.png": "e29dce4a8c900e8ca9d1ab2b181810e5433aa41b8640dc0b44cdf36ede06ecfd",
+    "screenshots/chrome-reconnected-balance.png": "14beb0bbb70a85eaadb2b426fb07c161b65b9c70cdfcf3ed87d6f48fa6cad11b"
+  },
+  "newPublicTransactions": 0,
+  "existingInvoice1Repaid": false,
+  "applicationSourceChanged": false,
+  "applicationTestsRerun": false,
+  "historicalCoverageRetained": {
+    "contractCases": 37,
+    "apiCases": 28,
+    "browserGroups": 31,
+    "inputBoundaryCases": 22,
+    "accountSelectionCases": 14
+  },
+  "revisedPhase8Closed": true,
+  "hostingGateClosed": false,
+  "submissionReady": false,
+  "nativeGoalObservation": "Tool still reports historical blocked status; user-authorized execution has resumed. No native active transition is claimed."
+}

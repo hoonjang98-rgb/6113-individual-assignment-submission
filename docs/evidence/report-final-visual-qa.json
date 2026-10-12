@@ -1,0 +1,18 @@
+{
+  "recordedAtUtc": "2026-10-05T13:42:49.720388+00:00",
+  "status": "Passed",
+  "pdf": "output/pdf/FreelancePay_Report.pdf",
+  "pdfSha256": "19d239002d2d604ce76c114edea0846fb1e8227b2b2d7ea457e070ab7c9b04e2",
+  "pages": 7,
+  "topics": 13,
+  "review": "Every page rendered with Poppler at 110 dpi and visually inspected. Text, figures, table wrapping, references, headers and footers are legible and unclipped. Page 6 is dense but remains above its footer.",
+  "renders": {
+    "page-1": "fdc1cdb905bd48a87b6227a39fd7b108660bb67ec6d3fc2bdd58e9bd9ecded9d",
+    "page-2": "0956edcea108f0b5a4658e1f0c70f27ccfc32db78c10a753ed1e7cc668c95c11",
+    "page-3": "34cdba4f47f4abbd38ee520f53474d6fee35ef267eb3b3357069ed54b9f1beb7",
+    "page-4": "2b72a8a6c10d40840e80962426703ed6163b7bcd52bee526088904b589acf08a",
+    "page-5": "e5b614a62937c153ce4eee2f21c018bc353929c46218b98d957dd05e70b9c6a8",
+    "page-6": "97a3181411ac8577646f328b7223b8159e358a51c5bda401a6a2bc3c958be0f8",
+    "page-7": "a8a07daeb9f99aa0236ddc590fbebce41b3f198817835b2672d0eec46fd66a69"
+  }
+}

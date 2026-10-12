@@ -1,0 +1,162 @@
+{
+  "recordedAtUtc": "2026-10-05T10:54:22.030Z",
+  "result": "Passed",
+  "checks": [
+    {
+      "name": "Missing client",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "Native required-field validation"
+    },
+    {
+      "name": "Malformed client",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "Enter a valid Ethereum client address."
+    },
+    {
+      "name": "Invalid mixed-case checksum",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "Enter a valid Ethereum client address."
+    },
+    {
+      "name": "Zero client",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "The client must be a different, nonzero wallet address."
+    },
+    {
+      "name": "Issuer as client",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "The client must be a different, nonzero wallet address."
+    },
+    {
+      "name": "Missing reference",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "Native required-field validation"
+    },
+    {
+      "name": "Leading reference space",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "Use 1–32 printable English characters with no leading or trailing spaces."
+    },
+    {
+      "name": "Trailing reference space",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "Use 1–32 printable English characters with no leading or trailing spaces."
+    },
+    {
+      "name": "Non-ASCII reference",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "Use 1–32 printable English characters with no leading or trailing spaces."
+    },
+    {
+      "name": "Reference beyond HTML maxlength",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "Use 1–32 printable English characters with no leading or trailing spaces."
+    },
+    {
+      "name": "Missing amount",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "Native required-field validation"
+    },
+    {
+      "name": "Zero amount",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "Enter a positive amount within the supported range."
+    },
+    {
+      "name": "Negative amount",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "Enter a plain decimal amount with at most 18 decimal places."
+    },
+    {
+      "name": "Exponent amount",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "Enter a plain decimal amount with at most 18 decimal places."
+    },
+    {
+      "name": "Excess precision",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "Enter a plain decimal amount with at most 18 decimal places."
+    },
+    {
+      "name": "Leading zero amount",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "Enter a plain decimal amount with at most 18 decimal places."
+    },
+    {
+      "name": "Non-numeric amount",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "Enter a plain decimal amount with at most 18 decimal places."
+    },
+    {
+      "name": "Amount above uint256",
+      "expected": "Rejected before review/signing",
+      "passed": true,
+      "feedback": "Enter a positive amount within the supported range."
+    },
+    {
+      "name": "One-character reference and one wei",
+      "expected": "Exact review only; no wallet transaction",
+      "passed": true,
+      "amountWei": "1"
+    },
+    {
+      "name": "32-character reference and 18-decimal amount",
+      "expected": "Exact review only; no wallet transaction",
+      "passed": true,
+      "amountWei": "1000000000000000001"
+    },
+    {
+      "name": "Literal HTML-shaped reference",
+      "expected": "Exact review only; no wallet transaction",
+      "passed": true,
+      "amountWei": "100000000000000"
+    },
+    {
+      "name": "Maximum uint256 amount review",
+      "expected": "Exact review only; no wallet transaction",
+      "passed": true,
+      "amountWei": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+    }
+  ],
+  "rejectedCases": 18,
+  "acceptedReviewCases": 4,
+  "uncaughtBrowserErrors": [],
+  "sourceHashes": {
+    "contracts/FreelancePay.sol": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b",
+    "abi/FreelancePay.json": "9f3dc298157bb5fb7368d0501568ff25ad16ddb5249e33b3f8afb3601197260c",
+    "build/FreelancePay.json": "29365bd2e22dee37aeeee82f8a85459397b3c3cebbc139cb5221c40a75ee4206",
+    "app.py": "90a1a365db9fe4840a95e1bb89123ba45e0425ad8c463a2459d62048f9f20f4f",
+    "chain_service.py": "31c7e63f223d0363317b60a0a2322e104a36251c1ffdf8455f8de6407bf4b4d7",
+    "templates/index.html": "2f3721f1e56a917597405ed73a7d7ca0841b75cf7a7cdb7f4ed73ec5c399e751",
+    "static/app.js": "4b9d3434e0a09a2ad83188a923cb7b2dd43c11740e4bd54a1c377254bab3cc20",
+    "tests/input-boundaries.mjs": "e016fe09c30f9495e2b57a39363e48da5471de40c930dd26a297e1da8b7d3452"
+  },
+  "sourceSha256": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b",
+  "chainId": 31337,
+  "environment": "Isolated headless Chrome with an injected provider, real disposable Anvil and Flask. No personal wallet, Sepolia signing or Render operation.",
+  "wallet": {
+    "authorized": true,
+    "writeRequests": 0,
+    "connectionRequests": 1
+  },
+  "invoiceCount": "0",
+  "scope": "Focused V04 UI boundaries and exact review rendering. The Anvil contract deployment is fixture setup; zero application invoice transactions were requested. Accepted maximum amount is a parsing/review case, not evidence of affordability.",
+  "preserved": "The public app on port 8765 and the historical 31-group browser evidence were not changed."
+}

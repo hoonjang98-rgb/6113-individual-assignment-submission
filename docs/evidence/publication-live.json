@@ -1,0 +1,740 @@
+{
+  "checkedAtUtc": "2026-10-12T10:46:37.210542+00:00",
+  "baseUrl": "https://freelancepay-059m.onrender.com",
+  "scope": "Sequential anonymous HTTPS reads, existing transactions only; no wallet/transaction mutation.",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 31.578,
+      "bodySha256": "bcd0fb7e53b9c7601dae3f91f22d0ff50623623dc07ffc2d32bf8176f00a65fb"
+    },
+    {
+      "path": "/healthz",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.813,
+      "bodySha256": "52322600f0365cae83010b04708945662a4e8c96f46faafe84ff6a847ec1725c",
+      "body": {
+        "status": "alive"
+      }
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.421,
+      "bodySha256": "0f6bd64a0ba9791d6d7f14419d522b39c420ae577a00fe6dc856e4de1e05a31c",
+      "body": {
+        "abi": [
+          {
+            "inputs": [],
+            "name": "IncorrectValue",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "InvalidAmount",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "InvalidClient",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "InvalidPagination",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "InvalidReference",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "InvalidState",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "InvoiceNotFound",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "ReentrantCall",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "TransferFailed",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "Unauthorized",
+            "type": "error"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "invoiceId",
+                "type": "uint256"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "issuer",
+                "type": "address"
+              }
+            ],
+            "name": "InvoiceCancelled",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "invoiceId",
+                "type": "uint256"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "issuer",
+                "type": "address"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "client",
+                "type": "address"
+              },
+              {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountWei",
+                "type": "uint256"
+              },
+              {
+                "indexed": false,
+                "internalType": "string",
+                "name": "invoiceReference",
+                "type": "string"
+              }
+            ],
+            "name": "InvoiceCreated",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "invoiceId",
+                "type": "uint256"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "issuer",
+                "type": "address"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "client",
+                "type": "address"
+              },
+              {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountWei",
+                "type": "uint256"
+              }
+            ],
+            "name": "InvoicePaid",
+            "type": "event"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "invoiceId",
+                "type": "uint256"
+              }
+            ],
+            "name": "cancelInvoice",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "client",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountWei",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "invoiceReference",
+                "type": "string"
+              }
+            ],
+            "name": "createInvoice",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "invoiceId",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "invoiceId",
+                "type": "uint256"
+              }
+            ],
+            "name": "getInvoice",
+            "outputs": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "issuer",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "client",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "amountWei",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "invoiceReference",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint64",
+                    "name": "createdAt",
+                    "type": "uint64"
+                  },
+                  {
+                    "internalType": "uint64",
+                    "name": "settledAt",
+                    "type": "uint64"
+                  },
+                  {
+                    "internalType": "uint64",
+                    "name": "createdBlock",
+                    "type": "uint64"
+                  },
+                  {
+                    "internalType": "uint64",
+                    "name": "settledBlock",
+                    "type": "uint64"
+                  },
+                  {
+                    "internalType": "enum FreelancePay.Status",
+                    "name": "status",
+                    "type": "uint8"
+                  }
+                ],
+                "internalType": "struct FreelancePay.Invoice",
+                "name": "",
+                "type": "tuple"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "issued",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "offset",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "limit",
+                "type": "uint256"
+              }
+            ],
+            "name": "getInvoiceIds",
+            "outputs": [
+              {
+                "internalType": "uint256[]",
+                "name": "ids",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "total",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "invoiceCount",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "invoiceId",
+                "type": "uint256"
+              }
+            ],
+            "name": "payInvoice",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+          }
+        ],
+        "chainId": "11155111",
+        "configured": true,
+        "contractAddress": "0xF9c9cA735028b3C9787773383D1C6926B9312C0F",
+        "explorerUrl": "https://sepolia.etherscan.io",
+        "message": null,
+        "networkName": "Ethereum Sepolia",
+        "sourceSha256": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b"
+      }
+    },
+    {
+      "path": "/api/health",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 1.485,
+      "bodySha256": "dffa235476c47b0c4928d5ef6f561eb83d5620a6b7e9451c26c088f223b4e2da",
+      "body": {
+        "chainId": "11155111",
+        "contractAddress": "0xF9c9cA735028b3C9787773383D1C6926B9312C0F",
+        "observedBlock": "11898383",
+        "status": "ready"
+      }
+    },
+    {
+      "path": "/api/invoices/1",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 1.469,
+      "bodySha256": "d16f3483fc7f1aa4852e2f167513f81baa0fbc2a50aca4818ffbb8f65fe99f8b",
+      "body": {
+        "invoice": {
+          "amountWei": "100000000000000",
+          "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+          "createdAt": "1791045000",
+          "createdBlock": "11836826",
+          "id": "1",
+          "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+          "reference": "SC6113-PAY-001",
+          "settledAt": "1791050424",
+          "settledBlock": "11837239",
+          "status": "Paid"
+        },
+        "observedBlock": "11898383"
+      }
+    },
+    {
+      "path": "/api/invoices/2",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 1.375,
+      "bodySha256": "f39e93b62b366dc382c0334d7797a7a81128022bbdf9386369d17ae1112ce803",
+      "body": {
+        "invoice": {
+          "amountWei": "100000000000000",
+          "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+          "createdAt": "1791195936",
+          "createdBlock": "11848236",
+          "id": "2",
+          "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+          "reference": "SC6113-LIVE-PAY-001",
+          "settledAt": "1791196320",
+          "settledBlock": "11848266",
+          "status": "Paid"
+        },
+        "observedBlock": "11898384"
+      }
+    },
+    {
+      "path": "/api/invoices/3",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 1.75,
+      "bodySha256": "aa1beda87df8f3ef2b46eeb9186e8e8252b8a8b6e8580c12c145be354422c491",
+      "body": {
+        "invoice": {
+          "amountWei": "100000000000000",
+          "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+          "createdAt": "1791196536",
+          "createdBlock": "11848283",
+          "id": "3",
+          "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+          "reference": "SC6113-LIVE-CANCEL-001",
+          "settledAt": "1791196656",
+          "settledBlock": "11848293",
+          "status": "Cancelled"
+        },
+        "observedBlock": "11898384"
+      }
+    },
+    {
+      "path": "/api/invoices/2/history",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 1.796,
+      "bodySha256": "a617203f81a7db1fd74a6747f473932144f0099cddcd95e6d42af2545d023d4e",
+      "body": {
+        "items": [
+          {
+            "blockNumber": "11848236",
+            "event": "InvoiceCreated",
+            "invoiceId": "2",
+            "logIndex": 35,
+            "transactionHash": "0x8945bcc333c66b766ab1244728016e23ddfe0b6bacae5de618e66322bbdcaff7",
+            "transactionIndex": 13
+          },
+          {
+            "blockNumber": "11848266",
+            "event": "InvoicePaid",
+            "invoiceId": "2",
+            "logIndex": 23,
+            "transactionHash": "0x1fa4bc20a8f2fbfcea2c6f42ff65e2c8c1f843fe636cb1c4c67c4b8179eac9ad",
+            "transactionIndex": 5
+          }
+        ],
+        "observedBlock": "11898384"
+      }
+    },
+    {
+      "path": "/api/invoices/3/history",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 1.735,
+      "bodySha256": "b3cbbb0e3db9b21344db036f04d1147c13ecc868d080ceb79c01410530e085bc",
+      "body": {
+        "items": [
+          {
+            "blockNumber": "11848283",
+            "event": "InvoiceCreated",
+            "invoiceId": "3",
+            "logIndex": 36,
+            "transactionHash": "0x09525df5e350d98abbf288e1150cce3f6dc971d4d5ec559ffbb857aa5ae66509",
+            "transactionIndex": 13
+          },
+          {
+            "blockNumber": "11848293",
+            "event": "InvoiceCancelled",
+            "invoiceId": "3",
+            "logIndex": 59,
+            "transactionHash": "0x57c539676f3c18b31e0b95555873501c85bab2ae404685b1949191abc6cfb1b1",
+            "transactionIndex": 16
+          }
+        ],
+        "observedBlock": "11898384"
+      }
+    },
+    {
+      "path": "/api/transactions/0x8945bcc333c66b766ab1244728016e23ddfe0b6bacae5de618e66322bbdcaff7",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 1.312,
+      "bodySha256": "bed285357a0681de1ff445913d13844ac6dec12b6c0d1fd26fa298328a0639c4",
+      "body": {
+        "blockHash": "0x486580848b38499cb793f9badb45bc405f06545643053ecf7e537de312808fc4",
+        "blockNumber": "11848236",
+        "events": [
+          {
+            "event": "InvoiceCreated",
+            "invoiceId": "2"
+          }
+        ],
+        "from": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+        "gasUsed": "297326",
+        "hash": "0x8945bcc333c66b766ab1244728016e23ddfe0b6bacae5de618e66322bbdcaff7",
+        "observedBlock": "11898384",
+        "status": "confirmed"
+      }
+    },
+    {
+      "path": "/api/transactions/0x1fa4bc20a8f2fbfcea2c6f42ff65e2c8c1f843fe636cb1c4c67c4b8179eac9ad",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 1.235,
+      "bodySha256": "c9c51f7e904f3da9aba983d3886492d60f4b20bcfea42dbd61c3338dc344d266",
+      "body": {
+        "blockHash": "0x16d348d8f21a8196405f8dd7bf9b0856da92f4c9f23a67df757d818ac80acb87",
+        "blockNumber": "11848266",
+        "events": [
+          {
+            "event": "InvoicePaid",
+            "invoiceId": "2"
+          }
+        ],
+        "from": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+        "gasUsed": "181047",
+        "hash": "0x1fa4bc20a8f2fbfcea2c6f42ff65e2c8c1f843fe636cb1c4c67c4b8179eac9ad",
+        "observedBlock": "11898384",
+        "status": "confirmed"
+      }
+    },
+    {
+      "path": "/api/transactions/0x09525df5e350d98abbf288e1150cce3f6dc971d4d5ec559ffbb857aa5ae66509",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 1.14,
+      "bodySha256": "3f9853f301a2ea9ad20d8b53ca616bef4b0757984a4dbc9051c39dc344529b2f",
+      "body": {
+        "blockHash": "0x979972490a02483f7dc132afe69911cc546948813ad63196497073220af53cbb",
+        "blockNumber": "11848283",
+        "events": [
+          {
+            "event": "InvoiceCreated",
+            "invoiceId": "3"
+          }
+        ],
+        "from": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+        "gasUsed": "298115",
+        "hash": "0x09525df5e350d98abbf288e1150cce3f6dc971d4d5ec559ffbb857aa5ae66509",
+        "observedBlock": "11898384",
+        "status": "confirmed"
+      }
+    },
+    {
+      "path": "/api/transactions/0x57c539676f3c18b31e0b95555873501c85bab2ae404685b1949191abc6cfb1b1",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "seconds": 0.953,
+      "bodySha256": "7a0bd5ca785940900bdf05d06fff925a79ca46105dbf8a9436f8bb7ce3e38175",
+      "body": {
+        "blockHash": "0xbd3c0bb235d2c29742234477a1adc39c2f61c9d163a237861382d8aa3fec6f10",
+        "blockNumber": "11848293",
+        "events": [
+          {
+            "event": "InvoiceCancelled",
+            "invoiceId": "3"
+          }
+        ],
+        "from": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+        "gasUsed": "146942",
+        "hash": "0x57c539676f3c18b31e0b95555873501c85bab2ae404685b1949191abc6cfb1b1",
+        "observedBlock": "11898384",
+        "status": "confirmed"
+      }
+    },
+    {
+      "path": "/.env",
+      "status": 404,
+      "expected": 404,
+      "passed": true,
+      "seconds": 0.438,
+      "bodySha256": "f1eb617be881ab9d8d48b911afd885ed3ea00faeb278d7178ad97777b49084d1"
+    },
+    {
+      "path": "/.git/config",
+      "status": 404,
+      "expected": 404,
+      "passed": true,
+      "seconds": 0.406,
+      "bodySha256": "f1eb617be881ab9d8d48b911afd885ed3ea00faeb278d7178ad97777b49084d1"
+    },
+    {
+      "path": "/tools/deploy_server.py",
+      "status": 404,
+      "expected": 404,
+      "passed": true,
+      "seconds": 0.453,
+      "bodySha256": "f1eb617be881ab9d8d48b911afd885ed3ea00faeb278d7178ad97777b49084d1"
+    }
+  ],
+  "passed": true,
+  "newTransactions": 0,
+  "semanticValidation": {
+    "paidAndCancelledMatch": true,
+    "exactAmountsMatch": true,
+    "historyEventsMatch": true,
+    "roles": [
+      {
+        "path": "/api/invoices?address=0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f&role=issued",
+        "body": {
+          "items": [
+            {
+              "amountWei": "100000000000000",
+              "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+              "createdAt": "1791196536",
+              "createdBlock": "11848283",
+              "id": "3",
+              "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+              "reference": "SC6113-LIVE-CANCEL-001",
+              "settledAt": "1791196656",
+              "settledBlock": "11848293",
+              "status": "Cancelled"
+            },
+            {
+              "amountWei": "100000000000000",
+              "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+              "createdAt": "1791195936",
+              "createdBlock": "11848236",
+              "id": "2",
+              "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+              "reference": "SC6113-LIVE-PAY-001",
+              "settledAt": "1791196320",
+              "settledBlock": "11848266",
+              "status": "Paid"
+            },
+            {
+              "amountWei": "100000000000000",
+              "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+              "createdAt": "1791045000",
+              "createdBlock": "11836826",
+              "id": "1",
+              "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+              "reference": "SC6113-PAY-001",
+              "settledAt": "1791050424",
+              "settledBlock": "11837239",
+              "status": "Paid"
+            }
+          ],
+          "limit": 20,
+          "observedBlock": "11898409",
+          "offset": "0",
+          "total": "3"
+        },
+        "passed": true
+      },
+      {
+        "path": "/api/invoices?address=0xB2914BC24584098BB6108e3B72F96109E9bCcc67&role=received",
+        "body": {
+          "items": [
+            {
+              "amountWei": "100000000000000",
+              "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+              "createdAt": "1791196536",
+              "createdBlock": "11848283",
+              "id": "3",
+              "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+              "reference": "SC6113-LIVE-CANCEL-001",
+              "settledAt": "1791196656",
+              "settledBlock": "11848293",
+              "status": "Cancelled"
+            },
+            {
+              "amountWei": "100000000000000",
+              "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+              "createdAt": "1791195936",
+              "createdBlock": "11848236",
+              "id": "2",
+              "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+              "reference": "SC6113-LIVE-PAY-001",
+              "settledAt": "1791196320",
+              "settledBlock": "11848266",
+              "status": "Paid"
+            },
+            {
+              "amountWei": "100000000000000",
+              "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+              "createdAt": "1791045000",
+              "createdBlock": "11836826",
+              "id": "1",
+              "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+              "reference": "SC6113-PAY-001",
+              "settledAt": "1791050424",
+              "settledBlock": "11837239",
+              "status": "Paid"
+            }
+          ],
+          "limit": 20,
+          "observedBlock": "11898409",
+          "offset": "0",
+          "total": "3"
+        },
+        "passed": true
+      }
+    ],
+    "servedAssets": [
+      {
+        "file": "static/app.js",
+        "sha256": "4b9d3434e0a09a2ad83188a923cb7b2dd43c11740e4bd54a1c377254bab3cc20",
+        "matchesPublicFile": true
+      },
+      {
+        "file": "static/app.css",
+        "sha256": "71f7d57334abcc759f9c13451bebb037499975e49bb2884863532478af650fb0",
+        "matchesPublicFile": true
+      },
+      {
+        "file": "static/vendor/ethers.min.js",
+        "sha256": "b016b0c3898c78fd8156466eb1ff1f42c9df951c2f0d64c9bdf799fe745b0a6c",
+        "matchesPublicFile": true
+      },
+      {
+        "file": "static/vendor/ethers.LICENSE.md",
+        "sha256": "44eea86637405118248327fbe9d9fa95d04c7a57221c7e8c155f736db9f1b612",
+        "matchesPublicFile": true
+      }
+    ],
+    "verifiedAtUtc": "2026-10-12T10:51:31.095392+00:00"
+  }
+}

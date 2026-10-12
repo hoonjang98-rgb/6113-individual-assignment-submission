@@ -1,0 +1,110 @@
+{
+  "recordedAtUtc": "2026-10-05T13:51:32.476899+00:00",
+  "archive": "output/submission/FreelancePay_Submission_20261005_v2.zip",
+  "archiveSha256": "f905add1315e954237d79d0bc011faa461df96afa097ef45459ec867bb61d665",
+  "payloadFiles": 167,
+  "zipMembers": 169,
+  "crcAndAllHashesPass": true,
+  "extensions": {
+    ".example": 1,
+    "": 2,
+    ".md": 8,
+    ".json": 48,
+    ".py": 16,
+    ".sol": 2,
+    ".xml": 9,
+    ".txt": 28,
+    ".png": 28,
+    ".svg": 1,
+    ".pdf": 1,
+    ".yaml": 2,
+    ".css": 1,
+    ".js": 3,
+    ".html": 2,
+    ".mjs": 13,
+    ".ps1": 2
+  },
+  "textFilesDecoded": 138,
+  "imageFilesDecoded": [
+    "docs/evidence/screenshots/app-sepolia-paid-user.png",
+    "docs/evidence/screenshots/chrome-client-paid-reload.png",
+    "docs/evidence/screenshots/chrome-disconnected-reload.png",
+    "docs/evidence/screenshots/chrome-issuer-paid-reload.png",
+    "docs/evidence/screenshots/chrome-reconnected-balance.png",
+    "docs/evidence/screenshots/hosted-cancel-create-review.png",
+    "docs/evidence/screenshots/hosted-client-cancelled-reconnected.png",
+    "docs/evidence/screenshots/hosted-client-cancelled-reload.png",
+    "docs/evidence/screenshots/hosted-client-cancelled.png",
+    "docs/evidence/screenshots/hosted-client-paid-reconnected.png",
+    "docs/evidence/screenshots/hosted-client-paid-reload.png",
+    "docs/evidence/screenshots/hosted-client-paid.png",
+    "docs/evidence/screenshots/hosted-create-recovered.png",
+    "docs/evidence/screenshots/hosted-disconnected-reload.png",
+    "docs/evidence/screenshots/hosted-invalid-address.png",
+    "docs/evidence/screenshots/hosted-issuer-cancelled-reload.png",
+    "docs/evidence/screenshots/hosted-issuer-cancelled.png",
+    "docs/evidence/screenshots/hosted-issuer-paid.png",
+    "docs/evidence/screenshots/hosted-pay-create-review.png",
+    "docs/evidence/screenshots/hosted-pay-review.png",
+    "docs/evidence/screenshots/hosted-reconnected-both-accounts.png",
+    "Omitted from public copy: private hosting/portal evidence; see docs/PUBLICATION_NOTES.md",
+    "Omitted from public copy: private hosting/portal evidence; see docs/PUBLICATION_NOTES.md",
+    "Omitted from public copy: private hosting/portal evidence; see docs/PUBLICATION_NOTES.md",
+    "Omitted from public copy: private hosting/portal evidence; see docs/PUBLICATION_NOTES.md",
+    "docs/evidence/screenshots/resilience-client-cancelled.png",
+    "docs/evidence/screenshots/resilience-client-paid.png",
+    "Omitted from public copy: private hosting/portal evidence; see docs/PUBLICATION_NOTES.md"
+  ],
+  "pdfs": [
+    {
+      "path": "output/pdf/FreelancePay_Report.pdf",
+      "pages": 7,
+      "links": [
+        "https://freelancepay-059m.onrender.com",
+        "https://docs.soliditylang.org/en/latest/security-considerations.html",
+        "https://docs.metamask.io/metamask-connect/evm/reference/provider-api/",
+        "https://docs.ethers.org/v6/getting-started/",
+        "https://flask.palletsprojects.com/en/stable/deploying/",
+        "https://render.com/docs/deploy-flask",
+        "https://render.com/docs/free",
+        "https://ethereum.org/developers/docs/transactions/",
+        "https://ethereum.org/developers/docs/consensus-mechanisms/pos/#finality",
+        "https://docs.tenderly.co/node-rpc/rpc-reference"
+      ],
+      "allPagesHaveText": true
+    }
+  ],
+  "markdownLocalLinks": [
+    {
+      "source": "docs/REPORT_FINAL.md",
+      "target": "figures/freelancepay-architecture.svg",
+      "exists": true
+    },
+    {
+      "source": "docs/REPORT_FINAL.md",
+      "target": "evidence/screenshots/hosted-client-paid.png",
+      "exists": true
+    }
+  ],
+  "brokenMarkdownLocalLinks": [],
+  "externalMarkdownAndPdfLinks": [
+    "https://docs.ethers.org/v6/getting-started/",
+    "https://docs.metamask.io/metamask-connect/evm/reference/provider-api/",
+    "https://docs.soliditylang.org/en/latest/security-considerations.html",
+    "https://docs.tenderly.co/node-rpc/rpc-reference",
+    "https://ethereum.org/developers/docs/consensus-mechanisms/pos/#finality",
+    "https://ethereum.org/developers/docs/transactions/",
+    "https://flask.palletsprojects.com/en/stable/deploying/",
+    "https://freelancepay-059m.onrender.com",
+    "https://gunicorn.org/reference/settings/",
+    "https://render.com/docs/blueprint-spec",
+    "https://render.com/docs/deploy-flask",
+    "https://render.com/docs/free",
+    "https://render.com/docs/health-checks",
+    "https://render.com/docs/python-version"
+  ],
+  "currentInstructionSha256": "c57204513dec5681dc53ec645c4b564b3336f1ab9fe7b3f55fca0f67fc05a180",
+  "currentInstructionParagraphs": 100,
+  "additionalDocxContentParts": [],
+  "differenceFromEarlierSource": "Only paragraph 81: Demonstration Video (5-8 minutes) replaced by No video recording needed."
+}

@@ -1,0 +1,25 @@
+Browser tab: 1917613700, Title: "FreelancePay · Your work. Clear payments.", URL: "https://freelancepay-059m.onrender.com/".
+0 AXWebArea FreelancePay · Your work. Clear payments., URL: freelancepay-059m.onrender.com/
+	1 container Review your payment, ID: action-dialog
+		2 heading Review your payment, Value: 2, ID: action-title
+			3 text Review your payment
+		4 button Description: Close confirmation, ID: close-action
+		5 container action-review
+			6 definition list
+				7 container Invoice
+					8 text Invoice
+				9 text SC6113-LIVE-PAY-001 · #2
+				10 container Amount
+					11 text Amount
+				12 text 0.0001 ETH
+				13 container Recipient
+					14 text Recipient
+				15 text 0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f
+				16 container Client
+					17 text Client
+				18 text 0xB2914BC24584098BB6108e3B72F96109E9bCcc67
+			19 text The exact invoice amount goes directly to the issuer. This payment cannot be reversed here.
+		20 text MetaMask will show the network fee. Confirm only after checking the account, network and details.
+		21 button Continue to MetaMask, ID: confirm-action
+
+The focused UI element is 4 button Description: Close confirmation, ID: close-action

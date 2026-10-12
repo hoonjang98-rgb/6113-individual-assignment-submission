@@ -1,0 +1,120 @@
+{
+  "recordedAtUtc": "2026-10-05T13:38:39.242274+00:00",
+  "status": "Published runtime revision; Render deployment evidence recorded separately",
+  "commit": "8d0c3a626d2d2809ba537701d0c58feb48266070",
+  "tree": null,
+  "runtimeAndSourceFilesCompared": 17,
+  "remoteFiles": 19,
+  "remoteOnlyFiles": [
+    "README.md"
+  ],
+  "reasonForDifference": "The private runtime repo retains its deployment README and historical deployment guide; the assignment package has current full assessment documentation. All 17 executable/source/configuration files are matched to the published revision; only app.py, chain_service.py and requirements.txt changed from the previous verified runtime.",
+  "files": [
+    {
+      "path": ".python-version",
+      "sha256": "f50159fad3f4319868eb38717b91d55843c41e9803014c8de05e116a6d0bcfdc",
+      "gitBlobSha1": "f36fa5fd8017a085e301126c8c3fc30f1a2550b9",
+      "matchesPublishedTree": true
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "1cf220a492501d31b200654260d6b8fe0e4a5c76fc96d7a720cb5b43fc33f18b",
+      "gitBlobSha1": "3520783490faec5a1f6efdaa670858e124beb3a5",
+      "matchesPublishedTree": true
+    },
+    {
+      "path": ".env.example",
+      "sha256": "d5c09ee55e3517478b41fc38cd9df696371340aa4c784b61127a89a20cd6aa80",
+      "gitBlobSha1": "c42d3893c5b31e27f1128c6a2ffcd40278898a31",
+      "matchesPublishedTree": true
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "feba050aa559347ae4f63283de40fc868bebc8b40d48f551bf59bdc0d05ba5d2",
+      "gitBlobSha1": "23694a77caea019a21c50977f23ff20613da735c",
+      "matchesPublishedTree": true
+    },
+    {
+      "path": "wsgi.py",
+      "sha256": "fd2765a077cc83b8ec2c3daab9fb851d60cfffabdc499079189ed99d29872c7c",
+      "gitBlobSha1": "9b997069bf98721fd35d088068c1db49f43a8a68",
+      "matchesPublishedTree": true
+    },
+    {
+      "path": "gunicorn.conf.py",
+      "sha256": "dd80b328372d851a18da1561091178da12cb3747eb978a79719b5e2ce927fa32",
+      "gitBlobSha1": "d7780cbb0cd6c8629e0a391c6ffeca8556680754",
+      "matchesPublishedTree": true
+    },
+    {
+      "path": "render.yaml",
+      "sha256": "09bb2c1047bcf3a9d1405a017766d769340dbae86055d88eba1942c021ce3e2c",
+      "gitBlobSha1": "0db8a72387cf8c4dfeb4dc0e0c3f923fd6f6bbb0",
+      "matchesPublishedTree": true
+    },
+    {
+      "path": "app.py",
+      "sha256": "eb979dc11c41c6a30c1146b92f3c92848d59792a50d9a04a993024fecab8b50e",
+      "gitBlobSha1": "c0e655a3d6602bcb41386cacdffdba3b134faff3",
+      "matchesPublishedTree": true
+    },
+    {
+      "path": "chain_service.py",
+      "sha256": "648be2a31cd9f9e0207bf1a18bf6d8ddc70b6e613cabc8525fe510bc222a059e",
+      "gitBlobSha1": "e6be9b89efeabede864fb597eb7f8e587b4d2baa",
+      "matchesPublishedTree": true
+    },
+    {
+      "path": "contracts/FreelancePay.sol",
+      "sha256": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b",
+      "gitBlobSha1": "3b5e2b66c1f433d07298e38eb5dd7acc5f85d215",
+      "matchesPublishedTree": true
+    },
+    {
+      "path": "abi/FreelancePay.json",
+      "sha256": "9f3dc298157bb5fb7368d0501568ff25ad16ddb5249e33b3f8afb3601197260c",
+      "gitBlobSha1": "00ee4b00328f464a4fb3fb85e35519a3d8131791",
+      "matchesPublishedTree": true
+    },
+    {
+      "path": "build/FreelancePay.json",
+      "sha256": "29365bd2e22dee37aeeee82f8a85459397b3c3cebbc139cb5221c40a75ee4206",
+      "gitBlobSha1": "f6dd0ef5efe37917f3b8e6028279bfc778710fc7",
+      "matchesPublishedTree": true
+    },
+    {
+      "path": "templates/index.html",
+      "sha256": "2f3721f1e56a917597405ed73a7d7ca0841b75cf7a7cdb7f4ed73ec5c399e751",
+      "gitBlobSha1": "7872ea7670fefa66aba77c93839a18ed26291cf3",
+      "matchesPublishedTree": true
+    },
+    {
+      "path": "static/app.js",
+      "sha256": "4b9d3434e0a09a2ad83188a923cb7b2dd43c11740e4bd54a1c377254bab3cc20",
+      "gitBlobSha1": "cf3137f9ac8ff1370f6e37c1c7069fa0529ef8d9",
+      "matchesPublishedTree": true
+    },
+    {
+      "path": "static/app.css",
+      "sha256": "71f7d57334abcc759f9c13451bebb037499975e49bb2884863532478af650fb0",
+      "gitBlobSha1": "276aef36821797d4d5ce642c9f57bdae4ec35cb9",
+      "matchesPublishedTree": true
+    },
+    {
+      "path": "static/vendor/ethers.min.js",
+      "sha256": "b016b0c3898c78fd8156466eb1ff1f42c9df951c2f0d64c9bdf799fe745b0a6c",
+      "gitBlobSha1": "8b1bb8fb32192a266cbe2cf27983c71a69ba7d4c",
+      "matchesPublishedTree": true
+    },
+    {
+      "path": "static/vendor/ethers.LICENSE.md",
+      "sha256": "44eea86637405118248327fbe9d9fa95d04c7a57221c7e8c155f736db9f1b612",
+      "gitBlobSha1": "12fe15fbb73c3693168529d3158124c19b3c27da",
+      "matchesPublishedTree": true
+    }
+  ],
+  "renderServiceCreated": true,
+  "submissionReady": false,
+  "verification": "Remote exact chain_service.py readback and comparison prove only the reviewed backend receipt change; 17 other local files match prior remote identity.",
+  "phase8Closed": true
+}

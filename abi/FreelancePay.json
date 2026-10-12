@@ -1,0 +1,312 @@
+[
+  {
+    "inputs": [],
+    "name": "IncorrectValue",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidClient",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidPagination",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidReference",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidState",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvoiceNotFound",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ReentrantCall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "invoiceId",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "issuer",
+        "type": "address"
+      }
+    ],
+    "name": "InvoiceCancelled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "invoiceId",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "issuer",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "client",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amountWei",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "invoiceReference",
+        "type": "string"
+      }
+    ],
+    "name": "InvoiceCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "invoiceId",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "issuer",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "client",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amountWei",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvoicePaid",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "invoiceId",
+        "type": "uint256"
+      }
+    ],
+    "name": "cancelInvoice",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "client",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountWei",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "invoiceReference",
+        "type": "string"
+      }
+    ],
+    "name": "createInvoice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "invoiceId",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "invoiceId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getInvoice",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "issuer",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "client",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountWei",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "invoiceReference",
+            "type": "string"
+          },
+          {
+            "internalType": "uint64",
+            "name": "createdAt",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "settledAt",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "createdBlock",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "settledBlock",
+            "type": "uint64"
+          },
+          {
+            "internalType": "enum FreelancePay.Status",
+            "name": "status",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct FreelancePay.Invoice",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "issued",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "getInvoiceIds",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "ids",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "total",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "invoiceCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "invoiceId",
+        "type": "uint256"
+      }
+    ],
+    "name": "payInvoice",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

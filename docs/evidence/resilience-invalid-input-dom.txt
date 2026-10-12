@@ -1,0 +1,21 @@
+Browser tab: 1917613752, Title: "FreelancePay · Your work. Clear payments.", URL: "https://freelancepay-059m.onrender.com/".
+0 AXWebArea FreelancePay · Your work. Clear payments., URL: freelancepay-059m.onrender.com/
+	1 container Create an invoice, ID: create-dialog
+		2 container create-form
+			3 text NEW REQUEST
+			4 heading Create an invoice, Value: 2, ID: create-title
+				5 text Create an invoice
+			6 button Description: Close create invoice, ID: close-create
+			7 text Your connected account will receive the payment. Review all details before confirming in MetaMask.
+			8 text Public reference
+			9 text field (settable) Public reference, Value: SC6113-INPUT-CHECK, ID: reference
+			10 text 1–32 English letters, numbers or printable symbols. No personal information.
+			11 text Client wallet address
+			12 text field (settable) Client wallet address, Value: not-an-address, ID: client
+			13 text Amount in test ETH
+			14 text field (settable) Amount in test ETH, Value: 0.0001, ID: amount
+			15 text Exact amount required. The client also pays a network fee.
+			17 text Enter a valid Ethereum client address.
+			16 button Review invoice →, ID: review-invoice
+
+The focused UI element is 16 button Review invoice →, ID: review-invoice

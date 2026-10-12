@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "recordedAtUtc": "2026-10-12T10:41:34.589600+00:00",
+  "stage": "final",
+  "result": "Seven-page English final built; visual QA pending. Build is not submission approval.",
+  "basis": "Original 5-8 page/13-topic report; approved report strengthening and full assignment Goal.",
+  "traceability": {
+    "requirements": [
+      "R01",
+      "R02",
+      "R03",
+      "R04",
+      "R05",
+      "R06",
+      "R07",
+      "R08",
+      "R09",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18"
+    ],
+    "objectives": [
+      "L01",
+      "L02",
+      "L03",
+      "L04",
+      "L05"
+    ],
+    "verification": [
+      "V01",
+      "V17",
+      "V19",
+      "V20",
+      "V21",
+      "V22"
+    ],
+    "deliverables": [
+      "D08",
+      "D09",
+      "D10"
+    ]
+  },
+  "pdf": "output/pdf/FreelancePay_Report.pdf",
+  "source": "docs/REPORT_FINAL.md",
+  "pdfSha256": "607ec2b3ec12ffd306c3da15346316e74cbe85ef7cd14b33f844580e15204d09",
+  "sourceSha256": "f3f9de6709d7cba81a7fdb641f214d32787089804163893b9c7d392f7ef9707e",
+  "builderSha256": "2e02827263d78c848e2c00e8c86edf8844a4d6e5d8dddfe5577cd16ae10b85a9",
+  "pagesIncludingTitleAndReferences": 7,
+  "topicsFound": [
+    "Introduction",
+    "Problem Statement",
+    "Objectives",
+    "System Architecture",
+    "Technologies Used",
+    "Smart Contract Design",
+    "Application Design",
+    "Implementation",
+    "Testing and Results",
+    "Challenges Encountered",
+    "Limitations",
+    "Future Improvements",
+    "Conclusion"
+  ],
+  "extractedWords": 2569,
+  "englishOnlyCheck": "No Hangul; English prose requires visual review.",
+  "visualInspection": "Pending",
+  "submissionReady": false,
+  "readinessReason": "Report generation does not close live-wallet, Render, visual-review or final-package acceptance.",
+  "sourceScreenshot": "docs/evidence/screenshots/hosted-client-paid.png",
+  "sourceScreenshotSha256": "49a110171e249446fbbf5476464e88c6fc88a5c4c55aba62e45230889bb72923",
+  "figure1": "Native compact vector architecture derived from implemented source/design; not hosting evidence.",
+  "applicationSourceChanges": 0,
+  "publicTransactionsSubmitted": 0,
+  "previousBuilds": [
+    {
+      "recordedAtUtc": "2026-10-05T10:44:08.853534+00:00",
+      "pdfSha256": "4766dbe03bb4ffa31fd4ae97b4beeee40ce4cba714f681713c52587571e819c2",
+      "sourceSha256": "5183d2f2f4a9f573ef474af60342ad08f462d8e5494d3b3b6b76e8d17ac9e338",
+      "pagesIncludingTitleAndReferences": 7,
+      "visualInspection": "Passed: all seven pages; see report-final-visual-qa.json",
+      "result": "Seven-page English final built and visually inspected; package readiness is recorded separately."
+    },
+    {
+      "recordedAtUtc": "2026-10-05T13:38:39.730424+00:00",
+      "pdfSha256": "19d239002d2d604ce76c114edea0846fb1e8227b2b2d7ea457e070ab7c9b04e2",
+      "sourceSha256": "aab60f68df306f0f78df735b2db0a60576ceb0479891fe471570cb2ea421af20",
+      "pagesIncludingTitleAndReferences": 7,
+      "visualInspection": "Passed: all seven pages; see report-final-visual-qa.json",
+      "result": "Seven-page English final built and visually inspected; current package readiness is recorded separately."
+    }
+  ],
+  "references": [
+    "https://docs.soliditylang.org/en/latest/security-considerations.html",
+    "https://docs.metamask.io/metamask-connect/evm/reference/provider-api/",
+    "https://docs.ethers.org/v6/getting-started/",
+    "https://flask.palletsprojects.com/en/stable/deploying/",
+    "https://render.com/docs/deploy-flask",
+    "https://render.com/docs/free",
+    "https://ethereum.org/developers/docs/transactions/",
+    "https://ethereum.org/developers/docs/consensus-mechanisms/pos/#finality",
+    "https://docs.tenderly.co/node-rpc/rpc-reference"
+  ],
+  "referenceEntries": [
+    {
+      "number": 1,
+      "title": "Solidity: Security Considerations",
+      "url": "https://docs.soliditylang.org/en/latest/security-considerations.html"
+    },
+    {
+      "number": 2,
+      "title": "MetaMask: Ethereum Provider API",
+      "url": "https://docs.metamask.io/metamask-connect/evm/reference/provider-api/"
+    },
+    {
+      "number": 3,
+      "title": "Ethers v6: Getting Started",
+      "url": "https://docs.ethers.org/v6/getting-started/"
+    },
+    {
+      "number": 4,
+      "title": "Flask: Deploying to Production",
+      "url": "https://flask.palletsprojects.com/en/stable/deploying/"
+    },
+    {
+      "number": 5,
+      "title": "Render: Deploy a Flask App",
+      "url": "https://render.com/docs/deploy-flask"
+    },
+    {
+      "number": 6,
+      "title": "Render: Deploy for Free",
+      "url": "https://render.com/docs/free"
+    },
+    {
+      "number": 7,
+      "title": "Ethereum: Transactions",
+      "url": "https://ethereum.org/developers/docs/transactions/"
+    },
+    {
+      "number": 8,
+      "title": "Ethereum: Proof of Stake and Finality",
+      "url": "https://ethereum.org/developers/docs/consensus-mechanisms/pos/#finality"
+    },
+    {
+      "number": 9,
+      "title": "Tenderly: RPC Reference",
+      "url": "https://docs.tenderly.co/node-rpc/rpc-reference"
+    }
+  ],
+  "clickableReferenceCheck": "Passed"
+}

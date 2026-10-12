@@ -1,0 +1,69 @@
+Browser tab: 1917613700, Title: "FreelancePay · Your work. Clear payments.", URL: "https://freelancepay-059m.onrender.com/".
+1 AXWebArea FreelancePay · Your work. Clear payments., URL: freelancepay-059m.onrender.com/
+	2 link Description: Skip to invoices, Value: freelancepay-059m.onrender.com/#workspace
+	3 container
+		4 link Description: FreelancePay home, Value: freelancepay-059m.onrender.com/
+		5 container Wallet controls
+			6 button Connect MetaMask ↗, ID: connect
+			7 button Check connection, ID: check-connection
+	8 container
+		9 text WORK COMPLETED. PAYMENT RECORDED.
+		10 heading Your work. Clear payments., Value: 1
+			11 text Your work.
+			12 text Clear payments.
+		13 container
+			14 text Create an invoice. Pay the exact amount.
+			15 text Keep a record you can both verify.
+		16 container
+			17 text HOW IT WORKS
+			18 content list
+				19 container
+					20 text 01 Send a clear request Choose your client and invoice amount.
+				21 container
+					22 text 02 Pay through your wallet Only the designated client can pay.
+				23 container
+					24 text 03 Verify the result See the confirmed payment on-chain.
+			25 text Sepolia test ETH only · No platform fee
+		66 text Ethereum Sepolia
+		67 text Wallet not connected
+		68 text Disconnected from FreelancePay. Use Connect MetaMask when you are ready.
+		29 container Invoices, ID: workspace
+			30 text YOUR WORKSPACE
+			31 heading Invoices, Value: 2, ID: workspace-title
+				32 text Invoices
+			33 button (disabled) Create invoice, ID: new-invoice
+			34 container Invoice role
+				35 checkbox Issued by you, Value: 1, ID: issued
+				36 checkbox Sent to you, Value: 0, ID: received
+			37 button Refresh , ID: refresh
+			38 text To request a payment, create an invoice. To pay a request, choose Sent to you.
+			39 text Status
+			40 pop up button (disabled, collapsed, settable) Status, Value: All statuses, ID: status-filter, Secondary Actions: Expand
+				41 menu
+					42 (disabled) All statuses
+					43 (disabled) Pending
+					44 (disabled) Paid
+					45 (disabled) Cancelled
+			46 text Filters the invoices on this page.
+			47 container invoice-list
+				48 heading Your invoices start here., Value: 3
+					49 text Your invoices start here.
+				50 text Connect MetaMask to see invoices issued by you or sent to your account.
+			51 text No account selected
+			52 container
+				53 button (disabled) ← Previous, ID: previous
+				54 button (disabled) Next →, ID: next
+		55 heading Direct to the freelancer, Value: 3
+			56 text Direct to the freelancer
+		57 text Payment goes to the issuer in the same transaction. FreelancePay keeps no payment balance.
+		58 heading A shared, public record, Value: 3
+			59 text A shared, public record
+		60 text Addresses, references and payment details are public. Keep personal and confidential information out.
+		61 heading Know what is confirmed, Value: 3
+			62 text Know what is confirmed
+		63 text Payment records do not prove work quality. Payments have network fees and cannot be reversed here.
+	64 container
+		65 text FreelancePay SC6113 educational project · Test funds only
+		69 link Description: View contract ↗, Value: sepolia.etherscan.io/address/0xF9c9cA735028b3C9787773383D1C6926B9312C0F, ID: contract-link
+
+The focused UI element is 1 AXWebArea FreelancePay · Your work. Clear payments., URL: freelancepay-059m.onrender.com/

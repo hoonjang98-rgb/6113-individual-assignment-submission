@@ -1,0 +1,18 @@
+{
+  "recordedAtUtc": "2026-10-05T10:11:22.242781+00:00",
+  "reason": "Configured PublicNode returned empty historical logs and missing known receipts while Tenderly returned matching canonical blocks, successful receipts and complete events. Same existing Sepolia contract/runtime/state verified.",
+  "previousPublicRpc": "https://ethereum-sepolia.publicnode.com",
+  "currentPublicRpc": "https://sepolia.gateway.tenderly.co",
+  "source": "https://docs.tenderly.co/node-rpc/rpc-reference",
+  "chainId": 11155111,
+  "contractChanged": false,
+  "applicationSourceChanged": false,
+  "networkSwitchRequested": false,
+  "pending": null,
+  "verification": "Local HTTP and ordinary assessment Chrome history/receipt checks passed after restarting the identified server. Same RPC also passed actual Render HTTPS reads.",
+  "evidence": [
+    "docs/evidence/sepolia-rpc-correction-http.json",
+    "docs/evidence/chrome-chrome-acceptance.json",
+    "docs/evidence/render-live-http.json"
+  ]
+}

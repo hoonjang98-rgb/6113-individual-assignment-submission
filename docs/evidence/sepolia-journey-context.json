@@ -1,0 +1,23 @@
+{
+  "recordedAt": "2026-10-03T16:14:59.292779+00:00",
+  "network": "Ethereum Sepolia",
+  "chainId": 11155111,
+  "contractAddress": "0xF9c9cA735028b3C9787773383D1C6926B9312C0F",
+  "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+  "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+  "observedBlock": "11836756",
+  "issuerBalanceWei": "21608304969613673",
+  "clientBalanceWei": "10000000000000000",
+  "invoiceCountAtCheck": "0",
+  "plannedReference": "SC6113-PAY-001",
+  "plannedAmountWei": "100000000000000",
+  "plannedAmountSepoliaEth": "0.0001",
+  "estimatedCreateInvoiceGas": "264256",
+  "invoiceId": "1",
+  "creationTransactionHash": "0x6388e3e4c5cdab7e14fc0703b90583ddfcc394b334321798e8d535e51e82bcae",
+  "paymentTransactionHash": "0x893f17ebe18ef9360d13e7b4bc91235f9f075b7c19d83a783ac0bfa3cde0921f",
+  "scope": "Original preparation observations retained above. Creation and exact designated-client payment are independently verified in their separate receipt records; current Paid state must not be confused with the original empty-contract observation.",
+  "updatedAt": "2026-10-03T18:14:01.539222+00:00",
+  "creationEvidence": "sepolia-invoice-creation.json",
+  "paymentEvidence": "sepolia-invoice-payment.json"
+}

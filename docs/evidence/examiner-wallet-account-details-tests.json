@@ -1,0 +1,44 @@
+{
+  "recordedAtUtc": "2026-10-05T14:03:36.249Z",
+  "result": "passed",
+  "scope": "Isolated headless Chrome, static UI fixture and injected wallet; no actual MetaMask, Flask-chain or public transaction claim.",
+  "checks": [
+    "Multiple exposed accounts are visible, with only the first marked for actions.",
+    "Opening the disclosure makes no wallet request or account change.",
+    "A genuine fixture accountsChanged event updates both the action account and list order.",
+    "Additional provider values render as plain text without injected HTML.",
+    "Single-account wording and expanded 390px layout remain readable without horizontal overflow.",
+    "Disconnect and reload hide the disclosure and remove all previous accounts."
+  ],
+  "sourceHashes": {
+    "templates/index.html": "2f3721f1e56a917597405ed73a7d7ca0841b75cf7a7cdb7f4ed73ec5c399e751",
+    "static/app.js": "4b9d3434e0a09a2ad83188a923cb7b2dd43c11740e4bd54a1c377254bab3cc20",
+    "static/app.css": "71f7d57334abcc759f9c13451bebb037499975e49bb2884863532478af650fb0",
+    "static/vendor/ethers.min.js": "b016b0c3898c78fd8156466eb1ff1f42c9df951c2f0d64c9bdf799fe745b0a6c"
+  },
+  "testSha256": "b89a571e1a66fb605676aa95b7a36a10828d46de9e532e3f6ed121ed1069f786",
+  "pageErrors": [],
+  "walletMethods": [
+    "eth_accounts",
+    "eth_chainId",
+    "eth_chainId",
+    "eth_getBalance",
+    "eth_accounts",
+    "eth_chainId",
+    "eth_chainId",
+    "eth_getBalance",
+    "eth_accounts",
+    "eth_chainId",
+    "eth_chainId",
+    "eth_getBalance",
+    "eth_accounts",
+    "eth_chainId",
+    "eth_chainId",
+    "eth_getBalance",
+    "wallet_revokePermissions"
+  ],
+  "walletWriteRequests": 0,
+  "newPermissionRequests": 0,
+  "observationScope": "Method recorder persists outside the page across reload.",
+  "initialRecord": "docs/evidence/wallet-account-details-tests-initial.json"
+}

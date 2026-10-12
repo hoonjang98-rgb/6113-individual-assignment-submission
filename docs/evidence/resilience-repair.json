@@ -1,0 +1,85 @@
+{
+  "recordedAtUtc": "2026-10-05T13:38:39.242274+00:00",
+  "finding": "F01",
+  "status": "F01 addressed; scoped tests, exact deployment and fresh package reproduction passed",
+  "commit": "8d0c3a626d2d2809ba537701d0c58feb48266070",
+  "previousCommit": "5febbadce4a58fcec3841741b26f82572d4f892e",
+  "changedRuntimeFiles": [
+    "app.py",
+    "chain_service.py",
+    "requirements.txt"
+  ],
+  "developmentTests": {
+    "api": 34,
+    "rpcTransport": 28,
+    "passed": 62,
+    "evidence": "resilience-development-tests.xml"
+  },
+  "policy": {
+    "additionalAttemptsPerAPIRequest": 2,
+    "schedulingBudgetSeconds": 20,
+    "transportTimeoutSeconds": 4,
+    "backoffSeconds": [
+      0.25,
+      0.5
+    ],
+    "maximumRetryAfterSeconds": 2,
+    "longRetryAfter": "Fail visibly, never retry earlier than the server delay",
+    "readMethods": [
+      "eth_chainId",
+      "eth_blockNumber",
+      "eth_getCode",
+      "eth_call",
+      "eth_getLogs",
+      "eth_getTransactionByHash",
+      "eth_getTransactionReceipt"
+    ],
+    "transientHTTP": [
+      408,
+      429,
+      500,
+      502,
+      503,
+      504
+    ],
+    "noRetry": [
+      "wallet signing/submission",
+      "unknown RPC methods",
+      "permanent HTTP errors",
+      "SSL certificate errors",
+      "JSON-RPC application errors",
+      "wrong chain",
+      "runtime mismatch",
+      "incomplete history"
+    ],
+    "deadlineLimit": "Scheduling guard and bounded transport timeout, not a hard OS/DNS wall-clock guarantee"
+  },
+  "httpDependencies": {
+    "requests": "2.34.2",
+    "urllib3": "2.8.0"
+  },
+  "newPublicTransactions": 0,
+  "contractAndABIUnchanged": true,
+  "browserScope": "Read-only post-repair browser verification and one invalid form input. Historical signing/disconnect/reconnect acceptance is retained separately. Original existing-tab attachment timed out; a fresh tab in the same browser succeeded.",
+  "sourceHashes": {
+    "app.py": "eb979dc11c41c6a30c1146b92f3c92848d59792a50d9a04a993024fecab8b50e",
+    "chain_service.py": "648be2a31cd9f9e0207bf1a18bf6d8ddc70b6e613cabc8525fe510bc222a059e",
+    "requirements.txt": "feba050aa559347ae4f63283de40fc868bebc8b40d48f551bf59bdc0d05ba5d2",
+    "tests/test_api.py": "ee65c0a59adcc351a89c6b9a3a75ca2844c2b6292ee4b3d55286450d3b88ab40",
+    "tests/test_rpc_resilience.py": "bc2773caf7a9020cf0c51d116fcb1f1114014c51c3e801cf1ab15042f00338b1"
+  },
+  "publication": "GitHub connector read-back matched reviewed content; compare from previous commit changes exactly the listed three runtime files.",
+  "liveEvidence": "resilience-live-verification.json",
+  "reproductionEvidence": "resilience-package-reproduction.json",
+  "finalAudit": "resilience-package-audit.json",
+  "closedAtUtc": "2026-10-05T13:48:03.352300+00:00",
+  "browserEvidence": "resilience-browser-acceptance.json",
+  "testCounts": {
+    "contract": 37,
+    "api": 34,
+    "rpc": 28,
+    "browser": 31,
+    "connected-account": 14,
+    "input-boundary": 22
+  }
+}

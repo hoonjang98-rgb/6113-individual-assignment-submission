@@ -1,0 +1,169 @@
+{
+  "recordedAtUtc": "2026-10-03T18:04:16.057895+00:00",
+  "chainId": 11155111,
+  "primaryRpc": "https://ethereum-sepolia.publicnode.com",
+  "transactionHash": "0x893f17ebe18ef9360d13e7b4bc91235f9f075b7c19d83a783ac0bfa3cde0921f",
+  "contractAddress": "0xF9c9cA735028b3C9787773383D1C6926B9312C0F",
+  "sourceSha256": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b",
+  "invoiceId": "1",
+  "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+  "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+  "reference": "SC6113-PAY-001",
+  "amountWei": "100000000000000",
+  "calldata": "0xac60a6cd0000000000000000000000000000000000000000000000000000000000000001",
+  "blockNumber": "11837239",
+  "blockHash": "0x64b6db54ecdef31ebb97fccb2e6613c0358bbdfec5891bcd930e744cc4ce1023",
+  "blockTimestamp": "1791050424",
+  "observedBlock": "11837253",
+  "confirmationsAtCheck": "15",
+  "gasUsed": "74493",
+  "effectiveGasPriceWei": "2471185504",
+  "actualNetworkFeeWei": "184086021749472",
+  "actualNetworkFeeSepoliaEth": "0.000184086021749472",
+  "statusBeforePaymentBlock": "Pending",
+  "statusAtPaymentBlock": "Paid",
+  "statusAtObservation": "Paid",
+  "blockBoundaryBalances": {
+    "issuer": {
+      "beforeWei": "20943907872630765",
+      "afterWei": "21043907872630765",
+      "deltaWei": "100000000000000"
+    },
+    "client": {
+      "beforeWei": "10000000000000000",
+      "afterWei": "9715913978250528",
+      "deltaWei": "-284086021749472"
+    },
+    "contract": {
+      "beforeWei": "0",
+      "afterWei": "0",
+      "deltaWei": "0"
+    }
+  },
+  "issuerTransferEvidence": "Successful receipt and matching verified runtime require a successful exact-value issuer call; payment-block balance gain equals the invoice amount. Balances are measured across the whole block, not from an execution trace.",
+  "secondaryRpcCrossCheck": {
+    "rpc": "https://1rpc.io/sepolia",
+    "verified": true
+  },
+  "verification": {
+    "receiptSucceeded": true,
+    "canonicalBlockMatches": true,
+    "sourceAbiRuntimeMatch": true,
+    "senderTargetValueAndCalldataMatch": true,
+    "exactPaidEventMatches": true,
+    "pendingToPaidStateMatches": true,
+    "issuerBalanceGainMatches": true,
+    "clientDebitEqualsAmountPlusFee": true,
+    "flaskReceiptInvoiceHistoryAndBothRoleListsAgree": true,
+    "freshHttpReadAgrees": true
+  },
+  "flask": {
+    "transaction": {
+      "blockHash": "0x64b6db54ecdef31ebb97fccb2e6613c0358bbdfec5891bcd930e744cc4ce1023",
+      "blockNumber": "11837239",
+      "events": [
+        {
+          "event": "InvoicePaid",
+          "invoiceId": "1"
+        }
+      ],
+      "from": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+      "gasUsed": "74493",
+      "hash": "0x893f17ebe18ef9360d13e7b4bc91235f9f075b7c19d83a783ac0bfa3cde0921f",
+      "observedBlock": "11837254",
+      "status": "confirmed"
+    },
+    "invoice": {
+      "invoice": {
+        "amountWei": "100000000000000",
+        "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+        "createdAt": "1791045000",
+        "createdBlock": "11836826",
+        "id": "1",
+        "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+        "reference": "SC6113-PAY-001",
+        "settledAt": "1791050424",
+        "settledBlock": "11837239",
+        "status": "Paid"
+      },
+      "observedBlock": "11837254"
+    },
+    "history": {
+      "items": [
+        {
+          "blockNumber": "11836826",
+          "event": "InvoiceCreated",
+          "invoiceId": "1",
+          "logIndex": 43,
+          "transactionHash": "0x6388e3e4c5cdab7e14fc0703b90583ddfcc394b334321798e8d535e51e82bcae",
+          "transactionIndex": 13
+        },
+        {
+          "blockNumber": "11837239",
+          "event": "InvoicePaid",
+          "invoiceId": "1",
+          "logIndex": 32,
+          "transactionHash": "0x893f17ebe18ef9360d13e7b4bc91235f9f075b7c19d83a783ac0bfa3cde0921f",
+          "transactionIndex": 25
+        }
+      ],
+      "observedBlock": "11837254"
+    },
+    "roleLists": {
+      "issuer": {
+        "items": [
+          {
+            "amountWei": "100000000000000",
+            "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+            "createdAt": "1791045000",
+            "createdBlock": "11836826",
+            "id": "1",
+            "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+            "reference": "SC6113-PAY-001",
+            "settledAt": "1791050424",
+            "settledBlock": "11837239",
+            "status": "Paid"
+          }
+        ],
+        "limit": 20,
+        "observedBlock": "11837254",
+        "offset": "0",
+        "total": "1"
+      },
+      "client": {
+        "items": [
+          {
+            "amountWei": "100000000000000",
+            "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+            "createdAt": "1791045000",
+            "createdBlock": "11836826",
+            "id": "1",
+            "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+            "reference": "SC6113-PAY-001",
+            "settledAt": "1791050424",
+            "settledBlock": "11837239",
+            "status": "Paid"
+          }
+        ],
+        "limit": 20,
+        "observedBlock": "11837254",
+        "offset": "0",
+        "total": "1"
+      }
+    }
+  },
+  "actualWalletUiObserved": false,
+  "browserReloadObserved": false,
+  "agentSignedOrBroadcast": false,
+  "scope": "Recovered existing payment from live invoice history. Read-only public-chain and HTTP verification; no actual MetaMask approval, account-switch UI or real-browser reload was observed. Phase 6 remains open for those checks. Submission readiness is not established.",
+  "publicTerminalStateChecks": {
+    "recordedAtUtc": "2026-10-03T18:06:28.924636+00:00",
+    "observedBlock": "11837265",
+    "method": "eth_call only; no signature, broadcast, fee or state change",
+    "expectedCustomErrorSelector": "0xbaf3f0f7",
+    "results": {
+      "duplicatePayment": "InvalidState",
+      "issuerCancellationAfterPayment": "InvalidState"
+    }
+  }
+}

@@ -1,0 +1,759 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUtc": "2026-10-04T08:32:20.140710+00:00",
+  "verdict": "Required scope is covered; actual wallet recovery, live Render and final deliverables remain open.",
+  "basis": [
+    "Original assignment",
+    "Later submission notice",
+    "Approved execution plan",
+    "User clarification: agent browser for work; final professor desktop Chrome compatibility"
+  ],
+  "traceability": {
+    "requirements": 18,
+    "learningObjectives": 5,
+    "verificationRoutes": 22,
+    "deliverableRecords": 12,
+    "missingIds": []
+  },
+  "source": {
+    "originalSha256": "d9936c498ca6416e4ccc790ef7b7b5772cb1d1d608f831bdd47b233ccda8b3a5",
+    "paragraphCount": 100,
+    "reportTopics": 13,
+    "rubricMarks": 100,
+    "semanticIndependentReview": true,
+    "originalRenderedLayoutReview": false,
+    "noticeSha256": "4aef9d6e62fb94471ddf381c4a3b70b72222cc566c881de33cc631137c3eb729"
+  },
+  "evidenceInspectedWithoutBroadRerun": {
+    "contract": {
+      "tests": 37,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "api": {
+      "tests": 28,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "browserScenarioGroups": 31
+  },
+  "focusedExecution": {
+    "path": "docs/evidence/input-boundary-tests.json",
+    "sha256": "6f495aa473a15b47fa1029a2a7ec528f7747debd8e117fe15afa435cdce4fa3f",
+    "caseCount": 22,
+    "rejectedCases": 18,
+    "acceptedExactReviews": 4,
+    "result": "Passed",
+    "walletWriteRequests": 0,
+    "fixtureInvoiceCount": 0,
+    "environment": "Isolated headless Chrome, injected wallet, disposable Anvil/Flask; signing forbidden.",
+    "visualInspection": {
+      "screenshots": [
+        "docs/evidence/screenshots/input-boundary-invalid-client-fixture.png",
+        "docs/evidence/screenshots/input-boundary-one-wei-review-fixture.png"
+      ],
+      "outcome": "Readable English validation and exact one-wei review; inspected at original capture size."
+    }
+  },
+  "independentReview": {
+    "path": "docs/evidence/independent-compliance-review.json",
+    "sha256": "3febad3b6504655c0ad3480697c399cb59f6bccfe862035bcb40f6f7fe9d7c22",
+    "unmappedMandatoryClauses": [],
+    "integration": {
+      "IC01": "Closed by the separately executed 22 focused cases; native required versus deliberate JS-overlength behavior labelled.",
+      "IC02": "Finite required/project acceptance and optional stress cases separated in compliance audit and Phase 8 closure plan."
+    }
+  },
+  "currentRuntimeHashes": {
+    "contracts/FreelancePay.sol": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b",
+    "abi/FreelancePay.json": "9f3dc298157bb5fb7368d0501568ff25ad16ddb5249e33b3f8afb3601197260c",
+    "build/FreelancePay.json": "29365bd2e22dee37aeeee82f8a85459397b3c3cebbc139cb5221c40a75ee4206",
+    "app.py": "90a1a365db9fe4840a95e1bb89123ba45e0425ad8c463a2459d62048f9f20f4f",
+    "chain_service.py": "27af7bc6147f1f18e77c9adf965617cc3275008e8b8b8007276480c872fbcc76",
+    "templates/index.html": "b8ef028d93d9e446d619af75acb2834708d59336d080f0c90b53bc99b90d6635",
+    "static/app.js": "af908e4651517be8976ca00f8f4ea0c16603f9009b6764b145833dd946c21339",
+    "static/app.css": "82181c99f142c33441ce10da7b565742d2454883ed82612fa15ab81e55faad76"
+  },
+  "localReadOnlyHttpObservation": {
+    "baseUrl": "http://127.0.0.1:8765",
+    "reads": [
+      {
+        "path": "/healthz",
+        "httpStatus": 200,
+        "observedAtUtc": "2026-10-04T08:32:08.619063+00:00",
+        "response": {
+          "status": "alive"
+        }
+      },
+      {
+        "path": "/api/config",
+        "httpStatus": 200,
+        "observedAtUtc": "2026-10-04T08:32:08.634373+00:00",
+        "response": {
+          "abi": [
+            {
+              "inputs": [],
+              "name": "IncorrectValue",
+              "type": "error"
+            },
+            {
+              "inputs": [],
+              "name": "InvalidAmount",
+              "type": "error"
+            },
+            {
+              "inputs": [],
+              "name": "InvalidClient",
+              "type": "error"
+            },
+            {
+              "inputs": [],
+              "name": "InvalidPagination",
+              "type": "error"
+            },
+            {
+              "inputs": [],
+              "name": "InvalidReference",
+              "type": "error"
+            },
+            {
+              "inputs": [],
+              "name": "InvalidState",
+              "type": "error"
+            },
+            {
+              "inputs": [],
+              "name": "InvoiceNotFound",
+              "type": "error"
+            },
+            {
+              "inputs": [],
+              "name": "ReentrantCall",
+              "type": "error"
+            },
+            {
+              "inputs": [],
+              "name": "TransferFailed",
+              "type": "error"
+            },
+            {
+              "inputs": [],
+              "name": "Unauthorized",
+              "type": "error"
+            },
+            {
+              "anonymous": false,
+              "inputs": [
+                {
+                  "indexed": true,
+                  "internalType": "uint256",
+                  "name": "invoiceId",
+                  "type": "uint256"
+                },
+                {
+                  "indexed": true,
+                  "internalType": "address",
+                  "name": "issuer",
+                  "type": "address"
+                }
+              ],
+              "name": "InvoiceCancelled",
+              "type": "event"
+            },
+            {
+              "anonymous": false,
+              "inputs": [
+                {
+                  "indexed": true,
+                  "internalType": "uint256",
+                  "name": "invoiceId",
+                  "type": "uint256"
+                },
+                {
+                  "indexed": true,
+                  "internalType": "address",
+                  "name": "issuer",
+                  "type": "address"
+                },
+                {
+                  "indexed": true,
+                  "internalType": "address",
+                  "name": "client",
+                  "type": "address"
+                },
+                {
+                  "indexed": false,
+                  "internalType": "uint256",
+                  "name": "amountWei",
+                  "type": "uint256"
+                },
+                {
+                  "indexed": false,
+                  "internalType": "string",
+                  "name": "invoiceReference",
+                  "type": "string"
+                }
+              ],
+              "name": "InvoiceCreated",
+              "type": "event"
+            },
+            {
+              "anonymous": false,
+              "inputs": [
+                {
+                  "indexed": true,
+                  "internalType": "uint256",
+                  "name": "invoiceId",
+                  "type": "uint256"
+                },
+                {
+                  "indexed": true,
+                  "internalType": "address",
+                  "name": "issuer",
+                  "type": "address"
+                },
+                {
+                  "indexed": true,
+                  "internalType": "address",
+                  "name": "client",
+                  "type": "address"
+                },
+                {
+                  "indexed": false,
+                  "internalType": "uint256",
+                  "name": "amountWei",
+                  "type": "uint256"
+                }
+              ],
+              "name": "InvoicePaid",
+              "type": "event"
+            },
+            {
+              "inputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "invoiceId",
+                  "type": "uint256"
+                }
+              ],
+              "name": "cancelInvoice",
+              "outputs": [],
+              "stateMutability": "nonpayable",
+              "type": "function"
+            },
+            {
+              "inputs": [
+                {
+                  "internalType": "address",
+                  "name": "client",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amountWei",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "string",
+                  "name": "invoiceReference",
+                  "type": "string"
+                }
+              ],
+              "name": "createInvoice",
+              "outputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "invoiceId",
+                  "type": "uint256"
+                }
+              ],
+              "stateMutability": "nonpayable",
+              "type": "function"
+            },
+            {
+              "inputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "invoiceId",
+                  "type": "uint256"
+                }
+              ],
+              "name": "getInvoice",
+              "outputs": [
+                {
+                  "components": [
+                    {
+                      "internalType": "address",
+                      "name": "issuer",
+                      "type": "address"
+                    },
+                    {
+                      "internalType": "address",
+                      "name": "client",
+                      "type": "address"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "amountWei",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "string",
+                      "name": "invoiceReference",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "uint64",
+                      "name": "createdAt",
+                      "type": "uint64"
+                    },
+                    {
+                      "internalType": "uint64",
+                      "name": "settledAt",
+                      "type": "uint64"
+                    },
+                    {
+                      "internalType": "uint64",
+                      "name": "createdBlock",
+                      "type": "uint64"
+                    },
+                    {
+                      "internalType": "uint64",
+                      "name": "settledBlock",
+                      "type": "uint64"
+                    },
+                    {
+                      "internalType": "enum FreelancePay.Status",
+                      "name": "status",
+                      "type": "uint8"
+                    }
+                  ],
+                  "internalType": "struct FreelancePay.Invoice",
+                  "name": "",
+                  "type": "tuple"
+                }
+              ],
+              "stateMutability": "view",
+              "type": "function"
+            },
+            {
+              "inputs": [
+                {
+                  "internalType": "address",
+                  "name": "account",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "issued",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "offset",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "limit",
+                  "type": "uint256"
+                }
+              ],
+              "name": "getInvoiceIds",
+              "outputs": [
+                {
+                  "internalType": "uint256[]",
+                  "name": "ids",
+                  "type": "uint256[]"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "total",
+                  "type": "uint256"
+                }
+              ],
+              "stateMutability": "view",
+              "type": "function"
+            },
+            {
+              "inputs": [],
+              "name": "invoiceCount",
+              "outputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "",
+                  "type": "uint256"
+                }
+              ],
+              "stateMutability": "view",
+              "type": "function"
+            },
+            {
+              "inputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "invoiceId",
+                  "type": "uint256"
+                }
+              ],
+              "name": "payInvoice",
+              "outputs": [],
+              "stateMutability": "payable",
+              "type": "function"
+            }
+          ],
+          "chainId": "11155111",
+          "configured": true,
+          "contractAddress": "0xF9c9cA735028b3C9787773383D1C6926B9312C0F",
+          "explorerUrl": "https://sepolia.etherscan.io",
+          "message": null,
+          "networkName": "Ethereum Sepolia",
+          "sourceSha256": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b"
+        }
+      },
+      {
+        "path": "/api/health",
+        "httpStatus": 200,
+        "observedAtUtc": "2026-10-04T08:32:09.387976+00:00",
+        "response": {
+          "chainId": "11155111",
+          "contractAddress": "0xF9c9cA735028b3C9787773383D1C6926B9312C0F",
+          "observedBlock": "11841106",
+          "status": "ready"
+        }
+      },
+      {
+        "path": "/api/invoices/1",
+        "httpStatus": 200,
+        "observedAtUtc": "2026-10-04T08:32:11.739008+00:00",
+        "response": {
+          "invoice": {
+            "amountWei": "100000000000000",
+            "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+            "createdAt": "1791045000",
+            "createdBlock": "11836826",
+            "id": "1",
+            "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+            "reference": "SC6113-PAY-001",
+            "settledAt": "1791050424",
+            "settledBlock": "11837239",
+            "status": "Paid"
+          },
+          "observedBlock": "11841106"
+        }
+      },
+      {
+        "path": "/api/invoices/1/history",
+        "httpStatus": 200,
+        "observedAtUtc": "2026-10-04T08:32:14.516980+00:00",
+        "response": {
+          "items": [
+            {
+              "blockNumber": "11836826",
+              "event": "InvoiceCreated",
+              "invoiceId": "1",
+              "logIndex": 43,
+              "transactionHash": "0x6388e3e4c5cdab7e14fc0703b90583ddfcc394b334321798e8d535e51e82bcae",
+              "transactionIndex": 13
+            },
+            {
+              "blockNumber": "11837239",
+              "event": "InvoicePaid",
+              "invoiceId": "1",
+              "logIndex": 32,
+              "transactionHash": "0x893f17ebe18ef9360d13e7b4bc91235f9f075b7c19d83a783ac0bfa3cde0921f",
+              "transactionIndex": 25
+            }
+          ],
+          "observedBlock": "11841107"
+        }
+      },
+      {
+        "path": "/api/transactions/0x893f17ebe18ef9360d13e7b4bc91235f9f075b7c19d83a783ac0bfa3cde0921f",
+        "httpStatus": 200,
+        "observedAtUtc": "2026-10-04T08:32:15.750493+00:00",
+        "response": {
+          "blockHash": "0x64b6db54ecdef31ebb97fccb2e6613c0358bbdfec5891bcd930e744cc4ce1023",
+          "blockNumber": "11837239",
+          "events": [
+            {
+              "event": "InvoicePaid",
+              "invoiceId": "1"
+            }
+          ],
+          "from": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+          "gasUsed": "74493",
+          "hash": "0x893f17ebe18ef9360d13e7b4bc91235f9f075b7c19d83a783ac0bfa3cde0921f",
+          "observedBlock": "11841107",
+          "status": "confirmed"
+        }
+      },
+      {
+        "path": "/api/invoices?address=0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f&role=issued",
+        "httpStatus": 200,
+        "observedAtUtc": "2026-10-04T08:32:17.858041+00:00",
+        "response": {
+          "items": [
+            {
+              "amountWei": "100000000000000",
+              "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+              "createdAt": "1791045000",
+              "createdBlock": "11836826",
+              "id": "1",
+              "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+              "reference": "SC6113-PAY-001",
+              "settledAt": "1791050424",
+              "settledBlock": "11837239",
+              "status": "Paid"
+            }
+          ],
+          "limit": 20,
+          "observedBlock": "11841107",
+          "offset": "0",
+          "total": "1"
+        }
+      },
+      {
+        "path": "/api/invoices?address=0xB2914BC24584098BB6108e3B72F96109E9bCcc67&role=received",
+        "httpStatus": 200,
+        "observedAtUtc": "2026-10-04T08:32:20.129720+00:00",
+        "response": {
+          "items": [
+            {
+              "amountWei": "100000000000000",
+              "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+              "createdAt": "1791045000",
+              "createdBlock": "11836826",
+              "id": "1",
+              "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+              "reference": "SC6113-PAY-001",
+              "settledAt": "1791050424",
+              "settledBlock": "11837239",
+              "status": "Paid"
+            }
+          ],
+          "limit": 20,
+          "observedBlock": "11841107",
+          "offset": "0",
+          "total": "1"
+        }
+      }
+    ],
+    "scope": "Server/chain evidence only; no actual wallet session action inferred."
+  },
+  "sourcePublication": {
+    "repository": "hoonjang98-rgb/6113-individual-assignment",
+    "publishedCommit": "08affe1f849f13e82799e17d1aef2f71cc6e3a08",
+    "scope": "Existing verified private runtime publication; new audit/test documents are local and no new upload is claimed."
+  },
+  "goalCheckpoint": {
+    "path": "docs/evidence/compliance-execution-goal.json",
+    "status": "blocked",
+    "observedAtUtc": "2026-10-04 14:22:05 UTC"
+  },
+  "openGates": [
+    "Phase 8 W01–W06 actual wallet checks",
+    "Render Linux/Gunicorn HTTPS deployment and actual Chrome journeys",
+    "English 5–8-total-page PDF with all 13 topics",
+    "Final README/screenshots/URL",
+    "Clean final candidate reproduction and submission archive/manifest audit"
+  ],
+  "transactionsSubmittedByThisAudit": 0,
+  "browserRuntime": {
+    "result": "Unavailable before UI initialization",
+    "diagnosedCause": "Windows denies access to obsolete cua_node/be2aaea167c12e53/bin/node_repl.exe during setup-refresh runtime read/execute validation.",
+    "serviceRestart": "CodexSandboxService.OpenAI.Codex successfully restarted; subsequent default sandbox readiness still failed.",
+    "officialDoctor": "sandbox.helpers failed; repair/reinstall from an approved distribution recommended.",
+    "actualWalletChecksVerifiedInThisExecution": []
+  },
+  "laterPreparation": {
+    "recordedAtUtc": "2026-10-04T14:02:44.167146+00:00",
+    "report": {
+      "path": "docs/evidence/report-draft-preparation.json",
+      "sha256": "e35f831443703891173766dcfb42455f8793b9d61b5cbb5544a5217b4e54bf8f",
+      "pages": 7,
+      "all13TopicsPresent": true,
+      "allPagesVisuallyInspected": true,
+      "finalReportComplete": false,
+      "latestDraftPdfSha256": "40832f0046cccb11514d296e7afe4d8349dd16bbe46b4dc348404cb80f9102a3"
+    },
+    "browserRepair": {
+      "path": "docs/evidence/browser-runtime-repair.json",
+      "sha256": "a46ddf285f9f88332f3b85594b25a8029635274fd5d74f3e315f6bb1460aadf0",
+      "officialPackageRepairSucceeded": true,
+      "supportedBrowserStillUnavailable": true
+    },
+    "postRepairApp": {
+      "path": "docs/evidence/post-repair-app-readiness.json",
+      "sha256": "68483508a787355564e434b0d93ae7fa719c149bf1e8c1601437b6c6298c182e"
+    },
+    "applicationRuntimeHashesUnchanged": true,
+    "newWalletChecks": [],
+    "newPublicTransactions": 0,
+    "overallSubmissionReady": false,
+    "independentReportReview": {
+      "path": "docs/evidence/independent-report-draft-review.json",
+      "sha256": "7b983053e876f6cd99e22ee0904347059e51267493cb98a5f51413fba3ad3605",
+      "integratedAtUtc": "2026-10-04T14:13:27.904803+00:00",
+      "result": "No material factual mismatch or unsupported completion claim; IR01 and IR02 resolved in current draft.",
+      "initialReviewPdfSha256": "3960fe32520f725aa6a3867d94de59b25f14b9130bdbd563d4eaca2f8844b47a",
+      "currentRevisionPdfSha256": "40832f0046cccb11514d296e7afe4d8349dd16bbe46b4dc348404cb80f9102a3",
+      "scope": "Initial all-topic/evidence/full-render review plus bounded revised source/PDF checks. Owner all-page visual QA separately recorded.",
+      "finalReportAndPackageClosed": false
+    },
+    "cleanReportBuilderReproduction": {
+      "path": "docs/evidence/report-builder-clean-reproduction.json",
+      "sha256": "67581d5a0d579cec747966a08e422f06cf4c7c6d056419c8163f8a0f41fde86f",
+      "result": "Passed fresh install/build, dependency/module isolation, seven matching page texts and seven byte-identical PNG renders.",
+      "finalPackageReproduced": false
+    }
+  },
+  "latestLocalReadiness": {
+    "observedAtUtc": "2026-10-04T14:19:32.946054+00:00",
+    "path": "/api/health",
+    "httpStatus": 200,
+    "response": {
+      "chainId": "11155111",
+      "contractAddress": "0xF9c9cA735028b3C9787773383D1C6926B9312C0F",
+      "observedBlock": "11842678",
+      "status": "ready"
+    },
+    "scope": "Local server/public read only; not actual wallet or Render."
+  },
+  "historicalAccessAudits": [
+    {
+      "path": "docs/evidence/current-wallet-hosting-access-blocked-audit.json",
+      "sha256": "745374d65dbf51ccb77808100d6577f25c585b59c1e3198b6597472ac2d4f25f",
+      "goalStatus": "blocked",
+      "submissionReady": false,
+      "objectiveUnchanged": true
+    },
+    {
+      "path": "docs/evidence/report-strengthening-blocked-audit.json",
+      "sha256": "8538005788f107279876acc59ce0e23950130fb3079ec2a55c5a8f9270e93709",
+      "goalStatus": "blocked",
+      "submissionReady": false,
+      "objectiveUnchanged": true
+    },
+    {
+      "recordedAtUtc": "2026-10-04T15:52:23.083315+00:00",
+      "path": "docs/evidence/remaining-execution-restart-checkpoint.json",
+      "goalStatus": "active",
+      "actualWalletVerified": false,
+      "renderVerified": false,
+      "submissionReady": false,
+      "nextAction": "Confirmed full desktop restart, then one supported inventory probe."
+    },
+    {
+      "recordedAtUtc": "2026-10-04T16:03:34.462354+00:00",
+      "path": "docs/evidence/post-full-restart-access-audit.json",
+      "goalStatus": "blocked",
+      "actualWalletVerified": false,
+      "renderVerified": false,
+      "submissionReady": false,
+      "nextAction": "Use Microsoft Store to confirm update eligibility for the installed OpenAI Codex/ChatGPT desktop app. Install an offered update and return to this chat; if no update is offered or the error persists, use the prepared local diagnostic summary with official support/feedback."
+    },
+    {
+      "recordedAtUtc": "2026-10-04T16:17:22.117982+00:00",
+      "path": "docs/evidence/browser-runtime-recovery-verified.json",
+      "nativeGoalStatus": "blocked",
+      "agentWorkResumedByUser": true,
+      "runtimeRecoveryVerified": true,
+      "actualChromePageVerified": true,
+      "actualWalletVerified": false,
+      "renderVerified": false,
+      "submissionReady": false,
+      "nextAction": "Approve the existing test-wallet connection in the opened ordinary Chrome page; use the Chrome profile containing the existing test accounts if MetaMask shows onboarding. Browser policy prevents the agent from operating the extension page."
+    }
+  ],
+  "currentExecution": {
+    "recordedAtUtc": "2026-10-04T18:29:26.283118+00:00",
+    "path": "docs/evidence/actual-wallet-acceptance.json",
+    "nativeGoalStatus": "blocked",
+    "userAuthorizedContinuation": true,
+    "runtimeRecoveryVerified": true,
+    "actualInAppIssuerReloadVerified": true,
+    "actualInAppBalanceFeedbackVerified": true,
+    "ordinaryChromeObserved": true,
+    "phase8Closed": false,
+    "renderVerified": false,
+    "submissionReady": false,
+    "nextAction": "Transfer to the checked fresh-chat handoff, then verify current state and continue unfinished acceptance. Keep Sepolia selected; withdrawn Mainnet switching is not pending user work. W05/W06 remain unverified project checks, not separately mandated instructor deliverables.",
+    "actualInAppDisconnectReloadVerified": true,
+    "actualClientReloadVerified": true,
+    "explicitReconnectVerified": true,
+    "actualInAppExplicitReconnectVerified": true,
+    "explicitReconnectScope": "Actual in-app issuer only; ordinary-Chrome wallet acceptance open",
+    "ordinaryChromeWalletConnected": false,
+    "chromeProfileVerified": false,
+    "accountDiagnosticPath": "docs/evidence/connected-account-selection-plan.json",
+    "actualReturnedAccounts": [
+      "0xa91f0fb5d5a7875c08c5c944fce96b2362095d8f",
+      "0xb2914bc24584098bb6108e3b72f96109e9bccc67"
+    ],
+    "currentUiMatchesPublishedCommit": true,
+    "pendingSourcePublication": [],
+    "currentPublishedCommit": "0ebc29b163fa885770f9e8b5b69bbaaec853a3df",
+    "actualInAppClientReloadVerified": true,
+    "actualInAppIssuerHandoffVerified": true,
+    "accountSelectionTests": 14,
+    "affectedBrowserRegressionGroups": 31,
+    "independentReview": "docs/evidence/independent-connected-account-review.json",
+    "independentReviewResult": "No material implementation finding; both focused coverage gaps resolved and re-inspected.",
+    "latestPreparationAtUtc": "2026-10-04T19:29:27.311652+00:00",
+    "renderAccountRepositoryAccessObserved": true,
+    "renderFormPrepared": true,
+    "renderServiceCreated": false,
+    "renderPreparation": "docs/evidence/render-account-preparation.json",
+    "latestOrdinaryChromeObservation": "docs/evidence/chrome-current-permission-check-dom.txt",
+    "latestOrdinaryChromeObservationOutcome": "MetaMask detected; no site account permission in accessible binding; assessment profile identity unverified.",
+    "migrationHandoff": "docs/NEW_CHAT_HANDOFF.md"
+  },
+  "latestReportStrengthening": {
+    "path": "docs/evidence/report-strengthening-execution.json",
+    "sha256": "cc961181f681b287f9c4a5240a6344fb0caa25d149187369451008355b4b1edc",
+    "pdfSha256": "5309b423d520a12d9a976fe6aa3d91d9146306e5594c7c3f91ef0c581f982e8f",
+    "reportPreparationSha256": "4d4cc86340e3e5edfb5d566589602ccab2b71f6e623511c10ca4ee3fc58c8ab2",
+    "builderChecksSha256": "4c92b2212f5211b3015f74d383df461147e1159fb780731cc00f846eae7266aa",
+    "independentReviewSha256": "e8c331d63b300c35e0f1f8390d32ff9f93dc54f93f7d122b5ae934488d83be66",
+    "independentReviewResult": "No material findings; read-only inspection, exact revision hashes matched."
+  },
+  "latestAccessContinuation": {
+    "path": "docs/evidence/browser-runtime-recovery-verified.json",
+    "sha256": "e19cb046606ca2015734d8de928f33d68ac3d91df680225a8ceeea47c1b39a85",
+    "nativeGoalStatus": "blocked",
+    "resumedAuditTurn": 1,
+    "classification": "Progress: obsolete-runtime failure repaired and direct Chrome app controls observed. Wallet extension control explicitly blocked by browser policy.",
+    "submissionReady": false
+  },
+  "latestSourcePublication": {
+    "path": "docs/evidence/connected-account-source-publication.json",
+    "commit": "0ebc29b163fa885770f9e8b5b69bbaaec853a3df",
+    "changedFiles": 3,
+    "exactReadback": true,
+    "renderVerified": false
+  },
+  "sourcePublicationHistory": [
+    {
+      "path": "docs/evidence/wallet-diagnostic-source-publication.json",
+      "commit": "b9eb2f9ea6576f54202bcc99b77b53fe98c152c2",
+      "changedFiles": 3,
+      "exactReadback": true,
+      "renderVerified": false
+    }
+  ],
+  "latestReportCurrentEvidenceUpdate": {
+    "recordedAtUtc": "2026-10-05T07:47:48.950016+00:00",
+    "plan": "docs/evidence/report-current-evidence-update-plan.json",
+    "qa": "docs/evidence/report-current-evidence-qa.json",
+    "sourceSha256": "6576de3eed7addfc3eb14c9862308178681a329e6de934183fd827dca2b77616",
+    "pdfSha256": "a07b43c45d6963555dafebebbc40267591489d6b7f3adb81923d4489c6430e5c",
+    "pages": 7,
+    "ownerChecks": 11,
+    "independentReview": "docs/evidence/independent-report-current-evidence-review.json",
+    "submissionReady": false,
+    "independentReviewResult": "No material findings; exact source/PDF/QA hashes independently matched."
+  }
+}

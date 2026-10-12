@@ -1,0 +1,62 @@
+{
+  "recordedAtUtc": "2026-10-05T13:48:03.352300+00:00",
+  "status": "Passed",
+  "submissionReady": true,
+  "schoolUploaded": false,
+  "findingF01": "Addressed within bounded-retry scope; ongoing RPC availability not guaranteed",
+  "traceability": {
+    "requirements": 18,
+    "learningObjectives": 5,
+    "verificationRoutes": 22,
+    "rubricPointsMapped": 100,
+    "predictedGrade": null
+  },
+  "tests": {
+    "contract": 37,
+    "api": 34,
+    "rpc": 28,
+    "browser": 31,
+    "connected-account": 14,
+    "input-boundary": 22
+  },
+  "freshReproduction": "resilience-package-reproduction.json",
+  "liveReads": 18,
+  "canonicalReceiptsRechecked": 4,
+  "newTransactions": 0,
+  "testedExecutableFilesUnchanged": 47,
+  "deployedRuntimeFilesMatched": 17,
+  "deployedCommit": "8d0c3a626d2d2809ba537701d0c58feb48266070",
+  "payloadFiles": 167,
+  "textFilesSecretScanned": 137,
+  "secretPatterns": [
+    "private-key",
+    "github-token",
+    "cloud-access-key",
+    "signed-download-url",
+    "bearer-credential",
+    "literal-wallet-key",
+    "url-password"
+  ],
+  "secretPatternFindings": [],
+  "reportPages": 7,
+  "reportTopics": 13,
+  "allSevenRebuiltPagePixelsIdentical": true,
+  "selectedCaptionImagesExist": true,
+  "forbiddenFilesExcluded": [
+    "personal .env",
+    "private keys/seeds",
+    "installed environments",
+    "cache",
+    ".git",
+    "other coursework",
+    "database",
+    "video"
+  ],
+  "schoolConditions": "Omitted from public copy: private hosting/portal evidence; see docs/PUBLICATION_NOTES.md",
+  "pendingUserActions": [
+    "confirm calendar deadline and any additional course/identity/AI rules",
+    "review and understand the report/source",
+    "upload required files and Render link, then verify receipt"
+  ],
+  "archiveReadbackPolicy": "CRC, every member and digest, and a separate fresh extraction must pass before release."
+}

@@ -1,0 +1,672 @@
+{
+  "recordedAtUtc": "2026-10-12T10:47:53.417172+00:00",
+  "status": "Passed",
+  "scope": "Fresh v4 allowlisted source copy, fresh Python environment and node_modules; local Anvil and injected Chrome only. No personal wallet or public writes.",
+  "commands": [
+    {
+      "label": "install-python",
+      "exitCode": 0,
+      "seconds": 4.938,
+      "logSha256": "c98b9253607048561d645d0447a0223c4294d24a49e86df9e86722a3cbfa7569"
+    },
+    {
+      "label": "install-node",
+      "exitCode": 0,
+      "seconds": 4.546,
+      "logSha256": "56859f3a0bce6b4d325fd1191fdb34eabd4386fc197068c8db19ed0c01200a7e"
+    },
+    {
+      "label": "pip-check",
+      "exitCode": 0,
+      "seconds": 0.954,
+      "logSha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+    },
+    {
+      "label": "python-environment",
+      "exitCode": 0,
+      "seconds": 0.609,
+      "logSha256": "bb287ed3240373a903ce940b6a1fe8b7637370a6bdcec9718cb6f800e39c80b1"
+    },
+    {
+      "label": "build",
+      "exitCode": 0,
+      "seconds": 1.984,
+      "logSha256": "b3acc9c74107bdb2580090618a4eaeffcf6f17704ae4047f32cf38798ace97ff"
+    },
+    {
+      "label": "contract",
+      "exitCode": 0,
+      "seconds": 44.531,
+      "logSha256": "10bc09b0845ed7f118fa5205e99a3b067753582ba5b190d6ae86cb1e66212f4c"
+    },
+    {
+      "label": "api",
+      "exitCode": 0,
+      "seconds": 8.094,
+      "logSha256": "703f267874a92622199256ad62bf8b81e0395c5f09c65b80490a60aafd4f5acb"
+    },
+    {
+      "label": "rpc",
+      "exitCode": 0,
+      "seconds": 2.312,
+      "logSha256": "cb356e4cf406c323971b96b819c4dae399fb79dc39c0e5afb84c98821eb2e3b0"
+    },
+    {
+      "label": "helper",
+      "exitCode": 0,
+      "seconds": 3.891,
+      "logSha256": "a26cbeb9bcacc5bfd54ee8d1f912e2ac60848b07e8760bdc8d0ab77f39ad5c87"
+    },
+    {
+      "label": "browser",
+      "exitCode": 0,
+      "seconds": 15.984,
+      "logSha256": "7517f4ad732bdac762b0488061ee647c0f2eb5f49768d2b2da27386fb3e7f824"
+    },
+    {
+      "label": "accounts",
+      "exitCode": 0,
+      "seconds": 8.984,
+      "logSha256": "04048e7b7c19cfbd5c7940a538c1beaadeea0f4eeaefd400b902606a3a52393d"
+    },
+    {
+      "label": "inputs",
+      "exitCode": 0,
+      "seconds": 8.079,
+      "logSha256": "1a685616355800f5dd34507191d1f3c024622c16607ad28341a76adce28f3b97"
+    },
+    {
+      "label": "deploy-ui",
+      "exitCode": 0,
+      "seconds": 3.765,
+      "logSha256": "4c6a38de6804db8cf0a0757a489108efaaa265a3e8414099f6711abadc9f1a5f"
+    },
+    {
+      "label": "wallet-details",
+      "exitCode": 0,
+      "seconds": 2.5,
+      "logSha256": "8d7a5ab5a134509342c6b0c44fa214812d7f4c7ff57c04b8a723bd1d206e7e04"
+    },
+    {
+      "label": "connection",
+      "exitCode": 0,
+      "seconds": 7.297,
+      "logSha256": "7ee3ad13a4b5144f0e6f93a717ce22cf2bb548264dd18e4e0b898b99a16f05ed"
+    },
+    {
+      "label": "recovery",
+      "exitCode": 0,
+      "seconds": 4.906,
+      "logSha256": "f73260d82f1d41dee29fd4c74345ee1ed7cc0fe71fdca2389b84f54f2ab50bbb"
+    },
+    {
+      "label": "report",
+      "exitCode": 0,
+      "seconds": 1.766,
+      "logSha256": "2b4c7d773c8091aa156aae118b6f728bf31353d97af7f2077f372b4ca08a534f"
+    }
+  ],
+  "initialAttempt": {
+    "recordedAtUtc": "2026-10-12T10:43:38.600082+00:00",
+    "status": "Failed",
+    "scope": "Fresh v4 allowlisted source copy, fresh Python environment and node_modules; local Anvil and injected Chrome only. No personal wallet or public writes.",
+    "commands": [
+      {
+        "label": "create-venv",
+        "exitCode": 0,
+        "seconds": 5.891,
+        "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "install-python",
+        "exitCode": 0,
+        "seconds": 40.125,
+        "logSha256": "2d5cafe5607f5dd8655ea8f54c1793308b7d7e5d5c5a75c507a890f4e5ae04b4"
+      },
+      {
+        "label": "install-node",
+        "exitCode": 0,
+        "seconds": 17.218,
+        "logSha256": "ce49cecb4f9616b70caac6ffd1ca1e40b48dc21895ce434e5d185bceefed50d5"
+      },
+      {
+        "label": "pip-check",
+        "exitCode": 0,
+        "seconds": 1.297,
+        "logSha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+      },
+      {
+        "label": "python-environment",
+        "exitCode": 0,
+        "seconds": 0.828,
+        "logSha256": "91fc5ff25012b268a5ce7cad9101041fb465a985dd1443bd7195401577e43082"
+      },
+      {
+        "label": "build",
+        "exitCode": 0,
+        "seconds": 2.125,
+        "logSha256": "b3acc9c74107bdb2580090618a4eaeffcf6f17704ae4047f32cf38798ace97ff"
+      },
+      {
+        "label": "contract",
+        "exitCode": 4,
+        "seconds": 5.015,
+        "logSha256": "8767b9db961d42a7465a2476470ae656c5732e87a713400953f3eec357c1efdb"
+      }
+    ],
+    "runtimeIdentity": {
+      "contracts/FreelancePay.sol": {
+        "sha256": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b",
+        "matchesV3": true,
+        "matchesPublicSource": true
+      },
+      "abi/FreelancePay.json": {
+        "sha256": "9f3dc298157bb5fb7368d0501568ff25ad16ddb5249e33b3f8afb3601197260c",
+        "matchesV3": true,
+        "matchesPublicSource": true
+      },
+      "build/FreelancePay.json": {
+        "sha256": "29365bd2e22dee37aeeee82f8a85459397b3c3cebbc139cb5221c40a75ee4206",
+        "matchesV3": true,
+        "matchesPublicSource": true
+      },
+      "app.py": {
+        "sha256": "eb979dc11c41c6a30c1146b92f3c92848d59792a50d9a04a993024fecab8b50e",
+        "matchesV3": true,
+        "matchesPublicSource": true
+      },
+      "chain_service.py": {
+        "sha256": "648be2a31cd9f9e0207bf1a18bf6d8ddc70b6e613cabc8525fe510bc222a059e",
+        "matchesV3": true,
+        "matchesPublicSource": true
+      },
+      "templates/index.html": {
+        "sha256": "2f3721f1e56a917597405ed73a7d7ca0841b75cf7a7cdb7f4ed73ec5c399e751",
+        "matchesV3": true,
+        "matchesPublicSource": true
+      },
+      "static/app.js": {
+        "sha256": "4b9d3434e0a09a2ad83188a923cb7b2dd43c11740e4bd54a1c377254bab3cc20",
+        "matchesV3": true,
+        "matchesPublicSource": true
+      },
+      "static/app.css": {
+        "sha256": "71f7d57334abcc759f9c13451bebb037499975e49bb2884863532478af650fb0",
+        "matchesV3": true,
+        "matchesPublicSource": true
+      },
+      "static/vendor/ethers.min.js": {
+        "sha256": "b016b0c3898c78fd8156466eb1ff1f42c9df951c2f0d64c9bdf799fe745b0a6c",
+        "matchesV3": true,
+        "matchesPublicSource": true
+      },
+      "static/vendor/ethers.LICENSE.md": {
+        "sha256": "44eea86637405118248327fbe9d9fa95d04c7a57221c7e8c155f736db9f1b612",
+        "matchesV3": true,
+        "matchesPublicSource": true
+      },
+      "wsgi.py": {
+        "sha256": "fd2765a077cc83b8ec2c3daab9fb851d60cfffabdc499079189ed99d29872c7c",
+        "matchesV3": true,
+        "matchesPublicSource": true
+      },
+      "gunicorn.conf.py": {
+        "sha256": "dd80b328372d851a18da1561091178da12cb3747eb978a79719b5e2ce927fa32",
+        "matchesV3": true,
+        "matchesPublicSource": true
+      },
+      "render.yaml": {
+        "sha256": "09bb2c1047bcf3a9d1405a017766d769340dbae86055d88eba1942c021ce3e2c",
+        "matchesV3": true,
+        "matchesPublicSource": true
+      },
+      "requirements.txt": {
+        "sha256": "feba050aa559347ae4f63283de40fc868bebc8b40d48f551bf59bdc0d05ba5d2",
+        "matchesV3": true,
+        "matchesPublicSource": true
+      },
+      ".python-version": {
+        "sha256": "f50159fad3f4319868eb38717b91d55843c41e9803014c8de05e116a6d0bcfdc",
+        "matchesV3": true,
+        "matchesPublicSource": true
+      },
+      ".env.example": {
+        "sha256": "d5c09ee55e3517478b41fc38cd9df696371340aa4c784b61127a89a20cd6aa80",
+        "matchesV3": true,
+        "matchesPublicSource": true
+      }
+    },
+    "tests": {},
+    "failure": "RuntimeError: contract failed"
+  },
+  "repair": "The initial fresh environment was retained; its Windows-blocked PyCryptodome 3.24.1 dependency was replaced by constrained 3.24.0. tmp was corrected to 0.2.7 after a new advisory lookup. No security policy was disabled.",
+  "runtimeIdentity": {
+    "contracts/FreelancePay.sol": {
+      "sha256": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b",
+      "matchesV3": true,
+      "matchesPublicSource": true
+    },
+    "abi/FreelancePay.json": {
+      "sha256": "9f3dc298157bb5fb7368d0501568ff25ad16ddb5249e33b3f8afb3601197260c",
+      "matchesV3": true,
+      "matchesPublicSource": true
+    },
+    "build/FreelancePay.json": {
+      "sha256": "29365bd2e22dee37aeeee82f8a85459397b3c3cebbc139cb5221c40a75ee4206",
+      "matchesV3": true,
+      "matchesPublicSource": true
+    },
+    "app.py": {
+      "sha256": "eb979dc11c41c6a30c1146b92f3c92848d59792a50d9a04a993024fecab8b50e",
+      "matchesV3": true,
+      "matchesPublicSource": true
+    },
+    "chain_service.py": {
+      "sha256": "648be2a31cd9f9e0207bf1a18bf6d8ddc70b6e613cabc8525fe510bc222a059e",
+      "matchesV3": true,
+      "matchesPublicSource": true
+    },
+    "templates/index.html": {
+      "sha256": "2f3721f1e56a917597405ed73a7d7ca0841b75cf7a7cdb7f4ed73ec5c399e751",
+      "matchesV3": true,
+      "matchesPublicSource": true
+    },
+    "static/app.js": {
+      "sha256": "4b9d3434e0a09a2ad83188a923cb7b2dd43c11740e4bd54a1c377254bab3cc20",
+      "matchesV3": true,
+      "matchesPublicSource": true
+    },
+    "static/app.css": {
+      "sha256": "71f7d57334abcc759f9c13451bebb037499975e49bb2884863532478af650fb0",
+      "matchesV3": true,
+      "matchesPublicSource": true
+    },
+    "static/vendor/ethers.min.js": {
+      "sha256": "b016b0c3898c78fd8156466eb1ff1f42c9df951c2f0d64c9bdf799fe745b0a6c",
+      "matchesV3": true,
+      "matchesPublicSource": true
+    },
+    "static/vendor/ethers.LICENSE.md": {
+      "sha256": "44eea86637405118248327fbe9d9fa95d04c7a57221c7e8c155f736db9f1b612",
+      "matchesV3": true,
+      "matchesPublicSource": true
+    },
+    "wsgi.py": {
+      "sha256": "fd2765a077cc83b8ec2c3daab9fb851d60cfffabdc499079189ed99d29872c7c",
+      "matchesV3": true,
+      "matchesPublicSource": true
+    },
+    "gunicorn.conf.py": {
+      "sha256": "dd80b328372d851a18da1561091178da12cb3747eb978a79719b5e2ce927fa32",
+      "matchesV3": true,
+      "matchesPublicSource": true
+    },
+    "render.yaml": {
+      "sha256": "09bb2c1047bcf3a9d1405a017766d769340dbae86055d88eba1942c021ce3e2c",
+      "matchesV3": true,
+      "matchesPublicSource": true
+    },
+    "requirements.txt": {
+      "sha256": "feba050aa559347ae4f63283de40fc868bebc8b40d48f551bf59bdc0d05ba5d2",
+      "matchesV3": true,
+      "matchesPublicSource": true
+    },
+    ".python-version": {
+      "sha256": "f50159fad3f4319868eb38717b91d55843c41e9803014c8de05e116a6d0bcfdc",
+      "matchesV3": true,
+      "matchesPublicSource": true
+    },
+    ".env.example": {
+      "sha256": "d5c09ee55e3517478b41fc38cd9df696371340aa4c784b61127a89a20cd6aa80",
+      "matchesV3": true,
+      "matchesPublicSource": true
+    }
+  },
+  "tests": {
+    "contract": {
+      "tests": 37,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "api": {
+      "tests": 34,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "rpc": {
+      "tests": 28,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "helper": {
+      "tests": 19,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "browser": {
+      "result": "Passed",
+      "checks": [
+        "Injected EIP-6963 test-provider connection and real Flask health",
+        "Account reselection uses wallet_requestPermissions; same-account, declined, pending and unsupported results are explicit and preserve the connection",
+        "Pending account selection disables conflicting controls, ignores duplicate clicks and never submits a transaction",
+        "Balance read failure preserves the wallet connection and explicit refresh visibly recovers",
+        "Review, exact one-wei invoice creation, receipt and state confirmation",
+        "Switch to client wallet selects received invoices and reopens the exact invoice without sending payment",
+        "Client account switch, exact payment, issuer balance increase, paid-state controls and real event history",
+        "390px viewport has no horizontal overflow",
+        "Switch to issuer wallet reopens the same Paid invoice in the issuer view",
+        "Wrong network disables writes and explicit switch recovers",
+        "UI rejects exponent, zero amount and self-client before wallet submission",
+        "Wallet rejection does not create an invoice or a false success",
+        "Public reference is text, issuer cancellation is confirmed, terminal controls removed",
+        "Reload restores an already-authorized wallet and Connected label without another account permission prompt",
+        "Disconnect revokes site permission, survives reload and preserves the submitted hash for explicit reconnect and recovery",
+        "Pending transaction survives reload and is confirmed from the receipt without resending",
+        "Network change immediately after wallet submission preserves the hash, original chain and backend-verified receipt",
+        "Unexpected wallet chain is rejected before submission even when no chainChanged event arrives",
+        "Restored wallet cannot hide RPC health failure; explicit successful refresh clears the error and restores controls without submitting a transaction",
+        "Account changes close stale creation and payment reviews without submitting an old action",
+        "Unsupported revocation leaves explicit local disconnection; late balance/account responses and reload cannot silently reconnect",
+        "Disconnect in another tab immediately clears this tab account and write controls",
+        "All three status filters use genuine local invoice states, preserve account total/page range and submit no transaction",
+        "Payment and cancellation details/activity use their on-chain creation/settlement times with an explicit time zone; the filter has a keyboard focus and scope label",
+        "Filtered empty later page retains its correct range and account total; pagination is disabled while loading and preserves the selected filter",
+        "Failed page clears obsolete counts and permits Previous recovery; role change resets filter and clears the old page",
+        "Account change resets the filter and discards a delayed previous-account list without restoring old Paid records",
+        "Status filters, honest pagination and activity times fit a 390px viewport without horizontal overflow",
+        "Genuinely underfunded local issuer receives amount-and-fee guidance with no hash, invoice or successful broadcast",
+        "Receipt API failure retains the mined transaction hash, blocks duplicate writes and recovers the same receipt without resending",
+        "No uncaught browser JavaScript errors"
+      ],
+      "scope": null
+    },
+    "accounts": {
+      "result": "passed",
+      "checks": [
+        "Selecting an already-authorized second account clears a stale review without a transaction or permission request.",
+        "Explicit second-account preference survives reload while still authorized.",
+        "Authorized account order changes preserve the explicitly selected client.",
+        "Revocation while account selection is reading discards the late authorized snapshot and retains the valid account.",
+        "Cross-tab disconnect during a delayed selection clears the preference and ignores the late response across reload.",
+        "Second exposed account signs the exact local payment; requested from, transfer and Paid receipt/state agree.",
+        "Already-authorized invoice handoff changes role and restores the same Paid record without another permission prompt.",
+        "Removing selected wallet permission clears the preference and prevents later silent reselection.",
+        "Tampered stored preference cannot add or select an address outside current wallet authorization.",
+        "Permission loss during signer lookup cannot trigger an implicit reconnection or transaction.",
+        "Fresh authorization check blocks a revoked selected address immediately before wallet submission.",
+        "A network change without a provider event is blocked before any wallet submission.",
+        "The full-address account selector fits a 390px viewport.",
+        "Disconnect and reload remove the preference and account choices."
+      ],
+      "scope": null
+    },
+    "inputs": {
+      "result": "Passed",
+      "checks": [
+        {
+          "name": "Missing client",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "Native required-field validation"
+        },
+        {
+          "name": "Malformed client",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "Enter a valid Ethereum client address."
+        },
+        {
+          "name": "Invalid mixed-case checksum",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "Enter a valid Ethereum client address."
+        },
+        {
+          "name": "Zero client",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "The client must be a different, nonzero wallet address."
+        },
+        {
+          "name": "Issuer as client",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "The client must be a different, nonzero wallet address."
+        },
+        {
+          "name": "Missing reference",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "Native required-field validation"
+        },
+        {
+          "name": "Leading reference space",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "Use 1\u201332 printable English characters with no leading or trailing spaces."
+        },
+        {
+          "name": "Trailing reference space",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "Use 1\u201332 printable English characters with no leading or trailing spaces."
+        },
+        {
+          "name": "Non-ASCII reference",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "Use 1\u201332 printable English characters with no leading or trailing spaces."
+        },
+        {
+          "name": "Reference beyond HTML maxlength",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "Use 1\u201332 printable English characters with no leading or trailing spaces."
+        },
+        {
+          "name": "Missing amount",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "Native required-field validation"
+        },
+        {
+          "name": "Zero amount",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "Enter a positive amount within the supported range."
+        },
+        {
+          "name": "Negative amount",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "Enter a plain decimal amount with at most 18 decimal places."
+        },
+        {
+          "name": "Exponent amount",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "Enter a plain decimal amount with at most 18 decimal places."
+        },
+        {
+          "name": "Excess precision",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "Enter a plain decimal amount with at most 18 decimal places."
+        },
+        {
+          "name": "Leading zero amount",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "Enter a plain decimal amount with at most 18 decimal places."
+        },
+        {
+          "name": "Non-numeric amount",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "Enter a plain decimal amount with at most 18 decimal places."
+        },
+        {
+          "name": "Amount above uint256",
+          "expected": "Rejected before review/signing",
+          "passed": true,
+          "feedback": "Enter a positive amount within the supported range."
+        },
+        {
+          "name": "One-character reference and one wei",
+          "expected": "Exact review only; no wallet transaction",
+          "passed": true,
+          "amountWei": "1"
+        },
+        {
+          "name": "32-character reference and 18-decimal amount",
+          "expected": "Exact review only; no wallet transaction",
+          "passed": true,
+          "amountWei": "1000000000000000001"
+        },
+        {
+          "name": "Literal HTML-shaped reference",
+          "expected": "Exact review only; no wallet transaction",
+          "passed": true,
+          "amountWei": "100000000000000"
+        },
+        {
+          "name": "Maximum uint256 amount review",
+          "expected": "Exact review only; no wallet transaction",
+          "passed": true,
+          "amountWei": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+        }
+      ],
+      "scope": "Focused V04 UI boundaries and exact review rendering. The Anvil contract deployment is fixture setup; zero application invoice transactions were requested. Accepted maximum amount is a parsing/review case, not evidence of affordability."
+    },
+    "deploy-ui": {
+      "result": "Passed",
+      "checks": [
+        "connect and balance read",
+        "public connection state shared with loopback helper",
+        "explicit target chain on deployment",
+        "creation receipt and exact runtime verification",
+        "duplicate deployment disabled",
+        "deployment record download",
+        "hash recovery and verification after reload",
+        "no uncaught JavaScript errors"
+      ],
+      "scope": null
+    },
+    "wallet-details": {
+      "result": "passed",
+      "checks": [
+        "Multiple exposed accounts are visible, with only the first marked for actions.",
+        "Opening the disclosure makes no wallet request or account change.",
+        "A genuine fixture accountsChanged event updates both the action account and list order.",
+        "Additional provider values render as plain text without injected HTML.",
+        "Single-account wording and expanded 390px layout remain readable without horizontal overflow.",
+        "Disconnect and reload hide the disclosure and remove all previous accounts."
+      ],
+      "scope": "Isolated headless Chrome, static UI fixture and injected wallet; no actual MetaMask, Flask-chain or public transaction claim."
+    },
+    "connection": {
+      "result": "Passed",
+      "checks": [
+        "Hidden or delayed approval remains visibly pending, prevents duplicate requests and accepts late approval",
+        "Existing pending request is reported with -32002; Refresh balance recovers account access without another approval request",
+        "Wallet error 4001 produces actionable connection feedback and does not enable deployment",
+        "Wallet error 4200 produces actionable connection feedback and does not enable deployment",
+        "Wallet error 4900 produces actionable connection feedback and does not enable deployment",
+        "Wallet error -32603 produces actionable connection feedback and does not enable deployment",
+        "An empty account response is not presented as connected",
+        "Balance RPC failure preserves the connected account and keeps deployment disabled",
+        "Missing wallet explains the browser requirement without a fake connection or signature",
+        "Authorized account shows Connected; balance refresh has visible progress and timestamp beside the amount; disconnect restores Connect; mobile layout fits",
+        "Wrong-network action sends the exact Sepolia switch request, blocks duplicates, verifies the returned chain and shows Sepolia active",
+        "Network-switch error 4001 is visible near Network and cannot falsely enable deployment",
+        "Network-switch error 4902 is visible near Network and cannot falsely enable deployment",
+        "Network-switch error -32002 is visible near Network and cannot falsely enable deployment"
+      ],
+      "scope": null
+    },
+    "recovery": {
+      "result": "Passed",
+      "checks": [
+        "Unanswered approval has visible guidance; duplicate clicks and empty read checks do not create another approval or claim a connection",
+        "Previously approved eth_accounts recovers a hung approval with validated network and connected controls, no repeated permission request or transaction; 390px has no overflow",
+        "Late rejection from a recovered approval cannot clear a newer account-selection operation",
+        "An actual exposed-account event releases the connection controls even if the original approval promise remains unresolved",
+        "MetaMask -32002 remains pending with no duplicate permission request and recovers through a permission read after approval",
+        "Hung account/network read ends within ten seconds and recovers via a read; approval is never timed out or automatically retried",
+        "Hung balance read preserves the connection, unlocks refresh and permits read-only recovery",
+        "A read check does not undo an explicit local disconnect when MetaMask permission remains",
+        "Declined approval and absent provider restore Connect with explicit feedback"
+      ],
+      "scope": "Isolated Chrome with injected EIP-6963 wallet and HTTP fixtures. These results verify application recovery; actual in-app-browser MetaMask approval/connection remains unverified."
+    }
+  },
+  "report": {
+    "pages": 7,
+    "sameExtractedText": true
+  },
+  "freshLocalHttp": {
+    "passed": true,
+    "publicChain": "Sepolia read-only",
+    "checks": [
+      {
+        "path": "/",
+        "status": 200,
+        "bytes": 8510
+      },
+      {
+        "path": "/healthz",
+        "status": 200,
+        "bytes": 19
+      },
+      {
+        "path": "/api/config",
+        "status": 200,
+        "bytes": 3947
+      },
+      {
+        "path": "/api/health",
+        "status": 200,
+        "bytes": 130
+      },
+      {
+        "path": "/api/invoices/2",
+        "status": 200,
+        "bytes": 340
+      },
+      {
+        "path": "/api/invoices/3",
+        "status": 200,
+        "bytes": 348
+      },
+      {
+        "path": "/api/invoices/2/history",
+        "status": 200,
+        "bytes": 417
+      },
+      {
+        "path": "/api/invoices/3/history",
+        "status": 200,
+        "bytes": 423
+      },
+      {
+        "path": "/static/app.js",
+        "status": 200,
+        "bytes": 43243
+      },
+      {
+        "path": "/static/app.css",
+        "status": 200,
+        "bytes": 11801
+      },
+      {
+        "path": "/static/vendor/ethers.min.js",
+        "status": 200,
+        "bytes": 522050
+      }
+    ]
+  }
+}

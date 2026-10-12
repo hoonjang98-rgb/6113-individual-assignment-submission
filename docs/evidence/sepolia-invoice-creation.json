@@ -1,0 +1,79 @@
+{
+  "recordedAt": "2026-10-03T16:32:59.716682+00:00",
+  "chainId": 11155111,
+  "contractAddress": "0xF9c9cA735028b3C9787773383D1C6926B9312C0F",
+  "sourceSha256": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b",
+  "transactionHash": "0x6388e3e4c5cdab7e14fc0703b90583ddfcc394b334321798e8d535e51e82bcae",
+  "invoiceId": "1",
+  "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+  "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+  "reference": "SC6113-PAY-001",
+  "amountWei": "100000000000000",
+  "transactionValueWei": "0",
+  "blockNumber": "11836826",
+  "blockHash": "0x0b0078fa4f580cc26578a241f4341bf2cc0c317462977a5264560b64f84c9fbe",
+  "blockTimestamp": "1791045000",
+  "observedBlock": "11836839",
+  "confirmationsAtCheck": "14",
+  "gasUsed": "257308",
+  "effectiveGasPriceWei": "2582108201",
+  "actualNetworkFeeWei": "664397096982908",
+  "actualNetworkFeeSepoliaEth": "0.000664397096982908",
+  "statusAtCreationBlock": "Pending",
+  "statusAtObservation": "Pending",
+  "verification": {
+    "receiptSucceeded": true,
+    "canonicalBlockMatches": true,
+    "sourceAbiRuntimeMatch": true,
+    "senderRecipientInputAndZeroValueMatch": true,
+    "exactCreatedEventMatches": true,
+    "creationBlockStateMatches": true,
+    "flaskTransactionInvoiceAndHistoryAgree": true
+  },
+  "flask": {
+    "transaction": {
+      "blockHash": "0x0b0078fa4f580cc26578a241f4341bf2cc0c317462977a5264560b64f84c9fbe",
+      "blockNumber": "11836826",
+      "events": [
+        {
+          "event": "InvoiceCreated",
+          "invoiceId": "1"
+        }
+      ],
+      "from": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+      "gasUsed": "257308",
+      "hash": "0x6388e3e4c5cdab7e14fc0703b90583ddfcc394b334321798e8d535e51e82bcae",
+      "observedBlock": "11836839",
+      "status": "confirmed"
+    },
+    "invoice": {
+      "invoice": {
+        "amountWei": "100000000000000",
+        "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+        "createdAt": "1791045000",
+        "createdBlock": "11836826",
+        "id": "1",
+        "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+        "reference": "SC6113-PAY-001",
+        "settledAt": "0",
+        "settledBlock": "0",
+        "status": "Pending"
+      },
+      "observedBlock": "11836839"
+    },
+    "history": {
+      "items": [
+        {
+          "blockNumber": "11836826",
+          "event": "InvoiceCreated",
+          "invoiceId": "1",
+          "logIndex": 43,
+          "transactionHash": "0x6388e3e4c5cdab7e14fc0703b90583ddfcc394b334321798e8d535e51e82bcae",
+          "transactionIndex": 13
+        }
+      ],
+      "observedBlock": "11836839"
+    }
+  },
+  "scope": "Independent read-only verification of the user-supplied creation hash. Actual public-chain creation is proven; wallet-extension UI was not observed by this verifier. Payment is a separate transaction."
+}

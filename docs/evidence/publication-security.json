@@ -1,0 +1,1084 @@
+{
+  "checkedAtUtc": "2026-10-12T10:54:02.038819+00:00",
+  "scope": "Exact allowlisted public payload; separate fresh Git author/tree verification is required before publication. No computer/wallet forensic or penetration-test claim.",
+  "payloadFiles": 193,
+  "missing": [],
+  "patternCandidates": [],
+  "personalMetadataCandidates": [],
+  "validMnemonicCandidates": [],
+  "hex32CandidatesCheckedAgainstDisclosedWallets": 290,
+  "walletPrivateKeyMatches": [],
+  "pdf": {
+    "pages": 7,
+    "allPagesVisuallyInspected": true,
+    "attachments": [],
+    "actionTypes": [
+      "/URI"
+    ],
+    "noOpenAction": true,
+    "all13Topics": true
+  },
+  "images": [
+    {
+      "file": "docs/evidence/screenshots/app-sepolia-paid-user.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/chrome-client-paid-reload.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/chrome-disconnected-reload.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/chrome-issuer-paid-reload.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/chrome-reconnected-balance.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/hosted-cancel-create-review.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/hosted-client-cancelled-reconnected.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/hosted-client-cancelled-reload.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/hosted-client-cancelled.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/hosted-client-paid-reconnected.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/hosted-client-paid-reload.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/hosted-client-paid.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/hosted-create-recovered.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/hosted-disconnected-reload.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/hosted-issuer-cancelled-reload.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/hosted-issuer-cancelled.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/hosted-issuer-paid.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/hosted-pay-create-review.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/hosted-pay-review.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/hosted-reconnected-both-accounts.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/hosted-invalid-address.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/resilience-client-paid.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    },
+    {
+      "file": "docs/evidence/screenshots/resilience-client-cancelled.png",
+      "exifTagCount": 0,
+      "matchesPreviouslyInspectedV3Image": true
+    }
+  ],
+  "relativeLinks": [
+    {
+      "file": "README.md",
+      "target": "output/pdf/FreelancePay_Report.pdf",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "output/pdf/FreelancePay_Report.pdf",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/SCREENSHOTS.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/FINAL_AUDIT.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/SUBMISSION_INDEX.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/PUBLICATION_NOTES.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/SCREENSHOTS.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/evidence/hosted-payment-verification.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/PUBLICATION_NOTES.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/evidence/publication-reproduction.json",
+      "exists": true
+    },
+    {
+      "file": "docs/REPORT_FINAL.md",
+      "target": "figures/freelancepay-architecture.svg",
+      "exists": true
+    },
+    {
+      "file": "docs/REPORT_FINAL.md",
+      "target": "evidence/screenshots/hosted-client-paid.png",
+      "exists": true
+    },
+    {
+      "file": "docs/FINAL_AUDIT.md",
+      "target": "PUBLICATION_NOTES.md",
+      "exists": true
+    },
+    {
+      "file": "docs/POST_COMPLETION_REVIEW.md",
+      "target": "FINAL_AUDIT.md",
+      "exists": true
+    },
+    {
+      "file": "docs/POST_COMPLETION_REVIEW.md",
+      "target": "EXAMINER_REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "output/pdf/FreelancePay_Report.pdf",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "README.md",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/FINAL_AUDIT.md",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/SUBMISSION_INDEX.md",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/PUBLICATION_NOTES.md",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "contracts/FreelancePay.sol",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "abi/FreelancePay.json",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/SCREENSHOTS.md",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/app-sepolia-paid-user.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/app-sepolia-paid-user.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/chrome-client-paid-reload.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/chrome-client-paid-reload.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/chrome-disconnected-reload.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/chrome-disconnected-reload.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/chrome-issuer-paid-reload.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/chrome-issuer-paid-reload.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/chrome-reconnected-balance.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/chrome-reconnected-balance.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-cancel-create-review.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-cancel-create-review.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-client-cancelled-reconnected.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-client-cancelled-reconnected.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-client-cancelled-reload.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-client-cancelled-reload.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-client-cancelled.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-client-cancelled.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-client-paid-reconnected.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-client-paid-reconnected.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-client-paid-reload.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-client-paid-reload.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-client-paid.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-client-paid.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-create-recovered.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-create-recovered.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-disconnected-reload.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-disconnected-reload.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-invalid-address.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-invalid-address.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-issuer-cancelled-reload.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-issuer-cancelled-reload.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-issuer-cancelled.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-issuer-cancelled.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-issuer-paid.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-issuer-paid.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-pay-create-review.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-pay-create-review.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-pay-review.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-pay-review.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-reconnected-both-accounts.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/hosted-reconnected-both-accounts.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/resilience-client-cancelled.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/resilience-client-cancelled.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/resilience-client-paid.png",
+      "exists": true
+    },
+    {
+      "file": "START_HERE.html",
+      "target": "docs/evidence/screenshots/resilience-client-paid.png",
+      "exists": true
+    }
+  ],
+  "dependencies": {
+    "checkedAtUtc": "2026-10-12T10:49:11.905727+00:00",
+    "source": "OSV querybatch",
+    "transmitted": "Public package names and exact versions only",
+    "queries": [
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "flask"
+        },
+        "version": "3.1.3"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "web3"
+        },
+        "version": "7.16.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "requests"
+        },
+        "version": "2.34.2"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "urllib3"
+        },
+        "version": "2.8.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "python-dotenv"
+        },
+        "version": "1.2.4"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "eth-account"
+        },
+        "version": "0.13.7"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "eth-abi"
+        },
+        "version": "5.2.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "eth-utils"
+        },
+        "version": "5.3.1"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "eth-typing"
+        },
+        "version": "5.2.1"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "hexbytes"
+        },
+        "version": "1.3.1"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "gunicorn"
+        },
+        "version": "26.2.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "pytest"
+        },
+        "version": "9.1.1"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "reportlab"
+        },
+        "version": "4.4.9"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "pypdf"
+        },
+        "version": "6.19.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "aiohappyeyeballs"
+        },
+        "version": "2.7.1"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "aiohttp"
+        },
+        "version": "3.14.5"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "aiosignal"
+        },
+        "version": "1.4.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "annotated-types"
+        },
+        "version": "0.8.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "attrs"
+        },
+        "version": "26.1.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "bitarray"
+        },
+        "version": "3.12.1"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "blinker"
+        },
+        "version": "1.9.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "certifi"
+        },
+        "version": "2026.7.22"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "charset-normalizer"
+        },
+        "version": "3.5.2"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "ckzg"
+        },
+        "version": "2.1.8"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "click"
+        },
+        "version": "8.5.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "colorama"
+        },
+        "version": "0.4.6"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "cytoolz"
+        },
+        "version": "1.2.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "eth-hash"
+        },
+        "version": "0.8.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "eth-keyfile"
+        },
+        "version": "0.8.1"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "eth-keys"
+        },
+        "version": "0.8.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "eth-rlp"
+        },
+        "version": "3.0.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "frozenlist"
+        },
+        "version": "1.8.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "idna"
+        },
+        "version": "3.20"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "iniconfig"
+        },
+        "version": "2.3.1"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "itsdangerous"
+        },
+        "version": "2.2.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "jinja2"
+        },
+        "version": "3.1.6"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "markupsafe"
+        },
+        "version": "3.0.4"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "multidict"
+        },
+        "version": "7.1.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "packaging"
+        },
+        "version": "26.3"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "parsimonious"
+        },
+        "version": "0.10.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "pillow"
+        },
+        "version": "12.3.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "pluggy"
+        },
+        "version": "1.6.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "propcache"
+        },
+        "version": "0.5.4"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "pycryptodome"
+        },
+        "version": "3.24.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "pydantic"
+        },
+        "version": "2.14.1"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "pydantic-core"
+        },
+        "version": "2.50.1"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "pygments"
+        },
+        "version": "2.21.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "pyunormalize"
+        },
+        "version": "18.0.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "pywin32"
+        },
+        "version": "312"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "regex"
+        },
+        "version": "2026.9.29"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "rlp"
+        },
+        "version": "5.0.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "toolz"
+        },
+        "version": "1.2.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "types-requests"
+        },
+        "version": "2.33.0.20261006"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "typing-inspection"
+        },
+        "version": "0.4.4"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "typing-extensions"
+        },
+        "version": "4.16.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "websockets"
+        },
+        "version": "15.0.1"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "werkzeug"
+        },
+        "version": "3.1.9"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "yarl"
+        },
+        "version": "1.25.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@adraffy/ens-normalize"
+        },
+        "version": "1.11.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@foundry-rs/anvil-darwin-amd64"
+        },
+        "version": "1.7.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@foundry-rs/anvil-darwin-arm64"
+        },
+        "version": "1.7.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@foundry-rs/anvil-linux-amd64"
+        },
+        "version": "1.7.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@foundry-rs/anvil-linux-arm64"
+        },
+        "version": "1.7.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@foundry-rs/anvil-win32-amd64"
+        },
+        "version": "1.7.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@foundry-rs/anvil"
+        },
+        "version": "1.7.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@noble/curves"
+        },
+        "version": "1.2.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@noble/hashes"
+        },
+        "version": "1.3.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@types/node"
+        },
+        "version": "22.7.5"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "aes-js"
+        },
+        "version": "4.0.0-beta.5"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "command-exists"
+        },
+        "version": "1.2.9"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "commander"
+        },
+        "version": "8.3.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "ethers"
+        },
+        "version": "6.17.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "follow-redirects"
+        },
+        "version": "1.16.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "fsevents"
+        },
+        "version": "2.3.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "js-sha3"
+        },
+        "version": "0.8.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "memorystream"
+        },
+        "version": "0.3.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "playwright-core"
+        },
+        "version": "1.62.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "playwright"
+        },
+        "version": "1.62.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "semver"
+        },
+        "version": "5.7.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "solc"
+        },
+        "version": "0.8.30"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "tmp"
+        },
+        "version": "0.2.7"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "tslib"
+        },
+        "version": "2.7.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "undici-types"
+        },
+        "version": "6.19.8"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "ws"
+        },
+        "version": "8.21.0"
+      }
+    ],
+    "complete": true,
+    "findings": []
+  },
+  "publicAddressLinkageRetained": true,
+  "passed": true
+}

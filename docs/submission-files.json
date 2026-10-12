@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "status": "Verified public v4 payload; current reproduction, public read checks and security audit supplied. School upload not performed.",
+  "groups": [
+    {
+      "deliverables": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D06",
+        "D09"
+      ],
+      "purpose": "Application, matching build and pinned dependencies",
+      "files": [
+        ".python-version",
+        ".gitignore",
+        ".env.example",
+        "README.md",
+        "requirements.txt",
+        "requirements-dev.txt",
+        "requirements-report.txt",
+        "package.json",
+        "pnpm-lock.yaml",
+        "wsgi.py",
+        "gunicorn.conf.py",
+        "render.yaml",
+        "app.py",
+        "chain_service.py",
+        "contracts/FreelancePay.sol",
+        "abi/FreelancePay.json",
+        "build/FreelancePay.json",
+        "templates/index.html",
+        "static/app.js",
+        "static/app.css",
+        "static/vendor/ethers.min.js",
+        "static/vendor/ethers.LICENSE.md"
+      ]
+    },
+    {
+      "deliverables": [
+        "D09"
+      ],
+      "purpose": "Rebuild, run and reproduce local tests from the package",
+      "files": [
+        "tools/build.mjs",
+        "tools/anvil-path.mjs",
+        "tools/local-chain.mjs",
+        "tools/run-chain.mjs",
+        "tools/start-app.ps1",
+        "tools/start-setup.ps1",
+        "tools/verify_deployment.py",
+        "tools/deploy_server.py",
+        "tools/deploy/index.html",
+        "tools/deploy/deploy.js",
+        "tools/check-environment.mjs",
+        "tools/check-deploy-ui.mjs",
+        "tools/evaluate.py",
+        "tools/build_report_draft.py",
+        "tools/prepare_submission.py",
+        "docs/submission-files.json",
+        "tests/conftest.py",
+        "tests/contracts/Recipients.sol",
+        "tests/test_contract.py",
+        "tests/test_api.py",
+        "tests/test_deployment_verification.py",
+        "tests/test_connection_reporting.py",
+        "tests/browser.mjs",
+        "tests/connected-accounts.mjs",
+        "tests/input-boundaries.mjs",
+        "tests/deployment-browser.mjs",
+        "tests/wallet-account-details.mjs",
+        "tests/wallet-connection-browser.mjs",
+        "tests/wallet-connection-recovery.mjs"
+      ]
+    },
+    {
+      "deliverables": [
+        "D01",
+        "D02",
+        "D09",
+        "D10"
+      ],
+      "purpose": "Existing public evidence required by the launcher, evaluation and report builder",
+      "files": [
+        "docs/evidence/sepolia-deployment.json",
+        "docs/evidence/sepolia-journey-context.json",
+        "docs/evidence/screenshots/app-sepolia-paid-user.png",
+        "docs/RENDER_DEPLOYMENT.md"
+      ]
+    },
+    {
+      "deliverables": [
+        "D07",
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "purpose": "Final assessment documents and current audit",
+      "files": [
+        "docs/SUBMISSION_INDEX.md",
+        "docs/REPORT_FINAL.md",
+        "output/pdf/FreelancePay_Report.pdf",
+        "docs/SCREENSHOTS.md",
+        "docs/FINAL_AUDIT.md"
+      ]
+    },
+    {
+      "deliverables": [
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "purpose": "Selected actual and historical evidence referenced by final report/captions, with distinct dated provenance",
+      "files": [
+        "docs/evidence/api-tests.xml",
+        "docs/evidence/application-review.json",
+        "docs/evidence/browser-tests.json",
+        "docs/evidence/clean-development-preflight.json",
+        "docs/evidence/compliance-audit.json",
+        "docs/evidence/connected-account-tests.json",
+        "docs/evidence/contract-tests.xml",
+        "docs/evidence/chrome-chrome-acceptance.json",
+        "docs/evidence/hosted-browser-acceptance.json",
+        "docs/evidence/hosted-client-cancelled-dom.txt",
+        "docs/evidence/hosted-client-cancelled-reconnected-dom.txt",
+        "docs/evidence/hosted-client-cancelled-reload-dom.txt",
+        "docs/evidence/hosted-client-paid-dom.txt",
+        "docs/evidence/hosted-client-paid-reconnected-dom.txt",
+        "docs/evidence/hosted-client-paid-reload-dom.txt",
+        "docs/evidence/hosted-complete-chain-http.json",
+        "docs/evidence/hosted-create-recovered-dom.txt",
+        "docs/evidence/hosted-disconnected-reload-dom.txt",
+        "docs/evidence/hosted-issuer-cancelled-reload-dom.txt",
+        "docs/evidence/hosted-issuer-paid-dom.txt",
+        "docs/evidence/hosted-issuer-paid-reload-dom.txt",
+        "docs/evidence/hosted-pay-create-review-dom.txt",
+        "docs/evidence/hosted-pay-review-dom.txt",
+        "docs/evidence/hosted-payment-verification.json",
+        "docs/evidence/hosted-reconnected-both-accounts-dom.txt",
+        "docs/evidence/input-boundary-tests.json",
+        "docs/evidence/performance-evaluation.json",
+        "docs/evidence/render-candidate-current-identity.json",
+        "docs/evidence/render-live-deployment.json",
+        "docs/evidence/render-live-http.json",
+        "docs/evidence/report-final-build.json",
+        "docs/evidence/report-final-visual-qa.json",
+        "docs/evidence/routed-receipt-api-tests.xml",
+        "docs/evidence/routed-receipt-public-verification.json",
+        "docs/evidence/routed-receipt-repair.json",
+        "docs/evidence/screenshots/chrome-client-paid-reload.png",
+        "docs/evidence/screenshots/chrome-disconnected-reload.png",
+        "docs/evidence/screenshots/chrome-issuer-paid-reload.png",
+        "docs/evidence/screenshots/chrome-reconnected-balance.png",
+        "docs/evidence/screenshots/hosted-cancel-create-review.png",
+        "docs/evidence/screenshots/hosted-client-cancelled-reconnected.png",
+        "docs/evidence/screenshots/hosted-client-cancelled-reload.png",
+        "docs/evidence/screenshots/hosted-client-cancelled.png",
+        "docs/evidence/screenshots/hosted-client-paid-reconnected.png",
+        "docs/evidence/screenshots/hosted-client-paid-reload.png",
+        "docs/evidence/screenshots/hosted-client-paid.png",
+        "docs/evidence/screenshots/hosted-create-recovered.png",
+        "docs/evidence/screenshots/hosted-disconnected-reload.png",
+        "docs/evidence/screenshots/hosted-issuer-cancelled-reload.png",
+        "docs/evidence/screenshots/hosted-issuer-cancelled.png",
+        "docs/evidence/screenshots/hosted-issuer-paid.png",
+        "docs/evidence/screenshots/hosted-pay-create-review.png",
+        "docs/evidence/screenshots/hosted-pay-review.png",
+        "docs/evidence/screenshots/hosted-reconnected-both-accounts.png",
+        "docs/evidence/sepolia-invoice-creation.json",
+        "docs/evidence/sepolia-invoice-payment.json",
+        "docs/evidence/sepolia-rpc-correction-http.json",
+        "docs/evidence/sepolia-rpc-correction.json",
+        "docs/evidence/sepolia-user-payment-screenshots.json",
+        "docs/figures/freelancepay-architecture.svg",
+        "tools/prepare_render.py"
+      ]
+    },
+    {
+      "deliverables": [
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "purpose": "Fresh final-package reproduction and final audit; historical results remain separate",
+      "files": [
+        "docs/evidence/final-package-reproduction.json",
+        "docs/evidence/final-package-audit.json",
+        "docs/evidence/final-contract-tests.xml",
+        "docs/evidence/final-api-tests.xml",
+        "docs/evidence/final-browser-tests.json",
+        "docs/evidence/final-connected-account-tests.json",
+        "docs/evidence/final-input-boundary-tests.json",
+        "docs/evidence/final-python-environment.txt",
+        "docs/evidence/hosted-create-recovered-http.json"
+      ]
+    },
+    {
+      "deliverables": [
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "purpose": "Post-review finding and bounded public-read resilience; original evidence retained",
+      "files": [
+        "tests/test_rpc_resilience.py",
+        "docs/POST_COMPLETION_REVIEW.md",
+        "docs/evidence/resilience-repair.json",
+        "docs/evidence/resilience-development-tests.xml",
+        "docs/evidence/resilience-live-verification.json",
+        "docs/evidence/post-completion-history-diagnostic.json",
+        "docs/evidence/post-completion-live-review.json",
+        "docs/evidence/render-identity-before-resilience.json",
+        "docs/evidence/render-deployment-before-resilience.json",
+        "docs/evidence/screenshots/hosted-invalid-address.png",
+        "docs/evidence/resilience-invalid-input-dom.txt"
+      ]
+    },
+    {
+      "deliverables": [
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "purpose": "Current revised package reproduction and post-repair browser verification",
+      "files": [
+        "docs/evidence/resilience-package-reproduction.json",
+        "docs/evidence/resilience-package-audit.json",
+        "docs/evidence/resilience-contract-tests.xml",
+        "docs/evidence/resilience-api-tests.xml",
+        "docs/evidence/resilience-rpc-tests.xml",
+        "docs/evidence/resilience-browser-tests.json",
+        "docs/evidence/resilience-connected-account-tests.json",
+        "docs/evidence/resilience-input-boundary-tests.json",
+        "docs/evidence/resilience-python-environment.txt",
+        "docs/evidence/resilience-browser-acceptance.json",
+        "docs/evidence/resilience-issuer-paid-dom.txt",
+        "docs/evidence/resilience-client-paid-dom.txt",
+        "docs/evidence/resilience-client-cancelled-dom.txt",
+        "docs/evidence/resilience-reload-dom.txt",
+        "docs/evidence/screenshots/resilience-client-paid.png",
+        "docs/evidence/screenshots/resilience-client-cancelled.png"
+      ]
+    },
+    {
+      "deliverables": [
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "purpose": "Current instruction baseline, examiner entry guide, fresh reproduction and final assessment audit",
+      "files": [
+        "START_HERE.html",
+        "docs/EXAMINER_REVIEW.md",
+        "docs/sources/assignment-current-20261005.txt",
+        "docs/evidence/examiner-api-tests.xml",
+        "docs/evidence/examiner-browser-review.json",
+        "docs/evidence/examiner-browser-tests.json",
+        "docs/evidence/examiner-cancelled-dom.txt",
+        "docs/evidence/examiner-connected-account-tests.json",
+        "docs/evidence/examiner-contract-tests.xml",
+        "docs/evidence/examiner-deployment-helper-flow.json",
+        "docs/evidence/examiner-explorer-links.json",
+        "docs/evidence/examiner-extra-browser-tests.json",
+        "docs/evidence/examiner-helper-tests.xml",
+        "docs/evidence/examiner-input-boundary-tests.json",
+        "docs/evidence/examiner-inventory.json",
+        "docs/evidence/examiner-links.json",
+        "docs/evidence/examiner-live-verification.json",
+        "docs/evidence/examiner-package-reproduction.json",
+        "docs/evidence/examiner-paid-dom.txt",
+        "docs/evidence/examiner-powershell-syntax.json",
+        "docs/evidence/examiner-python-environment.txt",
+        "docs/evidence/examiner-reload-dom.txt",
+        "docs/evidence/examiner-rpc-tests.xml",
+        "docs/evidence/examiner-syntax.json",
+        "docs/evidence/examiner-visual-review.json",
+        "docs/evidence/examiner-wallet-account-details-tests.json",
+        "docs/evidence/examiner-wallet-connection-browser.json",
+        "docs/evidence/examiner-wallet-connection-recovery.json",
+        "docs/evidence/examiner-package-audit.json"
+      ]
+    },
+    {
+      "deliverables": [
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "purpose": "Public v4 documentation, repaired build dependency and fresh publication evidence",
+      "files": [
+        "pnpm-workspace.yaml",
+        "docs/PUBLICATION_NOTES.md",
+        "docs/evidence/publication-reproduction.json",
+        "docs/evidence/publication-live.json",
+        "docs/evidence/publication-security.json",
+        "docs/evidence/publication-python-environment.txt",
+        "constraints-dev.txt"
+      ]
+    }
+  ]
+}

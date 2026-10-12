@@ -1,0 +1,18 @@
+# Deploy only after the integration gate and repository/account review.
+# Put this file at the root of the dedicated FreelancePay repository.
+services:
+  - type: web
+    name: freelancepay
+    runtime: python
+    plan: free
+    autoDeployTrigger: "off"
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --config gunicorn.conf.py wsgi:app
+    healthCheckPath: /healthz
+    envVars:
+      - key: CHAIN_ID
+        value: "11155111"
+      - key: CONTRACT_ADDRESS
+        value: "0xF9c9cA735028b3C9787773383D1C6926B9312C0F"
+      - key: RPC_URL
+        sync: false

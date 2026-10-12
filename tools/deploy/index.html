@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FreelancePay · Testnet setup</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#eef4f3;color:#183531;font:16px/1.6 system-ui,sans-serif}main{max-width:820px;margin:60px auto;padding:40px;background:white;border:1px solid #cfdfdb;border-radius:20px}h1{line-height:1.15;font-size:36px}h2{font-size:20px}small,.muted{color:#536d67}.tag{font-size:12px;font-weight:700;letter-spacing:2px;color:#176358}.panel{padding:20px;background:#f3f7f6;border-radius:12px;margin:22px 0}button{border:0;border-radius:8px;padding:12px 18px;background:#126556;color:white;font:inherit;font-weight:600;cursor:pointer;margin:5px 8px 5px 0}button:disabled{opacity:.5;cursor:default}button.secondary{background:#dcebe6;color:#183531}code,pre{overflow-wrap:anywhere;white-space:pre-wrap;font-size:13px}#status{border-left:4px solid #227e6b;padding:14px 18px;background:#edf6f2}dt{font-weight:700}dd{margin:0 0 12px;overflow-wrap:anywhere}a{color:#086350}input{width:100%;padding:12px;border:1px solid #809b95;border-radius:6px;font:inherit}*:focus-visible{outline:3px solid #cd6d32;outline-offset:3px}@media(max-width:600px){main{margin:12px;padding:24px}h1{font-size:28px}}
+  </style>
+  <style>
+    .wallet-actions,.field-heading{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.field-heading{margin-top:18px}.field-heading button{margin:0;font-size:14px;padding:8px 13px}button.is-active:disabled{opacity:1;background:#dcefe6;color:#14583e;border:1px solid #96c6ad}.balance-panel{padding:16px 18px;border:1px solid #cfdfdb;border-radius:12px;background:#f3f7f6}.balance-panel .field-heading{margin:0 0 10px}.balance-panel dd{margin-bottom:4px}#balance{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums}#balance-status{display:block;min-height:1.6em;color:#176358}#wallet-status,#network-status{margin-top:10px}#network-status{font-size:14px}.balance-panel[aria-busy="true"]{background:#e1f0eb;border-color:#227e6b}.balance-panel[aria-busy="true"] #refresh-wallet::before{content:'↻ ';display:inline-block}details{margin:20px 0}summary{cursor:pointer;color:#176358;font-weight:600}.refresh-complete{animation:balance-flash 1.2s ease-out}@keyframes balance-flash{from{background:#c8e9d7}to{background:#f3f7f6}}@media(prefers-reduced-motion:reduce){.refresh-complete{animation:none}}
+  </style>
+  <script type="module" src="/deploy.js"></script>
+</head>
+<body><main>
+  <p class="tag">FREELANCEPAY / LOCAL SETUP</p>
+  <h1>Deploy your invoice contract.</h1>
+  <p>This page deploys the tested FreelancePay contract to <strong>Ethereum Sepolia</strong>. It uses MetaMask in this browser and test ETH for the network fee. No real ETH payment is requested.</p>
+  <div class="panel"><strong>Before you begin</strong><p>Use a test account in MetaMask with Sepolia ETH. You will also need a second test account for the client payment later. This page never asks for a password, private key or recovery phrase.</p><p>If you need test ETH, use a faucet listed on the <a href="https://ethereum.org/en/developers/docs/networks/#sepolia" target="_blank" rel="noopener noreferrer">Ethereum Sepolia network page</a>. Faucet availability and requirements vary.</p></div>
+  <h2>1. Connect your test account</h2>
+  <div class="wallet-actions"><button id="connect">Connect MetaMask</button></div>
+  <p id="wallet-status" role="status" aria-live="polite">Checking MetaMask in this browser…</p>
+  <dl>
+    <dt>Account</dt><dd id="account">Not connected</dd>
+    <dt class="field-heading"><span>Network</span><button id="switch" class="secondary" disabled>Switch to Sepolia</button></dt>
+    <dd id="network">Not checked</dd>
+    <dd id="network-status" role="status" aria-live="polite">Connect MetaMask to check your network.</dd>
+  </dl>
+  <dl id="balance-panel" class="balance-panel" aria-busy="false">
+    <dt class="field-heading"><span>Test ETH balance</span><button id="refresh-wallet" class="secondary" aria-controls="balance balance-status">Refresh balance</button></dt>
+    <dd id="balance">Not checked</dd>
+    <dd><small id="balance-status" role="status" aria-live="polite">Connect MetaMask to read your balance.</small></dd>
+  </dl>
+  <details><summary>Connection help</summary><p class="muted">If the approval window does not appear, open MetaMask directly in this same browser and unlock it. Look for the connection request for <code>http://127.0.0.1:8765</code>. After approving, select Refresh balance to check the account again. If this browser cannot show the request, open this page in the regular Chrome profile where you installed MetaMask.</p></details>
+  <p class="muted">Connection checking shares your public account, network, connection stage, numeric error code and any deployment hash with Codex through this computer's local server. It does not request a signature. The report stays in local server memory.</p>
+  <small>Connection check v3</small>
+  <p id="connection-report" role="status">Connection check not sent yet.</p>
+  <h2>2. Review and deploy</h2>
+  <p>The contract has no owner privilege, constructor payment or platform fee. MetaMask shows the estimated network fee before confirmation. One confirmed deployment is sufficient.</p>
+  <p class="muted">Compiler and tested source fingerprint:</p><pre id="build">Loading build…</pre>
+  <button id="deploy" disabled>Deploy FreelancePay on Sepolia</button>
+  <p id="status" role="status" aria-live="polite">Deployment has not started. Review the account, network and balance above.</p>
+  <h2>3. Verify the deployment</h2>
+  <p>If confirmation takes time or this page is reloaded, paste the original transaction hash here. Check its outcome before attempting another deployment.</p>
+  <label for="hash">Deployment transaction hash</label><input id="hash" placeholder="0x…" autocomplete="off" spellcheck="false">
+  <button id="check" class="secondary" disabled>Check deployment</button>
+  <pre id="result"></pre><a id="explorer" hidden target="_blank" rel="noopener noreferrer">View transaction on Sepolia Etherscan</a>
+  <p><button id="download" class="secondary" disabled>Download deployment record</button></p>
+  <p class="muted">After verification, share the contract address or transaction hash with Codex. Both are public records. Keep recovery phrases and private keys private.</p>
+</main></body></html>

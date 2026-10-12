@@ -1,0 +1,24 @@
+{
+  "recordedAtUtc": "2026-10-05T13:48:03.352300+00:00",
+  "status": "Passed",
+  "origin": "https://freelancepay-059m.onrender.com",
+  "browser": "Ordinary Chrome, same user-authorized assessment profile",
+  "checks": [
+    "Existing issuer and client authorized options and their unchanged balances",
+    "Issuer invoice 2 Paid with original creation/payment activity",
+    "Client invoice 2 Paid and invoice 3 Cancelled with original activity",
+    "Reload restores the selected authorized client; choosing Sent to you restores all three existing invoices",
+    "Invalid client address rejected by Review invoice before any signing request"
+  ],
+  "temporaryTabClosed": true,
+  "newWalletPermissionRequests": 0,
+  "newTransactionRequests": 0,
+  "scope": "Read-only post-repair browser verification and one invalid form input. Historical signing/disconnect/reconnect acceptance is retained separately. Original existing-tab attachment timed out; a fresh tab in the same browser succeeded.",
+  "evidence": [
+    "resilience-issuer-paid-dom.txt",
+    "resilience-client-paid-dom.txt",
+    "resilience-client-cancelled-dom.txt",
+    "resilience-reload-dom.txt",
+    "resilience-invalid-input-dom.txt"
+  ]
+}

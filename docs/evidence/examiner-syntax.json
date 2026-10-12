@@ -1,0 +1,23 @@
+{
+  "javascriptSyntaxChecked": [
+    "static/app.js",
+    "static/vendor/ethers.min.js",
+    "tests/browser.mjs",
+    "tests/connected-accounts.mjs",
+    "tests/deployment-browser.mjs",
+    "tests/input-boundaries.mjs",
+    "tests/wallet-account-details.mjs",
+    "tests/wallet-connection-browser.mjs",
+    "tests/wallet-connection-recovery.mjs",
+    "tools/anvil-path.mjs",
+    "tools/build.mjs",
+    "tools/check-deploy-ui.mjs",
+    "tools/check-environment.mjs",
+    "tools/deploy/deploy.js",
+    "tools/local-chain.mjs",
+    "tools/run-chain.mjs"
+  ],
+  "result": "Passed",
+  "helperTests": "examiner-helper-tests.xml",
+  "environmentNote": "Initial helper run: 17 passed and 2 setup errors because sandbox denied the default shared Windows Temp directory. A fresh workspace --basetemp resolved this without source changes; 19 passed."
+}

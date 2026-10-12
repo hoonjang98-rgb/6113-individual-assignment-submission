@@ -1,0 +1,22 @@
+{
+  "recordedAt": "2026-10-05T14:03:34.103Z",
+  "result": "Passed",
+  "publicNetwork": false,
+  "environment": "Isolated headless Chrome with injected EIP-1193 fixtures and a disposable loopback Flask helper. NOT actual MetaMask or the user’s in-app browser.",
+  "checks": [
+    "Hidden or delayed approval remains visibly pending, prevents duplicate requests and accepts late approval",
+    "Existing pending request is reported with -32002; Refresh balance recovers account access without another approval request",
+    "Wallet error 4001 produces actionable connection feedback and does not enable deployment",
+    "Wallet error 4200 produces actionable connection feedback and does not enable deployment",
+    "Wallet error 4900 produces actionable connection feedback and does not enable deployment",
+    "Wallet error -32603 produces actionable connection feedback and does not enable deployment",
+    "An empty account response is not presented as connected",
+    "Balance RPC failure preserves the connected account and keeps deployment disabled",
+    "Missing wallet explains the browser requirement without a fake connection or signature",
+    "Authorized account shows Connected; balance refresh has visible progress and timestamp beside the amount; disconnect restores Connect; mobile layout fits",
+    "Wrong-network action sends the exact Sepolia switch request, blocks duplicates, verifies the returned chain and shows Sepolia active",
+    "Network-switch error 4001 is visible near Network and cannot falsely enable deployment",
+    "Network-switch error 4902 is visible near Network and cannot falsely enable deployment",
+    "Network-switch error -32002 is visible near Network and cannot falsely enable deployment"
+  ]
+}

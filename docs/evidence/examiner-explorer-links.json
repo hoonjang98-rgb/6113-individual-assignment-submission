@@ -1,0 +1,34 @@
+[
+  {
+    "url": "https://sepolia.etherscan.io/tx/0x1fa4bc20a8f2fbfcea2c6f42ff65e2c8c1f843fe636cb1c4c67c4b8179eac9ad",
+    "result": "Visible Success, block 11848266, 0.0001 ETH internal transfer, separate fee; initial navigation wait expired but loaded page was readable."
+  },
+  {
+    "url": "https://sepolia.etherscan.io/tx/0x8945bcc333c66b766ab1244728016e23ddfe0b6bacae5de618e66322bbdcaff7",
+    "successVisible": true
+  },
+  {
+    "url": "https://sepolia.etherscan.io/tx/0x09525df5e350d98abbf288e1150cce3f6dc971d4d5ec559ffbb857aa5ae66509",
+    "successVisible": true
+  },
+  {
+    "url": "https://sepolia.etherscan.io/tx/0x57c539676f3c18b31e0b95555873501c85bab2ae404685b1949191abc6cfb1b1",
+    "successVisible": true
+  },
+  {
+    "url": "https://sepolia.etherscan.io/tx/0x6388e3e4c5cdab7e14fc0703b90583ddfcc394b334321798e8d535e51e82bcae",
+    "successVisible": true
+  },
+  {
+    "url": "https://sepolia.etherscan.io/tx/0x893f17ebe18ef9360d13e7b4bc91235f9f075b7c19d83a783ac0bfa3cde0921f",
+    "successVisible": true
+  },
+  {
+    "url": "https://sepolia.etherscan.io/address/0xF9c9cA735028b3C9787773383D1C6926B9312C0F",
+    "result": "Contract address page visible, balance 0 ETH; direct transaction list shows legacy #1 interactions, routed #2/#3 use linked receipts and internal transfers."
+  },
+  {
+    "url": "https://sepolia.etherscan.io/address/0xF9c9cA735028b3C9787773383D1C6926B9312C0F#code",
+    "result": "Bytecode and Verify and Publish are visible. Source is not explorer-published; delivered source/ABI are verified by compile/runtime identity, not an Etherscan verification badge."
+  }
+]

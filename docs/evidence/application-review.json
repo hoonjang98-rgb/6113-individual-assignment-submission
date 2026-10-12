@@ -1,0 +1,133 @@
+{
+  "recordedAtUtc": "2026-10-03T18:24:16.410783+00:00",
+  "result": "Passed",
+  "sourceSha256": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b",
+  "contractAbiConfigurationIdentity": "Matching unchanged contract source, ABI, build, configuration and deployment record.",
+  "existingSuitesReusedNotRerun": {
+    "contract-tests.xml": {
+      "tests": "37",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-10-03T12:18:52.291632+08:00"
+    },
+    "api-tests.xml": {
+      "tests": "27",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-10-03T12:36:41.934527+08:00"
+    }
+  },
+  "reviewedCodeFiles": [
+    "app.py",
+    "chain_service.py",
+    "contracts/FreelancePay.sol",
+    "static/app.js",
+    "templates/index.html",
+    "tests/browser.mjs",
+    "tests/deployment-browser.mjs",
+    "tests/test_api.py",
+    "tests/test_connection_reporting.py",
+    "tests/test_contract.py",
+    "tests/test_deployment_verification.py",
+    "tests/wallet-connection-browser.mjs",
+    "tools/build.mjs",
+    "tools/deploy/deploy.js",
+    "tools/deploy/index.html",
+    "tools/deploy_server.py",
+    "tools/local-chain.mjs",
+    "tools/start-app.ps1",
+    "tools/start-setup.ps1",
+    "tools/verify_deployment.py"
+  ],
+  "secretScanScope": "Listed project implementation/test/helper files only, using literal-secret patterns. No wallet profile, personal key store or ignored .env was read; this is not an exhaustive secret detector or final package audit.",
+  "httpChecks": [
+    "Public config contains only expected public fields; RPC endpoint is absent",
+    "APIs request no-store caching",
+    "CSP, no-referrer, nosniff and permissions headers present",
+    "POST to read-only configuration is rejected with 405"
+  ],
+  "contrastSource": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+  "contrastMethod": "WCAG sRGB relative luminance ratio for ten specified normal-text color pairs; unrounded ratio compared with 4.5. Disabled controls excluded. This is a partial contrast review, not full WCAG conformance.",
+  "contrast": [
+    {
+      "element": "Muted text on paper",
+      "foreground": "#52665b",
+      "background": "#f6f7f1",
+      "ratio": 5.7158,
+      "passedNormalText4_5": true
+    },
+    {
+      "element": "Muted text on white",
+      "foreground": "#52665b",
+      "background": "#ffffff",
+      "ratio": 6.1577,
+      "passedNormalText4_5": true
+    },
+    {
+      "element": "Hero card guidance",
+      "foreground": "#52665b",
+      "background": "#e9eee3",
+      "ratio": 5.2205,
+      "passedNormalText4_5": true
+    },
+    {
+      "element": "Role guidance",
+      "foreground": "#52665b",
+      "background": "#f8faf6",
+      "ratio": 5.8634,
+      "passedNormalText4_5": true
+    },
+    {
+      "element": "Body text",
+      "foreground": "#173c35",
+      "background": "#ffffff",
+      "ratio": 12.1094,
+      "passedNormalText4_5": true
+    },
+    {
+      "element": "Pending status",
+      "foreground": "#796022",
+      "background": "#f7efd8",
+      "ratio": 5.2128,
+      "passedNormalText4_5": true
+    },
+    {
+      "element": "Paid status",
+      "foreground": "#176447",
+      "background": "#e1f1e7",
+      "ratio": 6.0799,
+      "passedNormalText4_5": true
+    },
+    {
+      "element": "Cancelled status",
+      "foreground": "#536057",
+      "background": "#ebefeb",
+      "ratio": 5.6877,
+      "passedNormalText4_5": true
+    },
+    {
+      "element": "Primary button",
+      "foreground": "#ffffff",
+      "background": "#146c55",
+      "ratio": 6.3522,
+      "passedNormalText4_5": true
+    },
+    {
+      "element": "Test note",
+      "foreground": "#526b54",
+      "background": "#e9eee3",
+      "ratio": 4.9594,
+      "passedNormalText4_5": true
+    }
+  ],
+  "findingsFixed": [
+    {
+      "id": "EVAL-01",
+      "issue": "Original muted text had ratios 4.291 on paper and 3.919 on the hero card; Cancelled text had 4.368 on its badge.",
+      "fix": "Darkened muted text to #52665b and Cancelled text to #536057; financial and state logic unchanged."
+    }
+  ],
+  "scope": "Structured internal source/HTTP/contrast review with reused unchanged suite results. Actual MetaMask edge cases, independent security audit, live Render checks and final package audit are not claimed."
+}

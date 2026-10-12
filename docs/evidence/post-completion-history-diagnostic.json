@@ -1,0 +1,211 @@
+{
+  "recordedAtUtc": "2026-10-05T12:40:53.648804+00:00",
+  "trigger": "A three-concurrent-read review returned HTTP 503 at /api/invoices/2/history; first failing run stopped without claiming success.",
+  "http": [
+    {
+      "path": "/api/invoices/2/history",
+      "status": 200,
+      "seconds": 2.391,
+      "body": {
+        "items": [
+          {
+            "blockNumber": "11848236",
+            "event": "InvoiceCreated",
+            "invoiceId": "2",
+            "logIndex": 35,
+            "transactionHash": "0x8945bcc333c66b766ab1244728016e23ddfe0b6bacae5de618e66322bbdcaff7",
+            "transactionIndex": 13
+          },
+          {
+            "blockNumber": "11848266",
+            "event": "InvoicePaid",
+            "invoiceId": "2",
+            "logIndex": 23,
+            "transactionHash": "0x1fa4bc20a8f2fbfcea2c6f42ff65e2c8c1f843fe636cb1c4c67c4b8179eac9ad",
+            "transactionIndex": 5
+          }
+        ],
+        "observedBlock": "11848875"
+      }
+    },
+    {
+      "path": "/api/invoices/3/history",
+      "status": 200,
+      "seconds": 1.671,
+      "body": {
+        "items": [
+          {
+            "blockNumber": "11848283",
+            "event": "InvoiceCreated",
+            "invoiceId": "3",
+            "logIndex": 36,
+            "transactionHash": "0x09525df5e350d98abbf288e1150cce3f6dc971d4d5ec559ffbb857aa5ae66509",
+            "transactionIndex": 13
+          },
+          {
+            "blockNumber": "11848293",
+            "event": "InvoiceCancelled",
+            "invoiceId": "3",
+            "logIndex": 59,
+            "transactionHash": "0x57c539676f3c18b31e0b95555873501c85bab2ae404685b1949191abc6cfb1b1",
+            "transactionIndex": 16
+          }
+        ],
+        "observedBlock": "11848875"
+      }
+    },
+    {
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.61,
+      "body": {
+        "chainId": "11155111",
+        "contractAddress": "0xF9c9cA735028b3C9787773383D1C6926B9312C0F",
+        "observedBlock": "11848875",
+        "status": "ready"
+      }
+    },
+    {
+      "path": "/api/invoices/2",
+      "status": 200,
+      "seconds": 1.672,
+      "body": {
+        "invoice": {
+          "amountWei": "100000000000000",
+          "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+          "createdAt": "1791195936",
+          "createdBlock": "11848236",
+          "id": "2",
+          "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+          "reference": "SC6113-LIVE-PAY-001",
+          "settledAt": "1791196320",
+          "settledBlock": "11848266",
+          "status": "Paid"
+        },
+        "observedBlock": "11848875"
+      }
+    }
+  ],
+  "rpc": [
+    {
+      "method": "eth_getLogs",
+      "block": 11848236,
+      "http": 200,
+      "resultCount": 1,
+      "error": null,
+      "body": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": [
+          {
+            "address": "0xf9c9ca735028b3c9787773383d1c6926b9312c0f",
+            "topics": [
+              "0x195d340bd25bc3523c352bd8dc52c6887d0f5a23a8891381d5998c06d07575f6",
+              "0x0000000000000000000000000000000000000000000000000000000000000002",
+              "0x000000000000000000000000a91f0fb5d5a7875c08c5c944fce96b2362095d8f",
+              "0x000000000000000000000000b2914bc24584098bb6108e3b72f96109e9bccc67"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000005af3107a4000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000135343363131332d4c4956452d5041592d30303100000000000000000000000000",
+            "blockNumber": "0xb4ca2c",
+            "transactionHash": "0x8945bcc333c66b766ab1244728016e23ddfe0b6bacae5de618e66322bbdcaff7",
+            "transactionIndex": "0xd",
+            "blockHash": "0x486580848b38499cb793f9badb45bc405f06545643053ecf7e537de312808fc4",
+            "logIndex": "0x23",
+            "blockTimestamp": "0x6ac37b20",
+            "removed": false
+          }
+        ]
+      }
+    },
+    {
+      "method": "eth_getLogs",
+      "block": 11848266,
+      "http": 200,
+      "resultCount": 1,
+      "error": null,
+      "body": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": [
+          {
+            "address": "0xf9c9ca735028b3c9787773383d1c6926b9312c0f",
+            "topics": [
+              "0x4894261bc8821cd0e09696d6fa3e110c4034efc8f207633c1e1d16b7ea07fe7b",
+              "0x0000000000000000000000000000000000000000000000000000000000000002",
+              "0x000000000000000000000000a91f0fb5d5a7875c08c5c944fce96b2362095d8f",
+              "0x000000000000000000000000b2914bc24584098bb6108e3b72f96109e9bccc67"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000005af3107a4000",
+            "blockNumber": "0xb4ca4a",
+            "transactionHash": "0x1fa4bc20a8f2fbfcea2c6f42ff65e2c8c1f843fe636cb1c4c67c4b8179eac9ad",
+            "transactionIndex": "0x5",
+            "blockHash": "0x16d348d8f21a8196405f8dd7bf9b0856da92f4c9f23a67df757d818ac80acb87",
+            "logIndex": "0x17",
+            "blockTimestamp": "0x6ac37ca0",
+            "removed": false
+          }
+        ]
+      }
+    },
+    {
+      "method": "eth_getLogs",
+      "block": 11848283,
+      "http": 200,
+      "resultCount": 1,
+      "error": null,
+      "body": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": [
+          {
+            "address": "0xf9c9ca735028b3c9787773383d1c6926b9312c0f",
+            "topics": [
+              "0x195d340bd25bc3523c352bd8dc52c6887d0f5a23a8891381d5998c06d07575f6",
+              "0x0000000000000000000000000000000000000000000000000000000000000003",
+              "0x000000000000000000000000a91f0fb5d5a7875c08c5c944fce96b2362095d8f",
+              "0x000000000000000000000000b2914bc24584098bb6108e3b72f96109e9bccc67"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000005af3107a4000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000165343363131332d4c4956452d43414e43454c2d30303100000000000000000000",
+            "blockNumber": "0xb4ca5b",
+            "transactionHash": "0x09525df5e350d98abbf288e1150cce3f6dc971d4d5ec559ffbb857aa5ae66509",
+            "transactionIndex": "0xd",
+            "blockHash": "0x979972490a02483f7dc132afe69911cc546948813ad63196497073220af53cbb",
+            "logIndex": "0x24",
+            "blockTimestamp": "0x6ac37d78",
+            "removed": false
+          }
+        ]
+      }
+    },
+    {
+      "method": "eth_getLogs",
+      "block": 11848293,
+      "http": 200,
+      "resultCount": 1,
+      "error": null,
+      "body": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": [
+          {
+            "address": "0xf9c9ca735028b3c9787773383d1c6926b9312c0f",
+            "topics": [
+              "0x1893bd55c53ca5d28463267b3794ea27b1c3fc3b0cc5f86e0c5b613ad4156f08",
+              "0x0000000000000000000000000000000000000000000000000000000000000003",
+              "0x000000000000000000000000a91f0fb5d5a7875c08c5c944fce96b2362095d8f"
+            ],
+            "data": "0x",
+            "blockNumber": "0xb4ca65",
+            "transactionHash": "0x57c539676f3c18b31e0b95555873501c85bab2ae404685b1949191abc6cfb1b1",
+            "transactionIndex": "0x10",
+            "blockHash": "0xbd3c0bb235d2c29742234477a1adc39c2f61c9d163a237861382d8aa3fec6f10",
+            "logIndex": "0x3b",
+            "blockTimestamp": "0x6ac37df0",
+            "removed": false
+          }
+        ]
+      }
+    }
+  ],
+  "publicTransactions": 0
+}

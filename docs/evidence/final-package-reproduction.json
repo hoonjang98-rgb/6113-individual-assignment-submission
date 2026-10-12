@@ -1,0 +1,735 @@
+{
+  "recordedAtUtc": "2026-10-05T10:52:26.263557+00:00",
+  "status": "Passed",
+  "candidate": "output/submission/FreelancePay_CANDIDATE_20261005T105113207032Z.zip",
+  "candidateSha256": "816456f845d51e3c760fb60d48615874b8c41568072355cdfd7c0f1522ebe218",
+  "extractedPayloadFiles": 125,
+  "freshEnvironment": true,
+  "installationPolicy": "Fresh venv and run-owned pip cache and pnpm store. No installed project environment or node_modules copied. Bundled Python/Node/pnpm and installed desktop Chrome are prerequisites.",
+  "commands": [
+    {
+      "label": "create-venv",
+      "argv": [
+        "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "venv",
+        ".venv"
+      ],
+      "exitCode": 0,
+      "seconds": 3.25,
+      "log": ".tmp/final-repro-20261005/create-venv.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "install-dev",
+      "argv": [
+        "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\final-repro-20261005\\freelancepay\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements-dev.txt"
+      ],
+      "exitCode": 0,
+      "seconds": 34.266,
+      "log": ".tmp/final-repro-20261005/install-dev.log",
+      "logSha256": "45a22ad34f725bcf7fe8eeb18cbe564ce43a35a55242f4dbf4dfc898d605b603"
+    },
+    {
+      "label": "install-report",
+      "argv": [
+        "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\final-repro-20261005\\freelancepay\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements-report.txt"
+      ],
+      "exitCode": 0,
+      "seconds": 10.703,
+      "log": ".tmp/final-repro-20261005/install-report.log",
+      "logSha256": "8140cd791d5d4cd99d4534e54118facdfd69107c7a1c19c1b1d5434da8d15949"
+    },
+    {
+      "label": "pip-check",
+      "argv": [
+        "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\final-repro-20261005\\freelancepay\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exitCode": 0,
+      "seconds": 0.562,
+      "log": ".tmp/final-repro-20261005/pip-check.log",
+      "logSha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+    },
+    {
+      "label": "pnpm-install",
+      "argv": [
+        "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\bin\\fallback\\pnpm.cmd",
+        "install",
+        "--frozen-lockfile",
+        "--ignore-scripts",
+        "--store-dir",
+        "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\final-repro-20261005\\pnpm-store"
+      ],
+      "exitCode": 0,
+      "seconds": 12.547,
+      "log": ".tmp/final-repro-20261005/pnpm-install.log",
+      "logSha256": "19367710731e97cb4862f44fa01e5351774211b532a9db7d13d48dfdb0d42647"
+    },
+    {
+      "label": "build",
+      "argv": [
+        "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "tools/build.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 1.75,
+      "log": ".tmp/final-repro-20261005/build.log",
+      "logSha256": "b3acc9c74107bdb2580090618a4eaeffcf6f17704ae4047f32cf38798ace97ff"
+    },
+    {
+      "label": "contract-tests",
+      "argv": [
+        "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\final-repro-20261005\\freelancepay\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/test_contract.py",
+        "-q",
+        "--junitxml",
+        "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\final-repro-20261005\\contract-tests.xml"
+      ],
+      "exitCode": 0,
+      "seconds": 21.547,
+      "log": ".tmp/final-repro-20261005/contract-tests.log",
+      "logSha256": "96fca63f750cb5d86e0b845205cbcb1e746e6176e1255871250c6a2eb68ca7f9"
+    },
+    {
+      "label": "api-tests",
+      "argv": [
+        "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\final-repro-20261005\\freelancepay\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/test_api.py",
+        "-q",
+        "--junitxml",
+        "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\final-repro-20261005\\api-tests.xml"
+      ],
+      "exitCode": 0,
+      "seconds": 4.547,
+      "log": ".tmp/final-repro-20261005/api-tests.log",
+      "logSha256": "fa1c390684ab0844b0f80205b86ff4c9ebb0cf7dca013fe98176ac2a866bf073"
+    },
+    {
+      "label": "browser-tests",
+      "argv": [
+        "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "tests/browser.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 13.719,
+      "log": ".tmp/final-repro-20261005/browser-tests.log",
+      "logSha256": "bdee114293e9c3415d25415deac08dd533de86411a5b4112e858ee76af3260ae"
+    },
+    {
+      "label": "connected-account-tests",
+      "argv": [
+        "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "tests/connected-accounts.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 6.453,
+      "log": ".tmp/final-repro-20261005/connected-account-tests.log",
+      "logSha256": "04048e7b7c19cfbd5c7940a538c1beaadeea0f4eeaefd400b902606a3a52393d"
+    },
+    {
+      "label": "input-boundary-tests",
+      "argv": [
+        "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "tests/input-boundaries.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 6.797,
+      "log": ".tmp/final-repro-20261005/input-boundary-tests.log",
+      "logSha256": "1a685616355800f5dd34507191d1f3c024622c16607ad28341a76adce28f3b97"
+    },
+    {
+      "label": "report-build",
+      "argv": [
+        "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\final-repro-20261005\\freelancepay\\.venv\\Scripts\\python.exe",
+        "tools/build_report_draft.py",
+        "--stage",
+        "final"
+      ],
+      "exitCode": 0,
+      "seconds": 1.344,
+      "log": ".tmp/final-repro-20261005/report-build.log",
+      "logSha256": "922230fe67326922e39c6b30aba813e7110945dc395b3406ad54dba338675259"
+    }
+  ],
+  "deployedRuntimeIdentity": {
+    ".python-version": true,
+    ".gitignore": true,
+    ".env.example": true,
+    "requirements.txt": true,
+    "wsgi.py": true,
+    "gunicorn.conf.py": true,
+    "render.yaml": true,
+    "app.py": true,
+    "chain_service.py": true,
+    "contracts/FreelancePay.sol": true,
+    "abi/FreelancePay.json": true,
+    "build/FreelancePay.json": true,
+    "templates/index.html": true,
+    "static/app.js": true,
+    "static/app.css": true,
+    "static/vendor/ethers.min.js": true,
+    "static/vendor/ethers.LICENSE.md": true
+  },
+  "testedPayloadHashes": {
+    "abi/FreelancePay.json": "9f3dc298157bb5fb7368d0501568ff25ad16ddb5249e33b3f8afb3601197260c",
+    "app.py": "90a1a365db9fe4840a95e1bb89123ba45e0425ad8c463a2459d62048f9f20f4f",
+    "build/FreelancePay.json": "29365bd2e22dee37aeeee82f8a85459397b3c3cebbc139cb5221c40a75ee4206",
+    "chain_service.py": "31c7e63f223d0363317b60a0a2322e104a36251c1ffdf8455f8de6407bf4b4d7",
+    "contracts/FreelancePay.sol": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b",
+    "gunicorn.conf.py": "dd80b328372d851a18da1561091178da12cb3747eb978a79719b5e2ce927fa32",
+    "package.json": "85122939e375d5d2fcdd002110c20ec3d207f664d387416da84d1a7968761b59",
+    "pnpm-lock.yaml": "b1932f1e2a952107b8122437507899ec726d24ee21c4418c029b06164097bc4d",
+    "requirements-dev.txt": "1438527233ce7beb1cdf4a046b8b5d38f140bd77217ef4df17d5592989d3ec15",
+    "requirements-report.txt": "476c2bcb3eab2877bd632f0a654fecddc0d3af422c36426c8a3fca72b5c62767",
+    "requirements.txt": "d7ddce83b3a68c947c874c4ac6300f40a852e68a17a6c8d8202dfbf0c5ce0ea2",
+    "static/app.css": "71f7d57334abcc759f9c13451bebb037499975e49bb2884863532478af650fb0",
+    "static/app.js": "4b9d3434e0a09a2ad83188a923cb7b2dd43c11740e4bd54a1c377254bab3cc20",
+    "static/vendor/ethers.LICENSE.md": "44eea86637405118248327fbe9d9fa95d04c7a57221c7e8c155f736db9f1b612",
+    "static/vendor/ethers.min.js": "b016b0c3898c78fd8156466eb1ff1f42c9df951c2f0d64c9bdf799fe745b0a6c",
+    "templates/index.html": "2f3721f1e56a917597405ed73a7d7ca0841b75cf7a7cdb7f4ed73ec5c399e751",
+    "tests/browser.mjs": "ddf4ae1c6a67c96f7e043cd742fa8568822dda23348585644a50714735bcc176",
+    "tests/conftest.py": "82bf386e7c53effcc70cd576bd57f6a6136e206902acf7672e0ac7c74ad491a8",
+    "tests/connected-accounts.mjs": "2d71f232376d676ea114f144e38c51563036b55adbd881b3b44ff9fb7b8611e6",
+    "tests/contracts/Recipients.sol": "e3f13105f98bb95a83e7697296616fdb273614ef11065cc0b78d19024b192766",
+    "tests/deployment-browser.mjs": "0a65d2c90c56806a246437788834f890e51cb12a1fbc461fb89f53b857f353a2",
+    "tests/input-boundaries.mjs": "e016fe09c30f9495e2b57a39363e48da5471de40c930dd26a297e1da8b7d3452",
+    "tests/test_api.py": "3d2e5869910a86368adfb79cfd8d951bf98e7c1432936c070c15d02859b3f9f9",
+    "tests/test_connection_reporting.py": "3cd6d9f495fc9731a90d5514831be6358efcb51f7f3b5d0d4ad27eb3f779d623",
+    "tests/test_contract.py": "a58d01d2e51677f1a2fff6408a0d1bcdf1ce6fd9e2b183d0b99e5bd570bf66f8",
+    "tests/test_deployment_verification.py": "87ebfc7da8a5f61b162866cd8b0fb3cf35749de135ecaf41f89cae0fc6f31403",
+    "tests/wallet-account-details.mjs": "b89a571e1a66fb605676aa95b7a36a10828d46de9e532e3f6ed121ed1069f786",
+    "tests/wallet-connection-browser.mjs": "7aa4c23552bced30ad555eee5764d903f50ebec995329980a30d82baa51fe9b2",
+    "tests/wallet-connection-recovery.mjs": "4d4ba2132648d27baec3bca66716ff1d081c20287789f958dc9f37490aabe4ce",
+    "tools/anvil-path.mjs": "d0bf53c07541fe5bf82fa379ad6db658c0527adb806b2a3937e3b62cefd85079",
+    "tools/build.mjs": "2cf1af489a6267e2191e143d216551644c3611f99c38f294e54219aae7656268",
+    "tools/build_report_draft.py": "2e02827263d78c848e2c00e8c86edf8844a4d6e5d8dddfe5577cd16ae10b85a9",
+    "tools/check-deploy-ui.mjs": "9cef21cdbee70374db644439bfe4a6e165ce53e4fc8d421f84deed09bfd3479d",
+    "tools/check-environment.mjs": "0d987726710f090a352f77b5b8a204080a2253813d9e5a1fae5f2ea1e0c1f269",
+    "tools/deploy/deploy.js": "100466d1709cec7e94e785980307b750792b647f10d1a09aa5f672bb4061fbf6",
+    "tools/deploy/index.html": "0d46c1ae0940baac8a714a948647328b8c7ea9ac9aff056236cf2cc4f61c1d77",
+    "tools/deploy_server.py": "e5db098e112bbf77341fa479f80b76b815e4da8ac91548da77eb366cc390f735",
+    "tools/evaluate.py": "51f7b151bcaa394380d674942748c27c5d4b1d4654cd651edfbf6f746b0cdc6f",
+    "tools/local-chain.mjs": "29ed4074275af00697d9a0eafcf15104ab3767f85c6cf93bd49025b4ff89d6f9",
+    "tools/prepare_render.py": "bc5a0081c8e39745ee4e11a17a70a191d9f92cb9963da48508556f3fa887f18a",
+    "tools/prepare_submission.py": "b3762fef859132db119745872edaacdb34fa5ae29fd495efa0d772203509ed6e",
+    "tools/run-chain.mjs": "c76698de4ad0c1217b78bb8c5142437b956865b33ce09c70bea6631a15486c3e",
+    "tools/start-app.ps1": "9c0255a7447e2786f484a775298797617c748a2b9c35fefc76ab1e820918d885",
+    "tools/start-setup.ps1": "33c22f624e893c9add752c7b34148c3950328e0fb7c4e20f59f5610070889953",
+    "tools/verify_deployment.py": "08c98186d4e2968ea269ea82842441150b7f10f5f364d2798a280382b5964b43",
+    "wsgi.py": "fd2765a077cc83b8ec2c3daab9fb851d60cfffabdc499079189ed99d29872c7c"
+  },
+  "publicTransactionsSubmitted": 0,
+  "scope": "Fresh Windows package reproduction. Browser tests use disposable loopback Anvil and injected providers, not real MetaMask. Linux/Gunicorn separately verified on Render.",
+  "rebuiltAssetsMatch": {
+    "abi/FreelancePay.json": true,
+    "build/FreelancePay.json": true,
+    "static/vendor/ethers.min.js": true,
+    "static/vendor/ethers.LICENSE.md": true
+  },
+  "reportReproduction": {
+    "pages": 7,
+    "textAndLinksIdentical": true,
+    "originalSha256": "4766dbe03bb4ffa31fd4ae97b4beeee40ce4cba714f681713c52587571e819c2",
+    "rebuiltSha256": "4e383dca072e2bef64712c5312b9cf57aa9037a82bc1d5a6df243697bce033ee",
+    "note": "PDF creation metadata/IDs may differ. Original seven-page visual QA is separate.",
+    "allSevenRenderedPageHashesIdentical": {
+      "page-1": true,
+      "page-2": true,
+      "page-3": true,
+      "page-4": true,
+      "page-5": true,
+      "page-6": true,
+      "page-7": true
+    }
+  },
+  "freshServerHttp": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 8510,
+      "sha256": "bcd0fb7e53b9c7601dae3f91f22d0ff50623623dc07ffc2d32bf8176f00a65fb"
+    },
+    {
+      "path": "/healthz",
+      "status": 200,
+      "bytes": 19,
+      "sha256": "52322600f0365cae83010b04708945662a4e8c96f46faafe84ff6a847ec1725c"
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "bytes": 3947,
+      "sha256": "0f6bd64a0ba9791d6d7f14419d522b39c420ae577a00fe6dc856e4de1e05a31c",
+      "body": {
+        "abi": [
+          {
+            "inputs": [],
+            "name": "IncorrectValue",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "InvalidAmount",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "InvalidClient",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "InvalidPagination",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "InvalidReference",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "InvalidState",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "InvoiceNotFound",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "ReentrantCall",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "TransferFailed",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "Unauthorized",
+            "type": "error"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "invoiceId",
+                "type": "uint256"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "issuer",
+                "type": "address"
+              }
+            ],
+            "name": "InvoiceCancelled",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "invoiceId",
+                "type": "uint256"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "issuer",
+                "type": "address"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "client",
+                "type": "address"
+              },
+              {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountWei",
+                "type": "uint256"
+              },
+              {
+                "indexed": false,
+                "internalType": "string",
+                "name": "invoiceReference",
+                "type": "string"
+              }
+            ],
+            "name": "InvoiceCreated",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "invoiceId",
+                "type": "uint256"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "issuer",
+                "type": "address"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "client",
+                "type": "address"
+              },
+              {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountWei",
+                "type": "uint256"
+              }
+            ],
+            "name": "InvoicePaid",
+            "type": "event"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "invoiceId",
+                "type": "uint256"
+              }
+            ],
+            "name": "cancelInvoice",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "client",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountWei",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "invoiceReference",
+                "type": "string"
+              }
+            ],
+            "name": "createInvoice",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "invoiceId",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "invoiceId",
+                "type": "uint256"
+              }
+            ],
+            "name": "getInvoice",
+            "outputs": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "issuer",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "client",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "amountWei",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "invoiceReference",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint64",
+                    "name": "createdAt",
+                    "type": "uint64"
+                  },
+                  {
+                    "internalType": "uint64",
+                    "name": "settledAt",
+                    "type": "uint64"
+                  },
+                  {
+                    "internalType": "uint64",
+                    "name": "createdBlock",
+                    "type": "uint64"
+                  },
+                  {
+                    "internalType": "uint64",
+                    "name": "settledBlock",
+                    "type": "uint64"
+                  },
+                  {
+                    "internalType": "enum FreelancePay.Status",
+                    "name": "status",
+                    "type": "uint8"
+                  }
+                ],
+                "internalType": "struct FreelancePay.Invoice",
+                "name": "",
+                "type": "tuple"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "issued",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "offset",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "limit",
+                "type": "uint256"
+              }
+            ],
+            "name": "getInvoiceIds",
+            "outputs": [
+              {
+                "internalType": "uint256[]",
+                "name": "ids",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "total",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "invoiceCount",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "invoiceId",
+                "type": "uint256"
+              }
+            ],
+            "name": "payInvoice",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+          }
+        ],
+        "chainId": "11155111",
+        "configured": true,
+        "contractAddress": "0xF9c9cA735028b3C9787773383D1C6926B9312C0F",
+        "explorerUrl": "https://sepolia.etherscan.io",
+        "message": null,
+        "networkName": "Ethereum Sepolia",
+        "sourceSha256": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b"
+      }
+    },
+    {
+      "path": "/api/health",
+      "status": 200,
+      "bytes": 130,
+      "sha256": "ec95411d80cc9b5e74b312fa0eb09c2f696d694be9b4ffe29330e31474761a1d",
+      "body": {
+        "chainId": "11155111",
+        "contractAddress": "0xF9c9cA735028b3C9787773383D1C6926B9312C0F",
+        "observedBlock": "11848372",
+        "status": "ready"
+      }
+    },
+    {
+      "path": "/api/invoices/2",
+      "status": 200,
+      "bytes": 340,
+      "sha256": "c425ca00aa971c0f05eefd482df0c58643d8d74a8eb412da8c8be4c78bf92173",
+      "body": {
+        "invoice": {
+          "amountWei": "100000000000000",
+          "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+          "createdAt": "1791195936",
+          "createdBlock": "11848236",
+          "id": "2",
+          "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+          "reference": "SC6113-LIVE-PAY-001",
+          "settledAt": "1791196320",
+          "settledBlock": "11848266",
+          "status": "Paid"
+        },
+        "observedBlock": "11848372"
+      }
+    },
+    {
+      "path": "/api/invoices/3",
+      "status": 200,
+      "bytes": 348,
+      "sha256": "cbb607bf8783bf7f1e104a74ee3ca47aabfedd906ba24245c3e31a41c7f9e406",
+      "body": {
+        "invoice": {
+          "amountWei": "100000000000000",
+          "client": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+          "createdAt": "1791196536",
+          "createdBlock": "11848283",
+          "id": "3",
+          "issuer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+          "reference": "SC6113-LIVE-CANCEL-001",
+          "settledAt": "1791196656",
+          "settledBlock": "11848293",
+          "status": "Cancelled"
+        },
+        "observedBlock": "11848372"
+      }
+    },
+    {
+      "path": "/api/invoices/2/history",
+      "status": 200,
+      "bytes": 417,
+      "sha256": "5bcecc7c390cf02179cc2389f561f338c27eb1aab545465781bf0480c84889d3",
+      "body": {
+        "items": [
+          {
+            "blockNumber": "11848236",
+            "event": "InvoiceCreated",
+            "invoiceId": "2",
+            "logIndex": 35,
+            "transactionHash": "0x8945bcc333c66b766ab1244728016e23ddfe0b6bacae5de618e66322bbdcaff7",
+            "transactionIndex": 13
+          },
+          {
+            "blockNumber": "11848266",
+            "event": "InvoicePaid",
+            "invoiceId": "2",
+            "logIndex": 23,
+            "transactionHash": "0x1fa4bc20a8f2fbfcea2c6f42ff65e2c8c1f843fe636cb1c4c67c4b8179eac9ad",
+            "transactionIndex": 5
+          }
+        ],
+        "observedBlock": "11848372"
+      }
+    },
+    {
+      "path": "/api/invoices/3/history",
+      "status": 200,
+      "bytes": 423,
+      "sha256": "aca421725205c612d386415edf346913952951d4899423257a9d5ff56a05925f",
+      "body": {
+        "items": [
+          {
+            "blockNumber": "11848283",
+            "event": "InvoiceCreated",
+            "invoiceId": "3",
+            "logIndex": 36,
+            "transactionHash": "0x09525df5e350d98abbf288e1150cce3f6dc971d4d5ec559ffbb857aa5ae66509",
+            "transactionIndex": 13
+          },
+          {
+            "blockNumber": "11848293",
+            "event": "InvoiceCancelled",
+            "invoiceId": "3",
+            "logIndex": 59,
+            "transactionHash": "0x57c539676f3c18b31e0b95555873501c85bab2ae404685b1949191abc6cfb1b1",
+            "transactionIndex": 16
+          }
+        ],
+        "observedBlock": "11848372"
+      }
+    },
+    {
+      "path": "/static/app.js",
+      "status": 200,
+      "bytes": 43243,
+      "sha256": "4b9d3434e0a09a2ad83188a923cb7b2dd43c11740e4bd54a1c377254bab3cc20"
+    },
+    {
+      "path": "/static/app.css",
+      "status": 200,
+      "bytes": 11801,
+      "sha256": "71f7d57334abcc759f9c13451bebb037499975e49bb2884863532478af650fb0"
+    },
+    {
+      "path": "/static/vendor/ethers.min.js",
+      "status": 200,
+      "bytes": 522050,
+      "sha256": "b016b0c3898c78fd8156466eb1ff1f42c9df951c2f0d64c9bdf799fe745b0a6c"
+    }
+  ],
+  "versions": {
+    "python": "Python 3.12.14",
+    "node": "v24.19.0",
+    "pnpm": "11.19.0"
+  },
+  "completedAtUtc": "2026-10-05T10:54:40.787575+00:00"
+}

@@ -1,0 +1,29 @@
+{
+  "result": "Passed",
+  "commands": [
+    {
+      "script": "deployment-browser",
+      "exitCode": 0
+    },
+    {
+      "script": "wallet-connection-browser",
+      "exitCode": 0
+    },
+    {
+      "script": "wallet-account-details",
+      "exitCode": 0
+    },
+    {
+      "script": "wallet-connection-recovery",
+      "exitCode": 0
+    }
+  ],
+  "scope": "Existing optional helper and isolated injected-wallet tests; no personal wallet/public transaction.",
+  "recordedAtUtc": "2026-10-05T14:10:43.677007+00:00",
+  "counts": {
+    "deploymentHelper": 8,
+    "helperWalletConnection": 14,
+    "accountDetails": 6,
+    "walletConnectionRecovery": 9
+  }
+}

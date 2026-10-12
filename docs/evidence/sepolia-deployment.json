@@ -1,0 +1,41 @@
+{
+  "recordedAt": "2026-10-03T16:10:56.399815+00:00",
+  "chainId": 11155111,
+  "network": "Ethereum Sepolia",
+  "contractAddress": "0xF9c9cA735028b3C9787773383D1C6926B9312C0F",
+  "transactionHash": "0xb7c89b6523ce5e1b341e47ff141b0181064649b368c13fc3d248e922b696e59d",
+  "deployer": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+  "blockNumber": "11836730",
+  "blockHash": "0xd486009f108d96d5e5f95fc3131d47b6b96012c753a3dba76a38cd8dc8c6c6a2",
+  "gasUsed": "997830",
+  "confirmationsAtCheck": "7",
+  "compiler": "0.8.30+commit.73712a01.Emscripten.clang",
+  "compilerSettings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evmVersion": "paris",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode.object",
+          "evm.deployedBytecode.object",
+          "metadata"
+        ]
+      }
+    }
+  },
+  "sourceSha256": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b",
+  "runtimeSha256": "c6cef886809d3abf1714f012eb1837283f35264126f84774178a09ec92fbf983",
+  "invoiceCountAtCheck": "0",
+  "verification": {
+    "receiptSucceeded": true,
+    "creationCodeMatches": true,
+    "runtimeCodeMatches": true,
+    "canonicalBlockMatches": true,
+    "contractReadSucceeded": true
+  },
+  "scope": "Read-only RPC deployment verification. Wallet-extension interaction and the public application journey require separate evidence."
+}

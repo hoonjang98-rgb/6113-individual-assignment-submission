@@ -1,0 +1,18 @@
+{
+  "recordedAtUtc": "2026-10-05T14:05:16.016062+00:00",
+  "pdfSha256": "19d239002d2d604ce76c114edea0846fb1e8227b2b2d7ea457e070ab7c9b04e2",
+  "pages": 7,
+  "pageVisualReview": "All seven pages viewed again: legible text, no overlap or clipped report content, visible captions/references/page numbers. Page 6 is dense but stays above its footer.",
+  "allSevenRebuiltPagePixelsIdentical": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true
+  },
+  "screenshotReview": "All 28 originals decoded; all were viewed in five overview sheets. Detailed original result screenshots and seven PDF pages were reviewed; tall full-page images require zoom at full resolution. No visible keys/seeds found.",
+  "originalImagesPreserved": true,
+  "instructionDocx": "Complete OOXML text extracted (100 paragraphs; no extra header/footer/note/comment/media parts). Bundled LibreOffice is unavailable, so the DOCX itself was not locally rendered; the submitted PDF was fully rendered and inspected."
+}

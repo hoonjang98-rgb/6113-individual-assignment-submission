@@ -1,0 +1,40 @@
+{
+  "recordedAtUtc": "2026-10-05T13:58:00.663Z",
+  "result": "passed",
+  "checks": [
+    "Selecting an already-authorized second account clears a stale review without a transaction or permission request.",
+    "Explicit second-account preference survives reload while still authorized.",
+    "Authorized account order changes preserve the explicitly selected client.",
+    "Revocation while account selection is reading discards the late authorized snapshot and retains the valid account.",
+    "Cross-tab disconnect during a delayed selection clears the preference and ignores the late response across reload.",
+    "Second exposed account signs the exact local payment; requested from, transfer and Paid receipt/state agree.",
+    "Already-authorized invoice handoff changes role and restores the same Paid record without another permission prompt.",
+    "Removing selected wallet permission clears the preference and prevents later silent reselection.",
+    "Tampered stored preference cannot add or select an address outside current wallet authorization.",
+    "Permission loss during signer lookup cannot trigger an implicit reconnection or transaction.",
+    "Fresh authorization check blocks a revoked selected address immediately before wallet submission.",
+    "A network change without a provider event is blocked before any wallet submission.",
+    "The full-address account selector fits a 390px viewport.",
+    "Disconnect and reload remove the preference and account choices."
+  ],
+  "sourceHashes": {
+    "static/app.js": "4b9d3434e0a09a2ad83188a923cb7b2dd43c11740e4bd54a1c377254bab3cc20",
+    "static/app.css": "71f7d57334abcc759f9c13451bebb037499975e49bb2884863532478af650fb0",
+    "templates/index.html": "2f3721f1e56a917597405ed73a7d7ca0841b75cf7a7cdb7f4ed73ec5c399e751",
+    "tests/connected-accounts.mjs": "2d71f232376d676ea114f144e38c51563036b55adbd881b3b44ff9fb7b8611e6"
+  },
+  "environment": "Isolated headless Chrome with injected wallet, real disposable Anvil chain 31337 and Flask; not actual MetaMask or Sepolia.",
+  "permissionRequests": 0,
+  "localWalletTransactions": [
+    {
+      "chainId": "0x7a69",
+      "gas": "0x12c1c",
+      "value": "0x1",
+      "from": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+      "to": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+      "data": "0xac60a6cd0000000000000000000000000000000000000000000000000000000000000001"
+    }
+  ],
+  "publicTransactions": 0,
+  "pageErrors": []
+}

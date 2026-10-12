@@ -1,0 +1,24 @@
+{
+  "recordedAtUtc": "2026-10-05T14:08:57.877Z",
+  "result": "Passed within the stated read-only scope",
+  "origin": "https://freelancepay-059m.onrender.com",
+  "browser": "User-authorized assessment Chrome",
+  "observations": [
+    "Issuer restored with both authorized account options and existing balance",
+    "Paid #2, 0.0001 ETH, creation/payment blocks and transaction links",
+    "Selecting the already-authorized client restores its existing balance and three received invoices",
+    "Cancelled #3 with creation/cancellation blocks and no pay/cancel actions",
+    "Reload retains the authorized client; choosing Sent to you reconstructs Paid/Cancelled records"
+  ],
+  "newHoonPermissions": 0,
+  "newTransactions": 0,
+  "independentIabObservation": "Disconnected initial page and pending connection guidance seen. Connect was clicked once; no approval was supplied. The temporary tab was closed. Actual no-provider behavior is covered by isolated fixtures, not claimed from IAB.",
+  "localGuideObservation": "Browser tool rejects file:// navigation; direct local-file browser rendering unverified, no workaround attempted.",
+  "temporaryTabsClosed": true,
+  "evidence": [
+    "examiner-paid-dom.txt",
+    "examiner-cancelled-dom.txt",
+    "examiner-reload-dom.txt",
+    "examiner-explorer-links.json"
+  ]
+}

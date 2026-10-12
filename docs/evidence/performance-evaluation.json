@@ -1,0 +1,732 @@
+{
+  "recordedAtUtc": "2026-10-03T18:22:51.600004+00:00",
+  "result": "Passed",
+  "sourceSha256": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b",
+  "localChainId": 31337,
+  "localDeploymentGas": "997830",
+  "localInvoiceAmountWei": "100000000000000",
+  "localReferences": "Nine printable ASCII characters: EVAL-P-01 and EVAL-C-01 through 05. The first creation initializes both role lists; later creations have different storage costs.",
+  "localTransactionTimingScope": "perf_counter from unlocked local-account transact (including its RPC preflight) through receipt retrieval on an immediately mining local EVM. No wallet approval latency, public block-wait or production confirmation claim.",
+  "localTransactions": [
+    {
+      "action": "create",
+      "invoiceId": "1",
+      "hash": "0x6296d9a17bd3b069c1b3a5195ad47f19c79ff630e7e2fa16351bb0a557f423d4",
+      "block": "2",
+      "gasUsed": "255973",
+      "effectiveGasPriceWei": "1883315250",
+      "sendToReceiptMs": 8.882
+    },
+    {
+      "action": "pay",
+      "invoiceId": "1",
+      "hash": "0x782664198a71ad42ca2e8b0b6390cfd2312652f43d2c8ed70d803e92df9542e8",
+      "block": "3",
+      "gasUsed": "71838",
+      "effectiveGasPriceWei": "1774785051",
+      "sendToReceiptMs": 11.479
+    },
+    {
+      "action": "create",
+      "invoiceId": "2",
+      "hash": "0xc8cf004d78c376f6800335caa666d5f00f76a7cbd89d2d95db150774b7ec5cd2",
+      "block": "4",
+      "gasUsed": "204673",
+      "effectiveGasPriceWei": "1678400745",
+      "sendToReceiptMs": 9.668
+    },
+    {
+      "action": "cancel",
+      "invoiceId": "2",
+      "hash": "0x4897eeaad499c9730c7075129d841927506955eed53b91983cd0fc57f56a1eb1",
+      "block": "5",
+      "gasUsed": "57196",
+      "effectiveGasPriceWei": "1594757738",
+      "sendToReceiptMs": 11.548
+    },
+    {
+      "action": "create",
+      "invoiceId": "3",
+      "hash": "0xc185f484c2db435b8db5a1f480db6c7376fd95ebfcbd502c5549c2801681f9b1",
+      "block": "6",
+      "gasUsed": "204673",
+      "effectiveGasPriceWei": "1520696503",
+      "sendToReceiptMs": 8.987
+    },
+    {
+      "action": "pay",
+      "invoiceId": "3",
+      "hash": "0x7394e786e9a3808cd4e3328b9d0b4232797e55604f59e14eabf61a0ac0e61c4b",
+      "block": "7",
+      "gasUsed": "71838",
+      "effectiveGasPriceWei": "1456497545",
+      "sendToReceiptMs": 9.964
+    },
+    {
+      "action": "create",
+      "invoiceId": "4",
+      "hash": "0x0051731b1c69a4eae169fddd981e65ed5a61e0f18ddd539e342525d6354e9048",
+      "block": "8",
+      "gasUsed": "204673",
+      "effectiveGasPriceWei": "1399708635",
+      "sendToReceiptMs": 10.035
+    },
+    {
+      "action": "cancel",
+      "invoiceId": "4",
+      "hash": "0x3034b6002ec53a8dee9894f033aa895cb5e3f9706e9cb2278228e81d8809f6a7",
+      "block": "9",
+      "gasUsed": "57196",
+      "effectiveGasPriceWei": "1350426803",
+      "sendToReceiptMs": 8.833
+    },
+    {
+      "action": "create",
+      "invoiceId": "5",
+      "hash": "0x5d675c54494ef917f5d6dcf5e00f3d938d90e3038ff9637cf52170f43ca41bb8",
+      "block": "10",
+      "gasUsed": "204673",
+      "effectiveGasPriceWei": "1306790478",
+      "sendToReceiptMs": 8.529
+    },
+    {
+      "action": "pay",
+      "invoiceId": "5",
+      "hash": "0xf300ab0cc96c64a051a02aea536883a761f1bb24b2ee4f1079708902a8d8e23b",
+      "block": "11",
+      "gasUsed": "71838",
+      "effectiveGasPriceWei": "1268964933",
+      "sendToReceiptMs": 9.611
+    },
+    {
+      "action": "create",
+      "invoiceId": "6",
+      "hash": "0xf87be70a322f939f3b59e02f65d879fe0e53b0c84b1c210add33acc08c07fceb",
+      "block": "12",
+      "gasUsed": "204673",
+      "effectiveGasPriceWei": "1235505333",
+      "sendToReceiptMs": 9.929
+    },
+    {
+      "action": "cancel",
+      "invoiceId": "6",
+      "hash": "0x1fc2ca28bbb6c92001ec3cbea09a4681d116c924b424eecdab8fa82413f87100",
+      "block": "13",
+      "gasUsed": "57196",
+      "effectiveGasPriceWei": "1206468847",
+      "sendToReceiptMs": 8.788
+    },
+    {
+      "action": "create",
+      "invoiceId": "7",
+      "hash": "0x9d7632d4b4f51eb77de5933ccba368ea043c44e9471ab27bc73ced5a3458a669",
+      "block": "14",
+      "gasUsed": "204673",
+      "effectiveGasPriceWei": "1180758652",
+      "sendToReceiptMs": 9.237
+    },
+    {
+      "action": "pay",
+      "invoiceId": "7",
+      "hash": "0x6138d46d5798ec1eb25d92db0e09b8279fd25044a573ddc67d0a634ece5d426d",
+      "block": "15",
+      "gasUsed": "71838",
+      "effectiveGasPriceWei": "1158472124",
+      "sendToReceiptMs": 10.527
+    },
+    {
+      "action": "create",
+      "invoiceId": "8",
+      "hash": "0x3b074bce7a5280cb6d7d4d231564023074ea226dab0b2ec5035808fad6eb6c98",
+      "block": "16",
+      "gasUsed": "204673",
+      "effectiveGasPriceWei": "1138757978",
+      "sendToReceiptMs": 10.033
+    },
+    {
+      "action": "cancel",
+      "invoiceId": "8",
+      "hash": "0xd66c6983eddef62c2759043dc7a933e53740cdc6e9a6e08289ea1a8a494674ad",
+      "block": "17",
+      "gasUsed": "57196",
+      "effectiveGasPriceWei": "1121649898",
+      "sendToReceiptMs": 10.033
+    },
+    {
+      "action": "create",
+      "invoiceId": "9",
+      "hash": "0x3654c7a066968aab2720fb6eef55471400468817a740a92662197266fb415f22",
+      "block": "18",
+      "gasUsed": "204673",
+      "effectiveGasPriceWei": "1106501644",
+      "sendToReceiptMs": 10.991
+    },
+    {
+      "action": "pay",
+      "invoiceId": "9",
+      "hash": "0x2ad0cbe420a57ee77774993e6e282da3771e2720330e9cec323cae5b491b767b",
+      "block": "19",
+      "gasUsed": "71838",
+      "effectiveGasPriceWei": "1093370589",
+      "sendToReceiptMs": 9.626
+    },
+    {
+      "action": "create",
+      "invoiceId": "10",
+      "hash": "0xa245b982b131d65a2796972e73ad2454a13792415bf7ccf301156a9e53be6ea6",
+      "block": "20",
+      "gasUsed": "204673",
+      "effectiveGasPriceWei": "1081755162",
+      "sendToReceiptMs": 8.441
+    },
+    {
+      "action": "cancel",
+      "invoiceId": "10",
+      "hash": "0xafdb4591ff10c4edeefe7fc363ce5644a473e133069e8a6f6443c6025bde8b36",
+      "block": "21",
+      "gasUsed": "57196",
+      "effectiveGasPriceWei": "1071675210",
+      "sendToReceiptMs": 9.009
+    }
+  ],
+  "localTransactionSummary": [
+    {
+      "action": "create",
+      "samples": 10,
+      "gasMin": 204673,
+      "gasMedian": 204673.0,
+      "gasMax": 255973,
+      "sendToReceiptMedianMs": 9.4525,
+      "sendToReceiptMinMs": 8.441,
+      "sendToReceiptMaxMs": 10.991
+    },
+    {
+      "action": "pay",
+      "samples": 5,
+      "gasMin": 71838,
+      "gasMedian": 71838,
+      "gasMax": 71838,
+      "sendToReceiptMedianMs": 9.964,
+      "sendToReceiptMinMs": 9.611,
+      "sendToReceiptMaxMs": 11.479
+    },
+    {
+      "action": "cancel",
+      "samples": 5,
+      "gasMin": 57196,
+      "gasMedian": 57196,
+      "gasMax": 57196,
+      "sendToReceiptMedianMs": 9.009,
+      "sendToReceiptMinMs": 8.788,
+      "sendToReceiptMaxMs": 11.548
+    }
+  ],
+  "localHttp": {
+    "environment": "Isolated local threaded Werkzeug HTTP server, Flask and immediately mined Anvil. Role pages contain 10 records; limit is 20.",
+    "method": "Five sequential complete HTTP GET requests per route, including JSON body reading. perf_counter elapsed time; no excluded warm-up, concurrency or capacity claim.",
+    "results": [
+      {
+        "route": "config",
+        "path": "/api/config",
+        "sampleCount": 5,
+        "medianMs": 16.579,
+        "minMs": 2.793,
+        "maxMs": 28.564,
+        "samples": [
+          {
+            "elapsedMs": 28.564,
+            "observedBlock": null,
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 2.793,
+            "observedBlock": null,
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 13.822,
+            "observedBlock": null,
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 16.579,
+            "observedBlock": null,
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 17.158,
+            "observedBlock": null,
+            "itemCount": null
+          }
+        ]
+      },
+      {
+        "route": "health",
+        "path": "/api/health",
+        "sampleCount": 5,
+        "medianMs": 31.139,
+        "minMs": 4.776,
+        "maxMs": 35.747,
+        "samples": [
+          {
+            "elapsedMs": 35.747,
+            "observedBlock": "21",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 31.139,
+            "observedBlock": "21",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 33.941,
+            "observedBlock": "21",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 16.864,
+            "observedBlock": "21",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 4.776,
+            "observedBlock": "21",
+            "itemCount": null
+          }
+        ]
+      },
+      {
+        "route": "invoice",
+        "path": "/api/invoices/1",
+        "sampleCount": 5,
+        "medianMs": 34.38,
+        "minMs": 30.471,
+        "maxMs": 35.883,
+        "samples": [
+          {
+            "elapsedMs": 35.883,
+            "observedBlock": "21",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 34.38,
+            "observedBlock": "21",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 30.471,
+            "observedBlock": "21",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 35.062,
+            "observedBlock": "21",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 33.452,
+            "observedBlock": "21",
+            "itemCount": null
+          }
+        ]
+      },
+      {
+        "route": "history",
+        "path": "/api/invoices/1/history",
+        "sampleCount": 5,
+        "medianMs": 16.672,
+        "minMs": 14.899,
+        "maxMs": 51.992,
+        "samples": [
+          {
+            "elapsedMs": 16.672,
+            "observedBlock": "21",
+            "itemCount": 2
+          },
+          {
+            "elapsedMs": 14.899,
+            "observedBlock": "21",
+            "itemCount": 2
+          },
+          {
+            "elapsedMs": 15.65,
+            "observedBlock": "21",
+            "itemCount": 2
+          },
+          {
+            "elapsedMs": 38.833,
+            "observedBlock": "21",
+            "itemCount": 2
+          },
+          {
+            "elapsedMs": 51.992,
+            "observedBlock": "21",
+            "itemCount": 2
+          }
+        ]
+      },
+      {
+        "route": "issued",
+        "path": "/api/invoices?address=0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266&role=issued&limit=20",
+        "sampleCount": 5,
+        "medianMs": 65.826,
+        "minMs": 43.124,
+        "maxMs": 69.274,
+        "samples": [
+          {
+            "elapsedMs": 43.124,
+            "observedBlock": "21",
+            "itemCount": 10
+          },
+          {
+            "elapsedMs": 65.826,
+            "observedBlock": "21",
+            "itemCount": 10
+          },
+          {
+            "elapsedMs": 65.132,
+            "observedBlock": "21",
+            "itemCount": 10
+          },
+          {
+            "elapsedMs": 66.144,
+            "observedBlock": "21",
+            "itemCount": 10
+          },
+          {
+            "elapsedMs": 69.274,
+            "observedBlock": "21",
+            "itemCount": 10
+          }
+        ]
+      },
+      {
+        "route": "received",
+        "path": "/api/invoices?address=0x70997970C51812dc3A010C7d01b50e0d17dc79C8&role=received&limit=20",
+        "sampleCount": 5,
+        "medianMs": 63.302,
+        "minMs": 40.595,
+        "maxMs": 67.832,
+        "samples": [
+          {
+            "elapsedMs": 63.302,
+            "observedBlock": "21",
+            "itemCount": 10
+          },
+          {
+            "elapsedMs": 67.537,
+            "observedBlock": "21",
+            "itemCount": 10
+          },
+          {
+            "elapsedMs": 48.212,
+            "observedBlock": "21",
+            "itemCount": 10
+          },
+          {
+            "elapsedMs": 67.832,
+            "observedBlock": "21",
+            "itemCount": 10
+          },
+          {
+            "elapsedMs": 40.595,
+            "observedBlock": "21",
+            "itemCount": 10
+          }
+        ]
+      },
+      {
+        "route": "transaction",
+        "path": "/api/transactions/0x782664198a71ad42ca2e8b0b6390cfd2312652f43d2c8ed70d803e92df9542e8",
+        "sampleCount": 5,
+        "medianMs": 8.751,
+        "minMs": 7.584,
+        "maxMs": 9.304,
+        "samples": [
+          {
+            "elapsedMs": 8.751,
+            "observedBlock": "21",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 7.584,
+            "observedBlock": "21",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 9.23,
+            "observedBlock": "21",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 7.61,
+            "observedBlock": "21",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 9.304,
+            "observedBlock": "21",
+            "itemCount": null
+          }
+        ]
+      }
+    ]
+  },
+  "sepoliaBackedHttp": {
+    "environment": "Existing local Flask HTTP server using public Sepolia RPC. Role pages contain invoice #1. This is not Render or an Internet-to-Render measurement.",
+    "method": "Five sequential complete HTTP GET requests per route, including JSON body reading. perf_counter elapsed time; no excluded warm-up, concurrency or capacity claim.",
+    "results": [
+      {
+        "route": "config",
+        "path": "/api/config",
+        "sampleCount": 5,
+        "medianMs": 14.34,
+        "minMs": 1.825,
+        "maxMs": 15.239,
+        "samples": [
+          {
+            "elapsedMs": 14.916,
+            "observedBlock": null,
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 15.239,
+            "observedBlock": null,
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 1.825,
+            "observedBlock": null,
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 14.34,
+            "observedBlock": null,
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 2.237,
+            "observedBlock": null,
+            "itemCount": null
+          }
+        ]
+      },
+      {
+        "route": "health",
+        "path": "/api/health",
+        "sampleCount": 5,
+        "medianMs": 655.085,
+        "minMs": 621.507,
+        "maxMs": 681.816,
+        "samples": [
+          {
+            "elapsedMs": 655.085,
+            "observedBlock": "11837340",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 674.865,
+            "observedBlock": "11837340",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 648.924,
+            "observedBlock": "11837340",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 681.816,
+            "observedBlock": "11837340",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 621.507,
+            "observedBlock": "11837340",
+            "itemCount": null
+          }
+        ]
+      },
+      {
+        "route": "invoice",
+        "path": "/api/invoices/1",
+        "sampleCount": 5,
+        "medianMs": 1885.792,
+        "minMs": 1819.159,
+        "maxMs": 1957.683,
+        "samples": [
+          {
+            "elapsedMs": 1885.792,
+            "observedBlock": "11837340",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 1819.159,
+            "observedBlock": "11837340",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 1927.864,
+            "observedBlock": "11837340",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 1957.683,
+            "observedBlock": "11837341",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 1826.349,
+            "observedBlock": "11837341",
+            "itemCount": null
+          }
+        ]
+      },
+      {
+        "route": "history",
+        "path": "/api/invoices/1/history",
+        "sampleCount": 5,
+        "medianMs": 2306.59,
+        "minMs": 2224.514,
+        "maxMs": 2355.857,
+        "samples": [
+          {
+            "elapsedMs": 2224.514,
+            "observedBlock": "11837341",
+            "itemCount": 2
+          },
+          {
+            "elapsedMs": 2306.59,
+            "observedBlock": "11837341",
+            "itemCount": 2
+          },
+          {
+            "elapsedMs": 2355.857,
+            "observedBlock": "11837341",
+            "itemCount": 2
+          },
+          {
+            "elapsedMs": 2329.181,
+            "observedBlock": "11837341",
+            "itemCount": 2
+          },
+          {
+            "elapsedMs": 2262.549,
+            "observedBlock": "11837342",
+            "itemCount": 2
+          }
+        ]
+      },
+      {
+        "route": "issued",
+        "path": "/api/invoices?address=0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f&role=issued&limit=20",
+        "sampleCount": 5,
+        "medianMs": 1790.423,
+        "minMs": 1737.433,
+        "maxMs": 2027.08,
+        "samples": [
+          {
+            "elapsedMs": 1783.603,
+            "observedBlock": "11837342",
+            "itemCount": 1
+          },
+          {
+            "elapsedMs": 1790.423,
+            "observedBlock": "11837342",
+            "itemCount": 1
+          },
+          {
+            "elapsedMs": 1737.433,
+            "observedBlock": "11837342",
+            "itemCount": 1
+          },
+          {
+            "elapsedMs": 1845.239,
+            "observedBlock": "11837342",
+            "itemCount": 1
+          },
+          {
+            "elapsedMs": 2027.08,
+            "observedBlock": "11837342",
+            "itemCount": 1
+          }
+        ]
+      },
+      {
+        "route": "received",
+        "path": "/api/invoices?address=0xB2914BC24584098BB6108e3B72F96109E9bCcc67&role=received&limit=20",
+        "sampleCount": 5,
+        "medianMs": 1840.328,
+        "minMs": 1742.955,
+        "maxMs": 2024.548,
+        "samples": [
+          {
+            "elapsedMs": 1840.328,
+            "observedBlock": "11837343",
+            "itemCount": 1
+          },
+          {
+            "elapsedMs": 1742.955,
+            "observedBlock": "11837343",
+            "itemCount": 1
+          },
+          {
+            "elapsedMs": 2024.548,
+            "observedBlock": "11837343",
+            "itemCount": 1
+          },
+          {
+            "elapsedMs": 1970.671,
+            "observedBlock": "11837343",
+            "itemCount": 1
+          },
+          {
+            "elapsedMs": 1827.874,
+            "observedBlock": "11837343",
+            "itemCount": 1
+          }
+        ]
+      },
+      {
+        "route": "transaction",
+        "path": "/api/transactions/0x893f17ebe18ef9360d13e7b4bc91235f9f075b7c19d83a783ac0bfa3cde0921f",
+        "sampleCount": 5,
+        "medianMs": 1097.551,
+        "minMs": 1067.845,
+        "maxMs": 1244.894,
+        "samples": [
+          {
+            "elapsedMs": 1097.551,
+            "observedBlock": "11837343",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 1071.195,
+            "observedBlock": "11837343",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 1067.845,
+            "observedBlock": "11837343",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 1244.894,
+            "observedBlock": "11837344",
+            "itemCount": null
+          },
+          {
+            "elapsedMs": 1137.382,
+            "observedBlock": "11837344",
+            "itemCount": null
+          }
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "Five sequential HTTP samples per route are a small descriptive sample, not a load benchmark.",
+    "Contract gas depends on storage state, reference/value and execution conditions; local and public results are distinct.",
+    "The public creation/payment confirmation duration was not measured and cannot be inferred from invoice timestamps.",
+    "No public transaction was signed or broadcast; all new writes use ephemeral local Anvil test accounts."
+  ]
+}

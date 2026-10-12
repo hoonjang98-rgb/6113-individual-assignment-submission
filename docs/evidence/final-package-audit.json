@@ -1,0 +1,53 @@
+{
+  "recordedAtUtc": "2026-10-05T10:57:09.087467+00:00",
+  "status": "Passed",
+  "submissionReady": true,
+  "universityUploaded": false,
+  "traceability": {
+    "requirements": 18,
+    "learningObjectives": 5,
+    "verificationRoutes": 22,
+    "rubricPointsMapped": 100,
+    "predictedGrade": null
+  },
+  "cleanReproduction": "docs/evidence/final-package-reproduction.json",
+  "testCounts": {
+    "contract": 37,
+    "api": 32,
+    "browser": 31,
+    "connected-account": 14,
+    "input-boundary": 22
+  },
+  "testedExecutableFilesUnchanged": 46,
+  "deployedFilesMatched": 17,
+  "documentationOnlyDifferenceFromDeployedAllowlist": "docs/RENDER_DEPLOYMENT.md",
+  "allSevenReportRendersIdentical": true,
+  "payloadFiles": 133,
+  "textFilesScanned": 109,
+  "secretPatternsChecked": [
+    "private-key-material",
+    "github-token",
+    "cloud-access-key",
+    "bearer-credential",
+    "literal-wallet-key",
+    "url-password"
+  ],
+  "secretPatternFindings": [],
+  "screenshotReview": "All selected actual images inspected; no keys, seeds or private configuration; incomplete transient cancellation-review image excluded.",
+  "reportEvidenceLocatorsPresent": true,
+  "captionImagesPresent": true,
+  "forbiddenFilesExcluded": [
+    ".env",
+    "private keys/seeds",
+    "installed environments",
+    "caches",
+    ".git",
+    "other coursework",
+    "database",
+    "demo/video"
+  ],
+  "networkScope": "Actual Sepolia only. W05/W06 excluded by user scope; unperformed/unverified, not passed. Simulated guard checks separate.",
+  "zipHashPolicy": "Adjacent file; manifest and payload hashes inside ZIP. No self-reference.",
+  "archiveReadbackAndFreshExtraction": "All members, bytes, SHA256SUMS and manifest checked by release procedure before delivery.",
+  "review": "Owner review; no new independent review claimed."
+}

@@ -1,0 +1,379 @@
+{
+  "recordedAtUtc": "2026-10-03T19:40:04.732121+00:00",
+  "status": "Passed",
+  "runDirectory": ".tmp\\clean-development-preflight\\20261003T194004732121Z",
+  "scope": "Fresh Windows development-source preparation. Not the final package, actual MetaMask, Linux Gunicorn, public signing or Render acceptance.",
+  "installationPolicy": "Fresh venv and run-owned pip/pnpm caches/store; no project .venv or node_modules copied. Bundled Python/Node/pnpm are prerequisite executables only.",
+  "commands": [
+    {
+      "label": "Create fresh Python environment",
+      "argv": [
+        "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "venv",
+        ".venv"
+      ],
+      "cwd": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\source",
+      "exitCode": 0,
+      "elapsedSeconds": 2.953,
+      "log": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\create-fresh-python-environment.log"
+    },
+    {
+      "label": "Install Python development requirements",
+      "argv": [
+        "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--cache-dir",
+        "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\pip-cache",
+        "-r",
+        "requirements-dev.txt"
+      ],
+      "cwd": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\source",
+      "exitCode": 0,
+      "elapsedSeconds": 41.735,
+      "log": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\install-python-development-requirements.log"
+    },
+    {
+      "label": "Python dependency consistency",
+      "argv": [
+        "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "cwd": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\source",
+      "exitCode": 0,
+      "elapsedSeconds": 0.547,
+      "log": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\python-dependency-consistency.log"
+    },
+    {
+      "label": "Check pinned pnpm",
+      "argv": [
+        "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\node_modules\\pnpm\\bin\\pnpm.mjs",
+        "--version"
+      ],
+      "cwd": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\source",
+      "exitCode": 0,
+      "elapsedSeconds": 1.296,
+      "log": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\check-pinned-pnpm.log"
+    },
+    {
+      "label": "Install locked Node development dependencies",
+      "argv": [
+        "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\node_modules\\pnpm\\bin\\pnpm.mjs",
+        "install",
+        "--frozen-lockfile",
+        "--ignore-scripts",
+        "--store-dir",
+        "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\pnpm-store"
+      ],
+      "cwd": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\source",
+      "exitCode": 0,
+      "elapsedSeconds": 10.531,
+      "log": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\install-locked-node-development-dependencies.log"
+    },
+    {
+      "label": "Verify isolated Node resolution",
+      "argv": [
+        "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "-e",
+        "const fs=require('node:fs'); const p=require('node:path'); const root=fs.realpathSync('node_modules'); const packages=['solc','ethers','playwright','@foundry-rs/anvil']; const resolved=Object.fromEntries(packages.map(n=>[n,fs.realpathSync(require.resolve(n))])); for(const s of Object.values(resolved)) if(!s.startsWith(root+p.sep)) throw Error('Dependency outside isolated node_modules: '+s); console.log(JSON.stringify({root,resolved,node:process.version}));"
+      ],
+      "cwd": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\source",
+      "exitCode": 1,
+      "elapsedSeconds": 0.828,
+      "log": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\verify-isolated-node-resolution.log"
+    },
+    {
+      "label": "Verify supported isolated Node resolution",
+      "argv": [
+        "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "-e",
+        "const fs=require('node:fs'); const p=require('node:path'); const root=fs.realpathSync('node_modules'); const requests=['solc','ethers','playwright','@foundry-rs/anvil/package.json']; const resolved=Object.fromEntries(requests.map(n=>[n,fs.realpathSync(require.resolve(n))])); for(const s of Object.values(resolved)) if(!s.startsWith(root+p.sep)) throw Error('Dependency outside isolated node_modules: '+s); console.log(JSON.stringify({root,resolved,node:process.version}));"
+      ],
+      "cwd": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\source",
+      "exitCode": 0,
+      "elapsedSeconds": 0.86,
+      "log": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\verify-supported-isolated-node-resolution.log"
+    },
+    {
+      "label": "Verify isolated native Anvil path",
+      "argv": [
+        "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "tools/anvil-path.mjs"
+      ],
+      "cwd": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\source",
+      "exitCode": 0,
+      "elapsedSeconds": 0.844,
+      "log": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\verify-isolated-native-anvil-path.log"
+    },
+    {
+      "label": "Verify isolated Python resolution",
+      "argv": [
+        "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\.venv\\Scripts\\python.exe",
+        "-c",
+        "import json,sys; from pathlib import Path; import flask,web3,pytest; root=Path(sys.prefix).resolve(); modules={m.__name__:str(Path(m.__file__).resolve()) for m in [flask,web3,pytest]}; assert all(Path(p).is_relative_to(root) for p in modules.values()); print(json.dumps({'prefix':str(root),'basePrefix':sys.base_prefix,'version':sys.version,'modules':modules,'path':sys.path}))"
+      ],
+      "cwd": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\source",
+      "exitCode": 0,
+      "elapsedSeconds": 3.39,
+      "log": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\verify-isolated-python-resolution.log"
+    },
+    {
+      "label": "Rebuild contract ABI and vendor outputs",
+      "argv": [
+        "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "tools/build.mjs"
+      ],
+      "cwd": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\source",
+      "exitCode": 0,
+      "elapsedSeconds": 1.75,
+      "log": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\rebuild-contract-abi-and-vendor-outputs.log"
+    },
+    {
+      "label": "Run isolated contract tests",
+      "argv": [
+        "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/test_contract.py",
+        "-q",
+        "--junitxml=docs/evidence/clean-contract-tests.xml"
+      ],
+      "cwd": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\source",
+      "exitCode": 0,
+      "elapsedSeconds": 7.938,
+      "log": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\run-isolated-contract-tests.log"
+    },
+    {
+      "label": "Run isolated api tests",
+      "argv": [
+        "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/test_api.py",
+        "-q",
+        "--junitxml=docs/evidence/clean-api-tests.xml"
+      ],
+      "cwd": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\source",
+      "exitCode": 0,
+      "elapsedSeconds": 3.531,
+      "log": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\run-isolated-api-tests.log"
+    },
+    {
+      "label": "Run isolated fixture browser journey",
+      "argv": [
+        "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "tests/browser.mjs"
+      ],
+      "cwd": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\source",
+      "exitCode": 0,
+      "elapsedSeconds": 13.156,
+      "log": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\run-isolated-fixture-browser-journey.log"
+    }
+  ],
+  "inputs": {
+    ".env.example": "d5c09ee55e3517478b41fc38cd9df696371340aa4c784b61127a89a20cd6aa80",
+    ".gitignore": "1cf220a492501d31b200654260d6b8fe0e4a5c76fc96d7a720cb5b43fc33f18b",
+    ".python-version": "f50159fad3f4319868eb38717b91d55843c41e9803014c8de05e116a6d0bcfdc",
+    "abi/FreelancePay.json": "9f3dc298157bb5fb7368d0501568ff25ad16ddb5249e33b3f8afb3601197260c",
+    "app.py": "90a1a365db9fe4840a95e1bb89123ba45e0425ad8c463a2459d62048f9f20f4f",
+    "build/FreelancePay.json": "29365bd2e22dee37aeeee82f8a85459397b3c3cebbc139cb5221c40a75ee4206",
+    "build/TestRecipient.json": "b7a0f14f3c76630a81f471b78fca17fda197ee1c4413390dad636b0c54d88b61",
+    "chain_service.py": "27af7bc6147f1f18e77c9adf965617cc3275008e8b8b8007276480c872fbcc76",
+    "contracts/FreelancePay.sol": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b",
+    "docs/DELIVERABLES.md": "6e8abd00eb27a42224426b40464d8c68f211146decfe8c9daffca7ef8414ceac",
+    "docs/EVALUATION.md": "5be1ec4573dbfce1b9fdd5eb2b413ba0b2e9c8c9970016a23c71c7c24c38cf75",
+    "docs/evidence/sepolia-deployment.json": "90fb5cc198d4a14230317c7c46184c6c6e574daa29515fd34d981d64f24e390e",
+    "docs/EVIDENCE.md": "2aba9d7e4fd7eef762ca25ea06321ceae82387edebad67ff7a5d449cae6705c9",
+    "docs/GOAL_PROMPT.md": "0c9bf0403dbb2ced0e557c54aa667050eca1feeb03097d81140178ab60650b51",
+    "docs/MASTER_PLAN.md": "8e04c66084616cc2174180bbbd9a1ec62a7c9a73532a9a7df7c75ee60db8eceb",
+    "docs/PARALLEL_REVIEW.md": "e8f22a4af06fa629085ad858e91f15ec2c3b8ff708e9c1bd384e1989a3837172",
+    "docs/PHASE_5_6_EXECUTION_PLAN.md": "74a6377d7b30eedba977656a358aebb6390d385756a9ade65b5e9d57b55d6a77",
+    "docs/PHASE_7_EXECUTION_PLAN.md": "c4893dcc832bb2e1e80d508cfd20b92ba36b211be201dc7a37c6bcca0f6abfd6",
+    "docs/PHASE_8_EXECUTION_PLAN.md": "709e676de3821635c5456b4202bf156538cb00255ac6b42356827b552e49dced",
+    "docs/PHASE_9_PREPARATION_PLAN.md": "247cf679222058e508d1617c7673bebc09d4e3771023a55e17218fa4aaa667e3",
+    "docs/PRODUCT_SPEC.md": "c37f1a1b64eb1d2091dadf132e4356233a792789c148c41624b7037fce8c54c7",
+    "docs/PROGRESS.md": "77c774e0085252a3d8fa72f74ec47d0e2eb2c59e0f3efea2f4dfafd614932619",
+    "docs/REMAINING_WORK_PLAN.md": "71033194a6aa81650ebe5c9e4c0277c1467a088461dd927dd936d2eaa5ee293e",
+    "docs/RENDER_DEPLOYMENT.md": "a9b3d0c003566d9270ebdbedb28aeefe0b89cd1e4f89baae8b343a7688f71ebb",
+    "docs/REPORT_EVIDENCE_MAP.md": "6d41daab74d13e0142ca66db9988430267d5d0824074b5b6e30e673cdec10e41",
+    "docs/REPOSITORY_ISOLATION_PLAN.md": "dffab68201e25c6fd93f72eb7e27b97511c2c63e918a4453e2470ce5406a6eeb",
+    "docs/REQUIREMENTS.md": "52a90d15f53a903ee07b32673d528b5a3e9e7002199d305acdcba8d772e2142a",
+    "docs/SYSTEM_DESIGN.md": "63815dc8961b5066982cdb33eb6001638aa94d73413d0c192338fca8b433256c",
+    "docs/VERIFICATION.md": "2bcc783a2b52b9352a544ea1edd333f15e2f7ed37321ff252705ef603aed2510",
+    "docs/WALLET_WORKFLOW.md": "596435eedc8d7294b1f9d5d623e8ac75a386228b1e9773b5cfb4eb48a2ae79ed",
+    "gunicorn.conf.py": "dd80b328372d851a18da1561091178da12cb3747eb978a79719b5e2ce927fa32",
+    "package.json": "85122939e375d5d2fcdd002110c20ec3d207f664d387416da84d1a7968761b59",
+    "pnpm-lock.yaml": "b1932f1e2a952107b8122437507899ec726d24ee21c4418c029b06164097bc4d",
+    "README.md": "398f5fe82c08a7622213efff1366ea187992a11e40ed7bde2fe427bb0e7d712a",
+    "render.yaml": "09bb2c1047bcf3a9d1405a017766d769340dbae86055d88eba1942c021ce3e2c",
+    "requirements-dev.txt": "1438527233ce7beb1cdf4a046b8b5d38f140bd77217ef4df17d5592989d3ec15",
+    "requirements.txt": "d7ddce83b3a68c947c874c4ac6300f40a852e68a17a6c8d8202dfbf0c5ce0ea2",
+    "static/app.css": "82181c99f142c33441ce10da7b565742d2454883ed82612fa15ab81e55faad76",
+    "static/app.js": "af908e4651517be8976ca00f8f4ea0c16603f9009b6764b145833dd946c21339",
+    "static/vendor/ethers.LICENSE.md": "44eea86637405118248327fbe9d9fa95d04c7a57221c7e8c155f736db9f1b612",
+    "static/vendor/ethers.min.js": "b016b0c3898c78fd8156466eb1ff1f42c9df951c2f0d64c9bdf799fe745b0a6c",
+    "templates/index.html": "b8ef028d93d9e446d619af75acb2834708d59336d080f0c90b53bc99b90d6635",
+    "tests/browser.mjs": "ddf4ae1c6a67c96f7e043cd742fa8568822dda23348585644a50714735bcc176",
+    "tests/conftest.py": "82bf386e7c53effcc70cd576bd57f6a6136e206902acf7672e0ac7c74ad491a8",
+    "tests/contracts/Recipients.sol": "e3f13105f98bb95a83e7697296616fdb273614ef11065cc0b78d19024b192766",
+    "tests/deployment-browser.mjs": "0a65d2c90c56806a246437788834f890e51cb12a1fbc461fb89f53b857f353a2",
+    "tests/test_api.py": "d7fe4dd768833348bfc4703e8e4d460151d3eccb97c20310e237a924e48cbb2a",
+    "tests/test_connection_reporting.py": "3cd6d9f495fc9731a90d5514831be6358efcb51f7f3b5d0d4ad27eb3f779d623",
+    "tests/test_contract.py": "a58d01d2e51677f1a2fff6408a0d1bcdf1ce6fd9e2b183d0b99e5bd570bf66f8",
+    "tests/test_deployment_verification.py": "87ebfc7da8a5f61b162866cd8b0fb3cf35749de135ecaf41f89cae0fc6f31403",
+    "tests/wallet-connection-browser.mjs": "7aa4c23552bced30ad555eee5764d903f50ebec995329980a30d82baa51fe9b2",
+    "tests/wallet-connection-recovery.mjs": "4d4ba2132648d27baec3bca66716ff1d081c20287789f958dc9f37490aabe4ce",
+    "tools/anvil-path.mjs": "d0bf53c07541fe5bf82fa379ad6db658c0527adb806b2a3937e3b62cefd85079",
+    "tools/build.mjs": "2cf1af489a6267e2191e143d216551644c3611f99c38f294e54219aae7656268",
+    "tools/check-deploy-ui.mjs": "9cef21cdbee70374db644439bfe4a6e165ce53e4fc8d421f84deed09bfd3479d",
+    "tools/check-environment.mjs": "0d987726710f090a352f77b5b8a204080a2253813d9e5a1fae5f2ea1e0c1f269",
+    "tools/deploy/deploy.js": "100466d1709cec7e94e785980307b750792b647f10d1a09aa5f672bb4061fbf6",
+    "tools/deploy/index.html": "0d46c1ae0940baac8a714a948647328b8c7ea9ac9aff056236cf2cc4f61c1d77",
+    "tools/deploy_server.py": "e5db098e112bbf77341fa479f80b76b815e4da8ac91548da77eb366cc390f735",
+    "tools/evaluate.py": "51f7b151bcaa394380d674942748c27c5d4b1d4654cd651edfbf6f746b0cdc6f",
+    "tools/local-chain.mjs": "29ed4074275af00697d9a0eafcf15104ab3767f85c6cf93bd49025b4ff89d6f9",
+    "tools/prepare_render.py": "bc5a0081c8e39745ee4e11a17a70a191d9f92cb9963da48508556f3fa887f18a",
+    "tools/run-chain.mjs": "c76698de4ad0c1217b78bb8c5142437b956865b33ce09c70bea6631a15486c3e",
+    "tools/start-app.ps1": "9c0255a7447e2786f484a775298797617c748a2b9c35fefc76ab1e820918d885",
+    "tools/start-setup.ps1": "33c22f624e893c9add752c7b34148c3950328e0fb7c4e20f59f5610070889953",
+    "tools/verify_deployment.py": "08c98186d4e2968ea269ea82842441150b7f10f5f364d2798a280382b5964b43",
+    "wsgi.py": "fd2765a077cc83b8ec2c3daab9fb851d60cfffabdc499079189ed99d29872c7c"
+  },
+  "publicWrites": 0,
+  "pending": [
+    "Actual wallet recovery and Phase 8 closure",
+    "GitHub/Render publication and live verification",
+    "Final report, final-package reproduction and submission audit"
+  ],
+  "inputFileCount": 67,
+  "removedGeneratedOutputsBeforeBuild": [
+    "abi/FreelancePay.json",
+    "build/FreelancePay.json",
+    "build/TestRecipient.json",
+    "static/vendor/ethers.min.js",
+    "static/vendor/ethers.LICENSE.md"
+  ],
+  "pnpmVersion": "11.19.0",
+  "harnessCorrection": {
+    "originalError": "Verify isolated Node resolution failed: node:internal/modules/cjs/loader:1520\n  throw err;\n  ^\n\nError: Cannot find module '@foundry-rs/anvil'\nRequire stack:\n- <USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\[eval]\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1517:15)\n    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1122:12)\n    at require.resolve (node:internal/modules/helpers:171:31)\n    at [eval]:1:248\n    at Array.map (<anonymous>)\n    at [eval]:1:214\n    at runScriptInThisContext (node:internal/vm:219:10)\n    at node:internal/process/execution:451:12\n    at [eval]-wrapper:6:24 {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [\n    '<USER_HOME>\\\\OneDrive\\\\Desktop\\\\Documents\\\\ChatGPT\\\\dapp course\\\\freelancepay\\\\.tmp\\\\clean-development-preflight\\\\20261003T194004732121Z\\\\source\\\\[eval]'\n  ]\n}\n\nNode.js v24.19.0\n",
+    "reason": "The installed Anvil CLI package has no root module entry; the existing project resolves its package.json explicitly. Correct the temporary resolution checker to use that supported entry and verify the native executable separately. No project source change or dependency reinstall.",
+    "originalRecord": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\first-attempt-record.json"
+  },
+  "nodeResolution": {
+    "root": "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\node_modules",
+    "resolved": {
+      "solc": "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\node_modules\\.pnpm\\solc@0.8.30\\node_modules\\solc\\index.js",
+      "ethers": "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\node_modules\\.pnpm\\ethers@6.17.0\\node_modules\\ethers\\lib.commonjs\\index.js",
+      "playwright": "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\node_modules\\.pnpm\\playwright@1.62.1\\node_modules\\playwright\\index.js",
+      "@foundry-rs/anvil/package.json": "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\node_modules\\.pnpm\\@foundry-rs+anvil@1.7.1\\node_modules\\@foundry-rs\\anvil\\package.json"
+    },
+    "node": "v24.19.0"
+  },
+  "anvilExecutable": "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\node_modules\\.pnpm\\@foundry-rs+anvil-win32-amd64@1.7.1\\node_modules\\@foundry-rs\\anvil-win32-amd64\\bin\\anvil.exe",
+  "pythonResolution": {
+    "prefix": "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\.venv",
+    "basePrefix": "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python",
+    "version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "modules": {
+      "flask": "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\.venv\\Lib\\site-packages\\flask\\__init__.py",
+      "web3": "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\.venv\\Lib\\site-packages\\web3\\__init__.py",
+      "pytest": "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\.venv\\Lib\\site-packages\\pytest\\__init__.py"
+    },
+    "path": [
+      "",
+      "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python312.zip",
+      "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs",
+      "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib",
+      "<USER_HOME>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python",
+      "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\.venv",
+      "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\.venv\\Lib\\site-packages",
+      "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\.venv\\Lib\\site-packages\\win32",
+      "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\.venv\\Lib\\site-packages\\win32\\lib",
+      "<USER_HOME>\\OneDrive\\Desktop\\Documents\\ChatGPT\\dapp course\\freelancepay\\.tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\.venv\\Lib\\site-packages\\pythonwin"
+    ]
+  },
+  "rebuiltOutputs": {
+    "abi/FreelancePay.json": "9f3dc298157bb5fb7368d0501568ff25ad16ddb5249e33b3f8afb3601197260c",
+    "build/FreelancePay.json": "29365bd2e22dee37aeeee82f8a85459397b3c3cebbc139cb5221c40a75ee4206",
+    "build/TestRecipient.json": "b7a0f14f3c76630a81f471b78fca17fda197ee1c4413390dad636b0c54d88b61",
+    "static/vendor/ethers.min.js": "b016b0c3898c78fd8156466eb1ff1f42c9df951c2f0d64c9bdf799fe745b0a6c",
+    "static/vendor/ethers.LICENSE.md": "44eea86637405118248327fbe9d9fa95d04c7a57221c7e8c155f736db9f1b612"
+  },
+  "contractTests": {
+    "tests": 37,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "record": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\docs\\evidence\\clean-contract-tests.xml",
+    "sha256": "b0915c502f53942f5a54fd57f0c5ff2dc68f2ec6497d01dec5902eba9a80329d"
+  },
+  "apiTests": {
+    "tests": 28,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "record": ".tmp\\clean-development-preflight\\20261003T194004732121Z\\source\\docs\\evidence\\clean-api-tests.xml",
+    "sha256": "c902e038862380063b314655ce8e4ab9fc286ca9b82a3fadeec6c64e48a117be"
+  },
+  "browserResult": {
+    "recordedAt": "2026-10-03T19:43:02.787Z",
+    "result": "Passed",
+    "chainId": 31337,
+    "sourceSha256": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b",
+    "environment": "Isolated headless Chrome; injected EIP-1193/EIP-6963 test provider; real local Anvil EVM and Flask. Not real MetaMask or Sepolia.",
+    "checks": [
+      "Injected EIP-6963 test-provider connection and real Flask health",
+      "Account reselection uses wallet_requestPermissions; same-account, declined, pending and unsupported results are explicit and preserve the connection",
+      "Pending account selection disables conflicting controls, ignores duplicate clicks and never submits a transaction",
+      "Balance read failure preserves the wallet connection and explicit refresh visibly recovers",
+      "Review, exact one-wei invoice creation, receipt and state confirmation",
+      "Switch to client wallet selects received invoices and reopens the exact invoice without sending payment",
+      "Client account switch, exact payment, issuer balance increase, paid-state controls and real event history",
+      "390px viewport has no horizontal overflow",
+      "Switch to issuer wallet reopens the same Paid invoice in the issuer view",
+      "Wrong network disables writes and explicit switch recovers",
+      "UI rejects exponent, zero amount and self-client before wallet submission",
+      "Wallet rejection does not create an invoice or a false success",
+      "Public reference is text, issuer cancellation is confirmed, terminal controls removed",
+      "Reload restores an already-authorized wallet and Connected label without another account permission prompt",
+      "Disconnect revokes site permission, survives reload and preserves the submitted hash for explicit reconnect and recovery",
+      "Pending transaction survives reload and is confirmed from the receipt without resending",
+      "Network change immediately after wallet submission preserves the hash, original chain and backend-verified receipt",
+      "Unexpected wallet chain is rejected before submission even when no chainChanged event arrives",
+      "Restored wallet cannot hide RPC health failure; explicit successful refresh clears the error and restores controls without submitting a transaction",
+      "Account changes close stale creation and payment reviews without submitting an old action",
+      "Unsupported revocation leaves explicit local disconnection; late balance/account responses and reload cannot silently reconnect",
+      "Disconnect in another tab immediately clears this tab account and write controls",
+      "All three status filters use genuine local invoice states, preserve account total/page range and submit no transaction",
+      "Payment and cancellation details/activity use their on-chain creation/settlement times with an explicit time zone; the filter has a keyboard focus and scope label",
+      "Filtered empty later page retains its correct range and account total; pagination is disabled while loading and preserves the selected filter",
+      "Failed page clears obsolete counts and permits Previous recovery; role change resets filter and clears the old page",
+      "Account change resets the filter and discards a delayed previous-account list without restoring old Paid records",
+      "Status filters, honest pagination and activity times fit a 390px viewport without horizontal overflow",
+      "Genuinely underfunded local issuer receives amount-and-fee guidance with no hash, invoice or successful broadcast",
+      "Receipt API failure retains the mined transaction hash, blocks duplicate writes and recovers the same receipt without resending",
+      "No uncaught browser JavaScript errors"
+    ]
+  },
+  "originalInputsUnchanged": true,
+  "completedAtUtc": "2026-10-03T19:43:03.087701+00:00",
+  "durableResults": {
+    "docs/evidence/clean-development/clean-contract-tests.xml": "b0915c502f53942f5a54fd57f0c5ff2dc68f2ec6497d01dec5902eba9a80329d",
+    "docs/evidence/clean-development/clean-api-tests.xml": "c902e038862380063b314655ce8e4ab9fc286ca9b82a3fadeec6c64e48a117be",
+    "docs/evidence/clean-development/browser-tests.json": "e82776c4a071cb9ba577ad37426ab6098f0f0296a3d86683661df3e64d0ca6dd"
+  },
+  "immutableInputSnapshot": {
+    "path": ".tmp/clean-development-preflight/20261003T194004732121Z/development-preflight-inputs.zip",
+    "sha256": "993b7254f1a9f0b006753ce3ce5ba9b0f14dd6b331a8ba7d8575c528ee707815",
+    "fileCount": 67,
+    "scope": "Exact development-source inputs tested in this preflight, not the final submission archive."
+  },
+  "originalInputsUnchangedScope": "Verified at preflight completion before later progress documentation updates; immutable snapshot retains the actual tested inputs.",
+  "resultsPreservedAtUtc": "2026-10-03T19:46:33.352090+00:00"
+}

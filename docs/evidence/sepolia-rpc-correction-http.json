@@ -1,0 +1,60 @@
+{
+  "recordedAtUtc": "2026-10-05T10:12:01.144962+00:00",
+  "results": [
+    {
+      "path": "/api/health",
+      "status": 200,
+      "body": {
+        "chainId": "11155111",
+        "contractAddress": "0xF9c9cA735028b3C9787773383D1C6926B9312C0F",
+        "observedBlock": "11848170",
+        "status": "ready"
+      }
+    },
+    {
+      "path": "/api/invoices/1/history",
+      "status": 200,
+      "body": {
+        "items": [
+          {
+            "blockNumber": "11836826",
+            "event": "InvoiceCreated",
+            "invoiceId": "1",
+            "logIndex": 43,
+            "transactionHash": "0x6388e3e4c5cdab7e14fc0703b90583ddfcc394b334321798e8d535e51e82bcae",
+            "transactionIndex": 13
+          },
+          {
+            "blockNumber": "11837239",
+            "event": "InvoicePaid",
+            "invoiceId": "1",
+            "logIndex": 32,
+            "transactionHash": "0x893f17ebe18ef9360d13e7b4bc91235f9f075b7c19d83a783ac0bfa3cde0921f",
+            "transactionIndex": 25
+          }
+        ],
+        "observedBlock": "11848170"
+      }
+    },
+    {
+      "path": "/api/transactions/0x893f17ebe18ef9360d13e7b4bc91235f9f075b7c19d83a783ac0bfa3cde0921f",
+      "status": 200,
+      "body": {
+        "blockHash": "0x64b6db54ecdef31ebb97fccb2e6613c0358bbdfec5891bcd930e744cc4ce1023",
+        "blockNumber": "11837239",
+        "events": [
+          {
+            "event": "InvoicePaid",
+            "invoiceId": "1"
+          }
+        ],
+        "from": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+        "gasUsed": "74493",
+        "hash": "0x893f17ebe18ef9360d13e7b4bc91235f9f075b7c19d83a783ac0bfa3cde0921f",
+        "observedBlock": "11848171",
+        "status": "confirmed"
+      }
+    }
+  ],
+  "scope": "Actual HTTP after server-only RPC correction; no wallet transactions"
+}

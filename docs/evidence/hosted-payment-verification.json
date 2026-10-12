@@ -1,0 +1,31 @@
+{
+  "recordedAtUtc": "2026-10-05T10:33:29.119375+00:00",
+  "transactionHash": "0x1fa4bc20a8f2fbfcea2c6f42ff65e2c8c1f843fe636cb1c4c67c4b8179eac9ad",
+  "from": "0xB2914BC24584098BB6108e3B72F96109E9bCcc67",
+  "outerTo": "0xdb9B1e94B5b69Df7e401DDbedE43491141047dB3",
+  "outerValueWei": "0",
+  "receiptStatus": 1,
+  "blockNumber": 11848266,
+  "blockHash": "0x16d348d8f21a8196405f8dd7bf9b0856da92f4c9f23a67df757d818ac80acb87",
+  "gasUsed": 181047,
+  "effectiveGasPriceWei": "2596194706",
+  "feeWei": "470033262937182",
+  "invoiceId": 2,
+  "reference": "SC6113-LIVE-PAY-001",
+  "amountWei": "100000000000000",
+  "status": "Paid",
+  "balancesAtAdjacentBlocks": {
+    "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f": {
+      "before": "20112665104837539",
+      "after": "20212665104837539"
+    },
+    "0xB2914BC24584098BB6108e3B72F96109E9bCcc67": {
+      "before": "9715913978250528",
+      "after": "9145880715313346"
+    }
+  },
+  "issuerGainWei": "100000000000000",
+  "clientDebitWei": "570033262937182",
+  "exactTransferAndFeeVerified": true,
+  "newTransactionsFromThisVerification": 0
+}

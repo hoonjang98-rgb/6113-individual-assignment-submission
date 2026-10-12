@@ -1,0 +1,3 @@
+# Optional English report generation only; not an application/Render dependency.
+reportlab==4.4.9
+pypdf==6.19.0

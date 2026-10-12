@@ -1,0 +1,15 @@
+{
+  "hash": "0x8945bcc333c66b766ab1244728016e23ddfe0b6bacae5de618e66322bbdcaff7",
+  "from": "0xa91f0Fb5D5a7875C08C5C944fce96b2362095D8f",
+  "observedBlock": "11848246",
+  "status": "confirmed",
+  "blockNumber": "11848236",
+  "blockHash": "0x486580848b38499cb793f9badb45bc405f06545643053ecf7e537de312808fc4",
+  "gasUsed": "297326",
+  "events": [
+    {
+      "event": "InvoiceCreated",
+      "invoiceId": "2"
+    }
+  ]
+}

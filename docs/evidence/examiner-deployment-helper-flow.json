@@ -1,0 +1,17 @@
+{
+  "recordedAt": "2026-10-05T14:03:28.147Z",
+  "result": "Passed",
+  "publicNetwork": false,
+  "environment": "Disposable loopback Anvil configured with chain ID 11155111 solely to test the Sepolia-only helper. Injected test wallet; NOT public Sepolia or actual MetaMask.",
+  "sourceSha256": "90bd065854237e43d92a45aac48ded28647d6a222a5003b9f94127175688a33b",
+  "checks": [
+    "connect and balance read",
+    "public connection state shared with loopback helper",
+    "explicit target chain on deployment",
+    "creation receipt and exact runtime verification",
+    "duplicate deployment disabled",
+    "deployment record download",
+    "hash recovery and verification after reload",
+    "no uncaught JavaScript errors"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "recordedAtUtc": "2026-10-05T14:03:39.675Z",
+  "result": "Passed",
+  "checks": [
+    "Unanswered approval has visible guidance; duplicate clicks and empty read checks do not create another approval or claim a connection",
+    "Previously approved eth_accounts recovers a hung approval with validated network and connected controls, no repeated permission request or transaction; 390px has no overflow",
+    "Late rejection from a recovered approval cannot clear a newer account-selection operation",
+    "An actual exposed-account event releases the connection controls even if the original approval promise remains unresolved",
+    "MetaMask -32002 remains pending with no duplicate permission request and recovers through a permission read after approval",
+    "Hung account/network read ends within ten seconds and recovers via a read; approval is never timed out or automatically retried",
+    "Hung balance read preserves the connection, unlocks refresh and permits read-only recovery",
+    "A read check does not undo an explicit local disconnect when MetaMask permission remains",
+    "Declined approval and absent provider restore Connect with explicit feedback"
+  ],
+  "pageErrors": [],
+  "scope": "Isolated Chrome with injected EIP-6963 wallet and HTTP fixtures. These results verify application recovery; actual in-app-browser MetaMask approval/connection remains unverified."
+}
